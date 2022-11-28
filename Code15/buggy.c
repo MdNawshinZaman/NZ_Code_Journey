@@ -8,3 +8,5 @@ int main (void)
         printf("#\n");
     }
 }
+// to debug this code I will have to use "debug50" functin
+// using example: dbug50 ./buggy 
