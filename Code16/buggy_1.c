@@ -16,6 +16,6 @@ int get_negative_int (void) // here get_negative_int is a fuction which will ret
     {
         n = get_int("Please input a negative integer: ");
     }
-    while (n < 0)
+    while (n >= 0);
     return n;
 }
