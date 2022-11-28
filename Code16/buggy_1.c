@@ -15,7 +15,7 @@ int get_negative_int (void) // here get_negative_int is a fuction which will ret
     do
     {
         n = get_int("Please input a negative integer: ");
-        printf("n is %i",n);
+        printf("n is %i\n",n);
     }
     while (n < 0);
     return n;
