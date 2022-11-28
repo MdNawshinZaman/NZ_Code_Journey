@@ -6,5 +6,7 @@ int main (void)
     int sc2 = 73;
     int sc3 = 33;
 
-    printf("Average : %f\n", (sc1 + sc2 + sc3)/3.0);
+    printf("Average : %f\n", (sc1 + sc2 + sc3)/3.0); // In this code, I have took 3 int as input. But my output will be a float value
+    // For this, i have used %f. but still it was not working because at first I had devided the sumesion with 3 that is it self an int.
+    // 
 }
