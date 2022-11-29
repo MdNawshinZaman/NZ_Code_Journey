@@ -5,5 +5,9 @@
 int main(void)
 {
     string name = get_string("Name: ");
-    int length = strlen(name); //"strlen" is a function that 
+    int length = strlen(name); //"strlen" is a function that can measure the length of a string.
+                               //This function comes with a library called <string.h>
+                               // this library comes with C itself
+
+    
 }
