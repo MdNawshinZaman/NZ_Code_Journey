@@ -35,7 +35,7 @@ int main (void)
 
     for (int i = 0; i < length; i++)
  */
-    for (int i = 0, n = strlen(s); i < n; i++) // for loops lets me declare multiple variables at once. This line is the example.
+    for (int i = 0, n = strlen(s); i < n; i++) // for loop lets me declare multiple variables at once. This line is the example.
                                                // Here I have declared two Integers at a same time. One is 'i' and the other one is 'n'
     {
         printf("%c",s[i]);
