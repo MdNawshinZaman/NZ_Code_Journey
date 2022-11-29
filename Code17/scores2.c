@@ -3,7 +3,11 @@
 int main (void)
 {
     int scores [3];
-    
+
+    for (int i = 0; i < 3; i++)
+    {
+        scroes[i] = get_int("Enter Score: ");
+    }
 
     printf("Average: %f \n",(scores[0]+scores[1]+scores[2])/3.0); // watch "scores.c" to see deference
 }
