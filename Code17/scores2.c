@@ -4,7 +4,7 @@ int main (void)
 {
     int scores [3];
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 3; i++) // watch scores1.c to see deferance
     {
         scores[i] = get_int("Enter Score: ");
     }
