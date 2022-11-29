@@ -4,7 +4,13 @@
 
 int main (void)
 {
-    string s = get_string("Input: ");
+    string s = get_string("Input:  ");
     // Now objective is to print the collected string without using %s
-    printf("Output",);
+    printf("Output: ");
+
+    for (int i = 0; i < strlen(s); i++)
+    {
+        printf("%c",s[i]);
+    }
+    printf("\n");
 }
