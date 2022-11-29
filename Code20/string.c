@@ -4,7 +4,7 @@
 
 int main (void)
 {
-    string s = get_string("Name: ");
+    string s = get_string("Input: ");
     // Now objective is to print the collected string without using %s
-    printf("String is",);
+    printf("Output",);
 }
