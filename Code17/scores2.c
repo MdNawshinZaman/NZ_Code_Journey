@@ -2,9 +2,11 @@
 #include <cs50.h>
 int main (void)
 {
-    int scores [3];
+    int n = get_int("How many scores? \n");
 
-    for (int i = 0; i < 3; i++) // watch scores1.c to see deferance
+    int scores [n];
+
+    for (int i = 0; i < n; i++) // watch scores1.c to see deferance
     {
         scores[i] = get_int("Enter Score: ");
     }
