@@ -1,3 +1,11 @@
 #include <stdio.h>
 
-int
+int main (void)
+{
+    char c1 = 'H';
+    char c2 = 'I';
+    char c3 = '!';
+
+    printf("%C%C%C\n", c1,c2,c3);
+
+}
