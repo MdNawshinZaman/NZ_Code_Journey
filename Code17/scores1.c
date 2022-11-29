@@ -7,5 +7,5 @@ int main (void)
     scores[1] = 73; //[1]-- index one
     scores[2] = 33;
 
-    printf("Average: %f",)
+    printf("Average: %f",(scrores[0]+scrores[1]+scrores[2])/3.0);
 }
