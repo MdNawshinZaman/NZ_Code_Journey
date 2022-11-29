@@ -12,5 +12,6 @@ int main (void)
     {
         printf("%c",s[i]);
     }
+    // the printing process has been done by printing each character of the string indevidually. 
     printf("\n");
 }
