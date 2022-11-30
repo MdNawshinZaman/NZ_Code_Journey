@@ -14,7 +14,7 @@ So if we pass a value to a program, value of argc would be 2 (one for argument a
 #include <cs50.h>
 #include <stdio.h>
 
-int main (int argc, string argv[]) //here argc = argument count  // string argv[] = argument vector
+int main (int argc, string argv[]) //here argc = argument count  // string argv[] = argument vector, this is an array of strings not a single string.
 {
 
 }
