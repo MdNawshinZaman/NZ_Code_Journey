@@ -11,7 +11,7 @@ int main(void)
 
     for(int i = 0, n = strlen(s); i < n; i++)
     {
-        if(islower(s[i])) // here used a new function called "islower()"
+        if(islower(s[i])) // here used a new function called "islower()"  // PsudoCode: if the character is a small letter, then substract 32
         {
             printf("%c", s[i]-32); //there is a gap of 32 between the ASCII valuse of an uppercase and a lower case letter.
         }
