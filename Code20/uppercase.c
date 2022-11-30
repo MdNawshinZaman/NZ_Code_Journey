@@ -10,7 +10,10 @@ int main(void)
 
     for(int i = 0, n = strlen(s); i < n; ++)
     {
-        if(s[i])
+        if(s[i] >= 'a' && s[i] <='z')
+        {
+            
+        }
     }
 
 }
