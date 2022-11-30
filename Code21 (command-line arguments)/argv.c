@@ -8,7 +8,7 @@ So if we pass a value to a program, value of argc would be 2 (one for argument a
 
 4. If argc is greater than zero,the array elements from argv[0] to argv[argc-1] will contain pointers to strings.
 
-5. Argv[0] is the name of the program , After that till argv[argc-1] every element is command -line arguments.
+5. Argv[0] is the name of the program , After that till argv[argc-1] every element is command-line arguments.
 */
 
 #include <cs50.h>
