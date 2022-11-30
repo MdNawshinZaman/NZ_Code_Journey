@@ -1,5 +1,6 @@
-//This is a program to convert all input characters to upper case
+//This is a program to convert all input characters to upper case (Upgrade version)
 #include <cs50.h>
+#include <ctype.h> // this is the new header file
 #include <stdio.h>
 #include <string.h>
 
@@ -10,7 +11,7 @@ int main(void)
 
     for(int i = 0, n = strlen(s); i < n; i++)
     {
-        if(s[i] >= 'a' && s[i] <='z')
+        if(islower(s[i])) // here used a new function called "islower()"
         {
             printf("%c", s[i]-32); //there is a gap of 32 between the ASCII valuse of an uppercase and a lower case letter.
         }
@@ -22,5 +23,3 @@ int main(void)
     printf("\n");
 
 }
-
-// I am writing the upgraded version of this cade named "uppercase1.c"
