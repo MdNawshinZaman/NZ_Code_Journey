@@ -11,14 +11,16 @@ int main(void)
 
     for(int i = 0, n = strlen(s); i < n; i++)
     {
-        if(islower(s[i]) != 0)
+       /* if(islower(s[i]) != 0)
         {
-            printf("%c", /* s[i]-32 */ toupper(s[i]));
+            printf("%c", toupper(s[i]));
         }
         else
         {
             printf("%c", s[i]);
-        }
+        } */
+
+        printf("%c", toupper(s[i])); // this function will do all the works of the mentioned if-else here.
     }
     printf("\n");
 
