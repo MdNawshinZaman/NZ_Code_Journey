@@ -1,4 +1,4 @@
-//This is a program to convert all input characters to upper case (Upgrade version)
+//This is a program to convert all input characters to upper case (Upgraded version)
 #include <cs50.h>
 #include <ctype.h> // this is the new header file
 #include <stdio.h>
@@ -23,3 +23,5 @@ int main(void)
     printf("\n");
 
 }
+
+// there is a much better way to Convert. seeing it in "uppercase2.c"
