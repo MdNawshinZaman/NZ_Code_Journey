@@ -12,8 +12,13 @@ int main(void)
     {
         if(s[i] >= 'a' && s[i] <='z')
         {
-            
+            printf("%c", s[i]-32); //there is a gap of 32 between the ASCII valuse of an uppercase and a lower case letter.
+        }
+        else
+        {
+            printf("%c", s[i]);
         }
     }
+    printf("\n");
 
 }
