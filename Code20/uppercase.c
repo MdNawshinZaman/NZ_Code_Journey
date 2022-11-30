@@ -10,7 +10,7 @@ int main(void)
 
     for(int i = 0, n = strlen(s); i < n; ++)
     {
-        print
+        if(s[i])
     }
 
 }
