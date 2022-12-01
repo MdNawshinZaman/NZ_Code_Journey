@@ -4,9 +4,9 @@ int main (int argc, string argv[]) //here argc = argument count  // string argv[
 {
     if (argc != 0)
     {
-        printf("Command-line argument is missing!");
-        return 1;
+        printf("Command-line argument is missing!\n");
+        return 11111;
     }
     printf ("Hello, %s.", argv[1]);
-    return 0; // main() is always returning 0 secreatly to the computer if the program execution was successful. 
+    return 0; // main() is always returning 0 secreatly to the computer if the program execution was successful.
 }
