@@ -7,10 +7,13 @@ int main (void)
 
     for (int i = 0; i < 7; i++)
     {
-        if (numbers[i] == 0)
+        if (numbers[i] == 9)
         {
-            printf("Number found in position ")
+            printf("Number found in position %i.\n", i);
+            return 0;
         }
     }
+    printf("Not found\n");
+    return 1;
 
 }
