@@ -9,7 +9,7 @@ int main(void)
     {
         //if (names[i] == "Ron") // this line is not going to work for a string
         // to do this we need a new function called 'strcmp'
-        if(strcmp(names[i], "Ron"))
+        if(strcmp(names[i], "Ron") == 0)
         {
             printf("Number found in position %i.\n", i);
             return 0;
