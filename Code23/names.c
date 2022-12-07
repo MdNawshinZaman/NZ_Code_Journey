@@ -3,11 +3,11 @@
 #include <strign.h>
 int main(void)
 {
-    string names[]={}
+    string names[]={"Bill", "Charlie", "Fred", "George", "Ginny", "Percy", "Ron"}
 
     for (int i = 0; i < 7; i++)
-    { 
-        if (numbers[i] == 9)
+    {
+        if (names[i] == "Ron")
         {
             printf("Number found in position %i.\n", i);
             return 0;
