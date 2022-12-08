@@ -14,7 +14,7 @@ person;
 
 int main(void)
 {
-    person people[];
+    person people[2];
 
     people[0].name= "Carter"; // Here the dot between name and people is a new syntext
                               //the dot is telling my code keep the tryped data inside the variable named "name"
