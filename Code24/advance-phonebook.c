@@ -25,7 +25,7 @@ int main(void)
 
     for(int i = 0; i < 2; i++)
     {
-        if (people[i].name, "David") == 0)
+        if (strcmp(people[i].name, "David") == 0)
         {
             printf("The number of %s is (%s)\n",people[i].name, people[i].number);
             return 0;
