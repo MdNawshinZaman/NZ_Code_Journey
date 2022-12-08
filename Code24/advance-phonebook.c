@@ -18,7 +18,7 @@ int main(void)
 
     people[0].name= "Carter"; // Here the dot between name and people is a new syntext
                               //the dot is telling my code keep the tryped data inside the variable named "name"
-    people[0].number= "+1-617-495-1000" //for this line, the dot is telling my code keep the tryped data inside the variable named "number"
+    people[0].number= "+1-617-495-1000"; //for this line, the dot is telling my code keep the tryped data inside the variable named "number"
 
     people[1].name= "David";
     people[1].number= "+1-949-468-2750";
