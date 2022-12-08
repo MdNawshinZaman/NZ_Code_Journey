@@ -7,4 +7,7 @@ int main(void)
     deaw (height)
 }
 
-void 
+void draw (int n)
+{
+    for(i = 0, i < )
+}
