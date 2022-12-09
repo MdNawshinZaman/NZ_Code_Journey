@@ -4,7 +4,7 @@
  int main(void)
  {
     int n = 50;
-    int *p = &n;
+    int *p = &n; // here the " int * " is the syntaxt
 
 /*
     int *p = &n; // here the single &n refers the memory address on the value of n.
