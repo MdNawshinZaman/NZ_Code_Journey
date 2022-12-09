@@ -11,8 +11,8 @@ int main(void)
 
 void draw (int n)
 {
-    if (n == 0) // used <= so that if my user gives me a negative number, my code doesn't show an error
-                // if we use the == instead of <=, then we will encounter a segmentation fault if our use inputs a negative number. 
+    if (n <= 0) // used <= so that if my user gives me a negative number, my code doesn't show an error
+                // if we use the == instead of <=, then we will encounter a segmentation fault if our use inputs a negative number.
     {
         return;
     }
