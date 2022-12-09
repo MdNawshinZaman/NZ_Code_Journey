@@ -4,6 +4,7 @@
  int main(void)
  {
     int n = 50;
+    int *p = &n;
 
 /*
     int *p = &n; // here the single &n refers the memory address on the value of n.
@@ -13,4 +14,5 @@
 */ // these 2 line of work can be done with a single line
 
     printf("%p\n", &n);
+    printf("%i\n", *p); // this line shows us that what is there in the address that has been presureved in *p
  }
