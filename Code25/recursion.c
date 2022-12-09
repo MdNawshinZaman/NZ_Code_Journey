@@ -22,4 +22,5 @@ void draw (int n)
         printf("#");
     }
     printf("\n");
+    // this new draw fuction will draw a pyramid that has 1 line less than commanded, then will print an another row.
 }
