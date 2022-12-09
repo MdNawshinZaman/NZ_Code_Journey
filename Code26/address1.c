@@ -3,7 +3,9 @@
 
 int main(void)
 {
-    string s = "HI!"; // this line won't work without cs50.h
+    string s = "HI!"; // this line works as --char *s = "HI!";--
     char c = s[0];
-    printf("%s\n",s);
+    char *p = &c;
+    printf("%p\n",s); // seeing the address of s
+    printf("%p\n",p); // seeing the value of *p AKA the Address of c
 }
