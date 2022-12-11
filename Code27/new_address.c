@@ -5,7 +5,7 @@ int main(void)
     int numbers[] = {4, 6, 8, 2, 7, 5, 0};
 
     printf("%i\n", *numbers);
-    printf("%i\n", *(numbers+1));
+    printf("%i\n", *(numbers+1));// from this line adding numbers like 1, 2, 3,.... is called pointer arithmetics
     printf("%i\n", *(numbers+2));
     printf("%i\n", *(numbers+3));
     printf("%i\n", *(numbers+4));
