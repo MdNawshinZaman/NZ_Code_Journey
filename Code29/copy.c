@@ -14,3 +14,8 @@ int main(void)
      printf("s: %s\n",s);
      printf("t: %s\n",t);
 }
+/* in the output we get both s and t doing the same job, because
+ by writing the line
+ string t = s;
+ we made two variables that are pointing to a same address.
+ So, when we apply any rule to one variable, the*/
