@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
@@ -9,9 +10,9 @@ int main(void)
     char *s = get_string("s: ");
     char *t = get_string("t: ");
 
-    if (s == t)
+    if (strcmp(s, t) == 0) // 'strcmp()'
     {
-        printf("Same\n"); // this par of the code never works when we use only 'string' instead of 'char *'
+        printf("Same\n"); // this part of the code never works when we use only 'string' instead of 'char *'
     }
     else
     {
