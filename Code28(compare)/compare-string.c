@@ -10,6 +10,8 @@ int main(void)
     char *s = get_string("s: ");
     char *t = get_string("t: ");
 
+    
+
     if (strcmp(s, t) == 0) // 'strcmp() is the function built-in string.h library to compare two strings
     {
         printf("Same\n"); // this part of the code never works when we use only 'string' instead of 'char *'
