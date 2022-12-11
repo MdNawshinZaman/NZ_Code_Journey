@@ -10,7 +10,8 @@ int main(void)
     char *s = get_string("s: ");
     char *t = get_string("t: ");
 
-    
+    printf("%s\n", s); // here %s knows that, it has to start printing from the first character (addressed by char *) and do the rest until it finds the NUL(\0) character
+    printf("%s\n", t);
 
     if (strcmp(s, t) == 0) // 'strcmp() is the function built-in string.h library to compare two strings
     {
