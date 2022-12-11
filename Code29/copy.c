@@ -1,5 +1,5 @@
 #include <cs50.h>
-#include <ctype.h> // included to use ''
+#include <ctype.h> // included to use 'toupper'
 #include <stdio.h>
 #include <string.h>
 
