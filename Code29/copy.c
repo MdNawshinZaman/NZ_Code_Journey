@@ -18,4 +18,5 @@ int main(void)
  by writing the line
  string t = s;
  we made two variables that are pointing to a same address.
- So, when we apply any rule to one variable, the*/
+ So, when we apply any rule to one variable, the evantually it works for both variables.
+ Because they were pointing to the same location.*/
