@@ -8,7 +8,7 @@ int main(void)
 
     if (s == t)
     {
-        printf("Same\n");
+        printf("Same\n"); 
     }
     else
     {
