@@ -1,5 +1,5 @@
 #include <cs50.h>
-#include <ctype.h> // this lirary contains ''
+#include <ctype.h> // included to use ''
 #include <stdio.h>
 #include <string.h>
 
