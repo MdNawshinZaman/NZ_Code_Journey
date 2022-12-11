@@ -4,5 +4,12 @@
 
 int main(void)
 {
-     
+     string s = get-string("s: ");
+
+     string t = s;
+
+     t[0] = toupper(t[0]);
+
+     printf("s: %s",s);
+     printf("t: %s",t);
 }
