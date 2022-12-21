@@ -3,15 +3,15 @@
 
 int main(void)
 {
-     double b, p = 0, R;
+     double b, p, R = 0;
     printf("Enter the Base: ");
     scanf("%lf", &b);
     printf("Enter a non fractional power: ");
     scanf("%lf", &p);
 
-    for (int i = 0; i < p; i++)
+    for (int i = 1; i < p; i++) //p-3, b-2, Ans: 8
     {
-        R = b*b;
+        R = R + b*b;
     }
 
     printf("Ans: \n");
