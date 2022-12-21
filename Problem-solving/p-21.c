@@ -3,7 +3,7 @@
 
 int main(void)
 {
-     double b, p, R;
+     double b, p, R = 1;
     printf("Enter the Base: ");
     scanf("%lf", &b);
     printf("Enter a non fractional power: ");
@@ -13,6 +13,5 @@ int main(void)
     {
         R = R*b;
     }
-
     printf("Ans: %.lf\n", R);
 }
