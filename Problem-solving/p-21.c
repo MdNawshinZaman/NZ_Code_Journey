@@ -9,7 +9,7 @@ int main(void)
     printf("Enter a non fractional power: ");
     scanf("%lf", &p);
 
-    for (int i = 1; i < p; i++) //p-3, b-2, Ans: 8
+    for (int i = 1; i <= p; i++) //p-3, b-2, Ans: 8
     {
         R = R + b*b;
     }
