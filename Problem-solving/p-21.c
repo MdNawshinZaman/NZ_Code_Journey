@@ -14,5 +14,5 @@ int main(void)
         R = R + b*b;
     }
 
-    printf("Ans: \n");
+    printf("Ans: %.lf\n", R);
 }
