@@ -6,8 +6,13 @@ int main(void)
      double b, p = 0, R;
     printf("Enter the Base: ");
     scanf("%lf", &b);
-    printf("Enter the power: ");
+    printf("Enter a non fractional power: ");
     scanf("%lf", &p);
 
-    for (p = 0; )
+    for (int i = 0; i < p; i++)
+    {
+        R = b*b;
+    }
+
+    printf("Ans: \n");
 }
