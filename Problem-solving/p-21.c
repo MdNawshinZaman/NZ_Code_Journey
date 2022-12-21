@@ -11,7 +11,7 @@ int main(void)
 
     for (int i = 1; i <= p; i++) //p-3, b-2, Ans: 8
     {
-        R = *b;
+        R = R*b;
     }
 
     printf("Ans: %.lf\n", R);
