@@ -8,7 +8,7 @@ int main(void)
 
     for (int i = 0; i < r; i++)
     {
-        for (int j = r; j > i; j--)
+        for (int j = r; j > i; j--) // this will flip the pyramid "for (int j = 0; j <= i; j++)"
         {
             printf("#");
         }
