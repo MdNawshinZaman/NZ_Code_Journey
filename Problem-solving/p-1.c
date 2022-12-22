@@ -5,7 +5,8 @@ int main(void)
     //char *n = "Md. Nawshin Zaman";
     //char *N = "Bangladeshi";
 
-    char n[]="" ,N[]="";
+    char n[];
+    char N[];
 
     printf("Enter your name: ");
     gets(n);
