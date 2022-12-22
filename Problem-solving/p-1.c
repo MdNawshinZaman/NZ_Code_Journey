@@ -2,5 +2,6 @@
 
 int main(void)
 {
-    P
+    char *
+    printf("Hello world, i am a student of CSE. Here is my identity: \n Name: %c")
 }
