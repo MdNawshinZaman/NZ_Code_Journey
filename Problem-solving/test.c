@@ -1,14 +1,18 @@
-#include<stdio.h>
-#include<math.h>
+#include <stdio.h>
+#include <conio.h>
 
-int main(void)
-{
-    double b, p, R;
-    printf("Enter the Base: ");
-    scanf("%lf", &b);
-    printf("Enter the exponent: ");
-    scanf("%lf", &p);
-    R = pow(b, p);
-    printf("Ans of power: %lf\n", R);
-    return 0;
+int main(){
+int i,n,rows;
+
+printf("Enter the number of rows :");
+scanf("%d",&rows);
+
+for(i=rows;i>0;i--){
+
+    for(n=i;n>0;n--)
+        printf("*");
+    printf("\n");
+
+}
+return 0;
 }
