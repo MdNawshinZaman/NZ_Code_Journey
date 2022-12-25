@@ -17,8 +17,4 @@ int main(void)
     {
         printf("Not Agreed.\n");
     }
-    else
-    {
-        goto start;
-    }
 }
