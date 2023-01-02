@@ -2,7 +2,7 @@
 
 void meow (int n)
 {
-    for (int i = 0; i > n; i--)
+    for (int i = n; i > n; i--)
     {
         printf("Meowww. \n");
     }
