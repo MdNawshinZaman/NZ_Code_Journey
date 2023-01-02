@@ -5,8 +5,9 @@ int main(void)
 {
     const int MINE = 2; // here the 'const' function will never let the value of 'MINE' to be changed.
                         // as this is a constant variable, it's recommended to use all Capital letters to remember it.
-    MINE = get_int("What is my point?");
+    /int MINe = get_int("What is my point?\n");
     printf("%i\n \n", MINE);
+    printf("%i\n \n", MINe);
 
     /*int points = get_int ("How many points did you loose?\n");
 
