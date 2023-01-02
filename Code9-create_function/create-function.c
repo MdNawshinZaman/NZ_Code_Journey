@@ -4,8 +4,6 @@
 void meow (void); //here the first 'void' is called the return value, 'meow' is the name of my function,
                  //and the 2nd '(void)' is called the arguments (the taking value) to that function
 
-int main(void)
-{
 /* when I moved the newly made function called 'meow' at the bottom after my main function,
 there is a tiny error appearing, but when I typed 'void main (void)' at the top after #include,
 my program knows that there is a function called 'meow'.
@@ -13,4 +11,17 @@ That means, I have declared the that there is a Hand made function named "void m
 As a result, the program search through the whole code for
 'meow' function before executing and as a result, the error is gone :) */
 
+
+int main(void)
+{
+    for (int i = 0; i < 4; i++)
+    {
+    meow();
+    }
+    return 0;
+}
+
+void meow(void)
+{
+    printf("Meow.\n");
 }
