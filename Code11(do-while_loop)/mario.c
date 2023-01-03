@@ -18,7 +18,7 @@ int main(void)
 
     If I had used "if()" to set my criteria and the input value was less than 1,
     my code would just finished without doing any thing. But now I can keep putting my value
-    until I get my desired result!!   */
+    until I get my desired result!!
 
     // here is the same job done by using only while loop
     while(1)
@@ -29,5 +29,8 @@ int main(void)
             break;
         }
     }
+    */
+
+   for(int i = 0; )
 
 }
