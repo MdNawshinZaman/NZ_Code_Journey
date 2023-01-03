@@ -11,3 +11,16 @@ int main (void)
     float sale = regular * .85;
     printf ("Sale price: %.2f\n", sale);
 }*/
+
+int main(void)
+{
+    char pr = '%';
+    float regular = get_float("Regular price: You are getting 15%c off.\nEnter the ammount: ");
+    float sale = discount (regular);
+    printf("Sale price: %.2f", sale);
+}
+
+float discount (float price)
+{
+    
+}
