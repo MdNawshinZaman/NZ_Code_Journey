@@ -4,6 +4,6 @@ int main(void)
 {
     string name = get_string("What is your name");
 
-    printf("AssalamuAlaikum \n");
+    printf("AssalamuAlaikum %s\n",name);
     return 0;
 }
