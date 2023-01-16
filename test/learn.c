@@ -1,7 +1,8 @@
 #include<stdio.h>
-
+#include<cs50.h>
 int main(void)
 {
-    printf("AssalamuAlaikum world\n");
+    string name = get_string("")
+    printf("AssalamuAlaikum\n");
     return 0;
 }
