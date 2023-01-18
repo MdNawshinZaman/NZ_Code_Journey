@@ -7,7 +7,7 @@ int main(void)
 {
     char pr = '%';
     float regular = get_float("Welcome to the shop!\nYou will get 15%c off.\nPlease enter your price: ",pr);
-    float sale = regular*(100-(15/100));
-    printf("Sale price: %f\n",sale);
+    float sale = regular*((100-15)/100);
+    printf("Sale price: %.2f\n",sale);
     return 0;
 }
