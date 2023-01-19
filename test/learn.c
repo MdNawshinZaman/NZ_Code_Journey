@@ -2,17 +2,11 @@
 #include <stdio.h>
 int get_negative_int(void);
 int main(void){
-    int i = get_negative_int();
-    printf("%i\n",i);
-}
+    int sc1, sc2, sc3;
 
-int get_negative_int(void){
-    int n;
-    do{
-        n = get_int("Please input a negative integer: ");
-        printf("n is %i, which is not nagative.\n Please, give another output.",n);
-    }
-    while(n > 0);
-    return n;
+    sc1 = 72;
+    sc2 = 73;
+    sc3 = 33;
 
+    printf("Averege: %")
 }

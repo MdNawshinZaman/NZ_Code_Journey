@@ -14,8 +14,8 @@ int main (void)
     do
     {
         n = get_int("Please input a negative integer: ");
-        printf("n is %i, which is not a negative number.\n",n);
+        printf("n is %i\n",n);
     }
-    while (n < 0); // here < is the bug of the code. 
+    while (n < 0); // here < is the bug of the code.
     return n;
 }
