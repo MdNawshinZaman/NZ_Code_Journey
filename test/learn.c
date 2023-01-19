@@ -9,6 +9,6 @@ int main(void){
     {
         scores[i] = get_int("Enter numebr: ");
     }
-
+    printf("\n%d\n\n",scores[2]);
     printf("Avarage of the first 3 input is %f\n", (scores[0]+scores[1]+scores[2])/3.0);
 }
