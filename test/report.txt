@@ -1,6 +1,5 @@
 Date: 16.01.2023
 Completed till Code9
 
-Folder: Code13- Code 13(Doller to pennies)
 Folder: Code14- Arrays
                 Arrays (without cs50)(ask for name)
