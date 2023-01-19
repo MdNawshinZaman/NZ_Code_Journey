@@ -3,5 +3,8 @@
 
 int main(void)
 {
-    
+    string name = get_string("What is your name? ");
+    printf("Hello, %s\n",name);
 }
+//this program does not run in CodeBlocks. it will run in cs50.io
+//
