@@ -21,6 +21,7 @@ int main(void)
             //printing a brick
             printf("#");
         }
+        printf("\n");
     }
     return 0;
 }
