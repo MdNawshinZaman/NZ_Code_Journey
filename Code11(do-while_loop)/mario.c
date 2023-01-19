@@ -31,6 +31,10 @@ int main(void)
     }
     */
 
-   for(int i = 0; )
-
+   for(int i=0; i<n; i++)
+    {
+        printf("?");
+    }
+    printf("\n");
+    return 0;
 }

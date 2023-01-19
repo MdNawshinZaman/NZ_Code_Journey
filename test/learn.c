@@ -4,11 +4,20 @@
 int main(void)
 {
     int n;
-    do
+    /*do
     {
         n = get_int("Enter the size: ");
     }
-    while (n<1);
+    while (n<1);*/
+
+    while(1)
+    {
+        n = get_int("Enter the size: ");
+        if(n>1)
+        {
+            break;
+        }
+    }
 
     for(int i=0; i<n; i++)
     {
