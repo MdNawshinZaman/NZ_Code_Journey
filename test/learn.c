@@ -2,5 +2,12 @@
 #include<cs50.h>
 
 int main(void){
-    string name = get_string("")
+    string name = get_string("Name: ");
+
+    int i = 0;
+    while(name[i] != '\0'){
+        i++;
+    }
+
+    printf("%d\n",i);
 }
