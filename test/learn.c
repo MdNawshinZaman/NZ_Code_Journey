@@ -8,5 +8,5 @@ int main(void){
     sc2 = 73;
     sc3 = 33;
 
-    printf("Averege: %f\n", (sc1+sc2+sc3)/3);
+    printf("Averege: %.1f\n", (sc1+sc2+sc3)/3.0);
 }

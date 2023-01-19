@@ -10,5 +10,5 @@ int main (void)
     // In this code, I have took 3 int as input. But my output will be a float value
     // For this, i have used %f. but still it was not working because at first I had devided the sumesion with 3 that is it self an int.
     // to solve this problem I have devided the Average with 3.0
-    // this .0 converts my ans to a floating value.
-}d 
+    // this .0 converts my answer to a floating value.
+}
