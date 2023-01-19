@@ -13,8 +13,14 @@ int main(void)
     while (n<1);
 
     //column maker
-    for(int i = 0; i<n; i++)
+    for(int i=0; i<n; i++)
     {
-        
+        //row maker
+        for(int j=0; j<n; j++)
+        {
+            //printing a brick
+            printf("#");
+        }
     }
+    return 0;
 }
