@@ -5,5 +5,16 @@
 int main(void)
 {
     int n;
-    // taking the size value from user,
+    // taking the size value from user, which must is grater than 1
+    do
+    {
+        n = get_int("Enter the size of your box: ");
+    }
+    while (n<1);
+
+    //column maker
+    for(int i = 0; i<n; i++)
+    {
+        
+    }
 }
