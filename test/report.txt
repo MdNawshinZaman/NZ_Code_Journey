@@ -1,4 +1,4 @@
 Date: 19.01.2023
 Completed till Code14
 
-In Code15 I couldn't find hoe to use dbug50
+In Code15 I couldn't find how to use dbug50
