@@ -2,11 +2,8 @@
 #include<cs50.h>
 
 int main(void){
-    char c1 = 'H';
-    char c2 = 'I';
-    char c3 = '!';
+    string s = "HI!\n";
+    printf("%s",s);
 
-    printf("%c%c%c\n", c1,c2,c3);
-    printf("%i%i%i\n",c1,c2,c3);
-    printf("%d%d%d\n",c1,c2,c3);
+    printf("%i %i %i %i\n", s[0], s[1], s[2], s[3]);
 }
