@@ -3,10 +3,11 @@
 #include<string.h>
 
 int main(void){
-    string s = get_string("Input: ");
+    string s = get_string("Input:  ");
     printf("Output: ");
 
-    for(int i = 0; i < strlen(s); i++){
+    int l = strlen(s);
+    for(int i = 0; i < l ; i++){
         printf("%c",s[i]);
     }
     printf("\n");
