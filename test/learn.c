@@ -3,8 +3,5 @@
 #include<string.h>
 
 int main(void){
-    string name = get_string("Name: ");
-     int length = strlen(name);
-     printf("%i\n", length);
-     return 0;
+    
 }
