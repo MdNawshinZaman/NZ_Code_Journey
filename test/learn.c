@@ -8,6 +8,6 @@ int main(void){
 
     for(int i = 0, j = strlen(s); i < j; i++)
     {
-        if ()
+        if(s[i] )
     }
 }
