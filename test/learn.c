@@ -2,10 +2,14 @@
 #include <math.h>
 int main() {
 
-    double pi=3.14159, r, vol;
-    scanf("%lf",&r);
-    vol = (4/3.0)*pi*pow(r,3);
-    printf("VOLUME = %.3lf\n",vol);
+    double A, B, C, pi=3.14159;
+    scanf("%lf %lf %lf",&A, &B, &C);
+
+    printf("TRIANGULO: %lf\n", .5*A*C);
+    printf("CIRCULO: %lf\n",pi*pow(C,2));
+    printf("TRAPEZIO: %lf\n", C*(A+B)/2.0);
+    printf("QUADRADO: %lf\n", pow(B,2));
+    printf("RETANGULO: %lf\n", A*B);
 
     return 0;
 }
