@@ -1,21 +1,23 @@
 #include <stdio.h>
 
-int main(void){
+int main() {
 
     int N;
-    int note[]={100, 50, 20, 10, 5, 2, 1};
-    int result[7];
+    int time[3];
     scanf("%d",&N);
-    printf("%d\n",N);
 
-    for(int i = 0; i < 7; i++){
-        result[i] = N / note[i];
-        N = N % note[i];
+    for(int i = 0; i < 3; i++){
+        time[i] = N % 60;
+        N = N - (N % 60);
     }
 
-    for(int j = 0; j < 7; j++){
-        printf("%d nota(s) de R$ %d,00\n", result[j], note[j]);
+    for(int j = 2; j >= 0; j--){
+        printf("%d",time[j]);
+        while(j > 0){
+            printf(":");
+        }
     }
+    printf("\n");
 
     return 0;
 }
