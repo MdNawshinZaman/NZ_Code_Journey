@@ -9,7 +9,7 @@ int main() {
     scanf("%d %d %f", &code2, &unit2, &price2);
 
     total = (unit1*price1)+(unit2*price2);
-    printf("VALOR A PAGAR: R$ %f\n",total);
+    printf("VALOR A PAGAR: R$ %.2f\n",total);
 
     return 0;
 }
