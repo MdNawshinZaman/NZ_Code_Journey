@@ -7,7 +7,7 @@ int main() {
     scanf("%d",&N);
 
     for(int i = 0; i < 3; i++){
-        time[i] = N % 60;
+        time[i] = N % 60; 
         N = N - (N % 60);
     }
 
