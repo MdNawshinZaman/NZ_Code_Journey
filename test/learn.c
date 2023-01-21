@@ -6,7 +6,7 @@ int main() {
     float salary, sale, total;
 
     scanf("%s",&name);
-    scanf("%f %f", salary, sale);
+    scanf("%f %f", &salary, &sale);
 
     total = salary + sale*0.15;
 
