@@ -2,15 +2,14 @@
 
 int main() {
 
-    char name[100];
-    float salary, sale, total;
+    int code1, code2, unit1, unit2;
+    float price1, price2, total;
 
-    scanf("%s",&name);
-    scanf("%f %f", &salary, &sale);
+    scanf("%d %d %f", &code1, &unit1, &price1);
+    scanf("%d %d %f", &code2, &unit2, &price2);
 
-    total = salary + sale*0.15;
-
-    printf("TOTAL = R$ %.2f\n", total);
+    total = (unit1*price1)+(unit2*price2);
+    printf("VALOR A PAGAR: R$ %f\n",total);
 
     return 0;
 }
