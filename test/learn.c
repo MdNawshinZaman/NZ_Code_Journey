@@ -8,6 +8,15 @@ int main(void){
 
     for(int i = 0, j = strlen(s); i < j; i++)
     {
-        if(s[i] )
+        if(s[i] >= 'a' && s[i] <= 'z')
+        {
+            printf("%c",s[i]-32);
+        }
+        else
+        {
+            printf("%c",s[i]);
+        }
     }
+    printf("\n");
+    return 0;
 }
