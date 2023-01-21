@@ -4,5 +4,5 @@
 
 int main(void)
 {
-
+    string s = get_string("")
 }
