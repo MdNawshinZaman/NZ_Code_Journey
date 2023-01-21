@@ -2,10 +2,9 @@
 
 int main() {
 
-    int d;
-    float t;
+    int d, t;
     scanf("%d",&d);
     t = d*2.0;
-    printf("%.2f minutos\n",t);
+    printf("%d minutos\n",t);
     return 0;
 }
