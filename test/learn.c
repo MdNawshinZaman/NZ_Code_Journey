@@ -4,19 +4,23 @@
 
 int main(void)
 {
+    printf("Start- ");
     for(int i = 0; i <= 127; i++)
     {
         printf("%d ",i);
     }
+    printf("End. ");
 
     printf("\n");
 
+    printf("Start- ");
     for(int i = 0; i <= 127; i++)
     {
         printf("%c ",i);
     }
 
     printf("\n");
-    
+    printf("End. ");
+
     return 0;
 }
