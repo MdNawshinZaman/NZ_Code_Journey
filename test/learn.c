@@ -13,7 +13,7 @@ int main() {
 
     for(int j = 2; j >= 0; j--){
         printf("%d",time[j]);
-        while(j > 0){
+        if(j > 0){
             printf(":");
         }
     }
