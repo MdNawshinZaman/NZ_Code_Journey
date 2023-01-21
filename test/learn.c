@@ -12,7 +12,7 @@ int main() {
         N = N - m;
     }
 
-    for(j = 2; j >= 0; j-1){
+    for(int j = 2; j >= 0; j--){
         printf("%d:",time[j]);
     }
     printf("\n");
