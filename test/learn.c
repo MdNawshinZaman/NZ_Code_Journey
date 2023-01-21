@@ -8,7 +8,7 @@ int main(void){
 
     for(int i = 0, j = strlen(s); i < j; i++)
     {
-        if(s[i] >= 97 && s[i] <= '122')
+        if(s[i] >= 97 && s[i] <= 122)
         {
             printf("%c",s[i]-32);
         }
@@ -18,8 +18,5 @@ int main(void){
         }
     }
     printf("\n");
-
-    char c = 'z';
-    printf("%i\n",c);
     return 0;
 }
