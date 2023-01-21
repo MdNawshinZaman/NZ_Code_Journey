@@ -12,12 +12,8 @@ int main() {
         N = N - m;
     }
 
-    int j;
-    for(j = 2; j >= 0; j--){
-        printf("%d",time[j]);
-        if(j > 0){
-            printf(":");
-        }
+    for(j = 2; j >= 0; j-1){
+        printf("%d:",time[j]);
     }
     printf("\n");
 
