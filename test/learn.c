@@ -1,25 +1,21 @@
 #include <stdio.h>
 
-int main() {
+int mian(void){
 
-    int n, a, b, c, d, e, f, g;
-    scanf("%d",&n);
-    a = n/100;
-    b = (n- a*100)/50;
-    c = (n- a*100 - b*50)/20;
-    d = (n - a*100 - b*50 - c*20)/10;
-    e = (n - a*100 - b*50 - c*20 -d*10)/5;
-    f = (n - a*100 - b*50 - c*20 -d*10 - e*5)/2;
-    g = (n - a*100 - b*50 - c*20 -d*10 - e*5 - f*2)/1;
+    int N;
+    int note[]={100, 50, 20, 10, 5, 2, 1};
+    int result[7];
+    scanf("%d",&N);
+    printf("%d\n",N);
 
-    printf("%d\n", n);
-    printf("%d nota(s) de R$ 100,00 \n",a);
-    printf("%d nota(s) de R$ 50,00 \n",b);
-    printf("%d nota(s) de R$ 20,00 \n",c);
-    printf("%d nota(s) de R$ 10,00 \n",d);
-    printf("%d nota(s) de R$ 5,00 \n",e);
-    printf("%d nota(s) de R$ 2,00 \n",f);
-    printf("%d nota(s) de R$ 1,00 \n",g);
+    for(int i = 0; i < 7; i++){
+        result[i] = N / note[i];
+        N = N % note[i];
+    }
+
+    for(int j = 0; j < 7; j++){
+        printf("%d nota(s) de R$ %d,00\n", result[j], note[j]);
+    }
 
     return 0;
 }
