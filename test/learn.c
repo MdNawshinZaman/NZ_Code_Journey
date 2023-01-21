@@ -8,7 +8,8 @@ int main() {
 
     for(int i = 0; i < 3; i++){
         time[i] = N % 60;
-        N = N - (N % 60);
+        int m = N %60;
+        N = N - m;
     }
 
     int j;
