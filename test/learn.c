@@ -1,22 +1,22 @@
-#include<stdio.h>
 #include<cs50.h>
+#include<stdio.h>
 #include<string.h>
 
-int main(void){
-    string s = get_string("Before: ");
-    printf("After:  ");
-
-    for(int i = 0, j = strlen(s); i < j; i++)
+int main(void)
+{
+    for(int i = 0; i <= 127; i++)
     {
-        if(s[i] >= 97 && s[i] <= 122)
-        {
-            printf("%c",s[i]-32);
-        }
-        else
-        {
-            printf("%c",s[i]);
-        }
+        printf("%d ",i);
     }
+
     printf("\n");
+
+    for(int i = 0; i <= 127; i++)
+    {
+        printf("%c ",i);
+    }
+
+    printf("\n");
+    
     return 0;
 }
