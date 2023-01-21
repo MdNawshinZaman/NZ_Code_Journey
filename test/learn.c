@@ -1,10 +1,16 @@
-#include<cs50.h>
-#include<stdio.h>
-#include<string.h>
-#include<ctype.h>
+#include <stdio.h>
 
-int main(void)
-{
-   
+int main() {
+
+    char name[100];
+    float salary, sale, total;
+
+    scanf("%s",&name);
+    scanf("%f %f", salary, sale);
+
+    total = salary + sale*0.15;
+
+    printf("TOTAL = R$ %.2f\n", total);
+
     return 0;
 }
