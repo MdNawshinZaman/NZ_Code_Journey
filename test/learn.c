@@ -21,7 +21,10 @@ int main(void){
     }
 
     printf("NOTAS:\n");
-    for()
+    for(int k = 0; k < 6; k++)
+    {
+        printf("%d nota(s) de R$ %d.00\n", nota[k], note[k]);
+    }
 
 
 
