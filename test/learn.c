@@ -6,7 +6,7 @@ int main(void){
     scanf("%f",&N);
 
     int note[6] = {100, 50, 20, 10, 5, 2};
-    float coin[6] = {1.00, 0.50, 0.25, 0.10, 0.05, 0.01};
+    float round(coin[6] = {1.00, 0.50, 0.25, 0.10, 0.05, 0.01});
 
     int nota[6], moeda[6];
     for(int i = 0; i < 6; i++)
@@ -32,7 +32,7 @@ int main(void){
     printf("MOEDAS:\n");
     for(int l = 0; l < 6; l++)
     {
-        printf("%d moeda(s) de R$ %.2f\n", round(moeda[l]), coin[l]);
+        printf("%d moeda(s) de R$ %.2f\n", moeda[l], coin[l]);
     }
 
 
