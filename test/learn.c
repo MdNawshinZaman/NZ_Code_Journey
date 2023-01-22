@@ -14,13 +14,14 @@ int main(void){
         N = N -(nota[i] * note[i]);
     }
 
-    for(int j = 0; j < 6; j++)
+    for(int j = 0; j < 5; j++)
     {
         moeda[j] = N / coin[j];
         N = N - (moeda[j] * coin[j]);
     }
+    printf("%.2lf",N);
 
-    printf("NOTAS:\n");
+    /*printf("NOTAS:\n");
     for(int k = 0; k < 6; k++)
     {
         printf("%d nota(s) de R$ %d.00\n", nota[k], note[k]);
@@ -30,7 +31,7 @@ int main(void){
     for(int l = 0; l < 6; l++)
     {
         printf("%d moeda(s) de R$ %.2f\n", moeda[l], coin[l]);
-    }
+    }*/
 
 
     return 0;
