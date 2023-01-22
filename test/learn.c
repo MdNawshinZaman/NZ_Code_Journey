@@ -25,7 +25,8 @@ int main(void){
     {
         printf("%d nota(s) de R$ %d.00\n", nota[k], note[k]);
     }
-
+     printf("\n");
+     
 
 
     return 0;
