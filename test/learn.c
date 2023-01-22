@@ -20,10 +20,10 @@ int main(void){
         moeda[j] = N / coin[j];
         N = N - (moeda[j] * coin[j]);
     }
-    printf("%.2f\n",N);
-    printf("%f\n", N/0.01);
+    //printf("%.2f\n",N);
+    //printf("%f\n", N/0.01);
 
-    /*printf("NOTAS:\n");
+    printf("NOTAS:\n");
     for(int k = 0; k < 6; k++)
     {
         printf("%d nota(s) de R$ %d.00\n", nota[k], note[k]);
@@ -32,8 +32,8 @@ int main(void){
     printf("MOEDAS:\n");
     for(int l = 0; l < 6; l++)
     {
-        printf("%d moeda(s) de R$ %.2f\n", moeda[l], coin[l]);
-    }*/
+        printf("%d moeda(s) de R$ %.2f\n", round(moeda[l]), coin[l]);
+    }
 
 
     return 0;
