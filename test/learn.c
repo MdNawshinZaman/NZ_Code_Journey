@@ -6,7 +6,7 @@ int main(void){
     scanf("%f",&N);
 
     int note[6] = {100, 50, 20, 10, 5, 2};
-    float round(coin[6] = {1.00, 0.50, 0.25, 0.10, 0.05, 0.01});
+    float coin[6] = {1.00, 0.50, 0.25, 0.10, 0.05, 0.01};
 
     int nota[6], moeda[6];
     for(int i = 0; i < 6; i++)
@@ -20,6 +20,7 @@ int main(void){
         moeda[j] = N / coin[j];
         N = N - (moeda[j] * coin[j]);
     }
+    moeda[6] = round(N/ coin[5]);
     //printf("%.2f\n",N);
     //printf("%f\n", N/0.01);
 
