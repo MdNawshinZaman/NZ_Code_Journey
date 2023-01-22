@@ -1,8 +1,8 @@
 #include<stdio.h>
 
 int main(void){
-    double N;
-    scanf("%lf",&N);
+    float N;
+    scanf("%f",&N);
 
     int note[6] = {100, 50, 20, 10, 5, 2};
     float coin[6] = {1.00, 0.50, 0.25, 0.10, 0.05, 0.01};
@@ -19,7 +19,8 @@ int main(void){
         moeda[j] = N / coin[j];
         N = N - (moeda[j] * coin[j]);
     }
-    printf("%.2lf",N);
+    printf("%.2f\n",N);
+    printf("%f\n", N/0.01);
 
     /*printf("NOTAS:\n");
     for(int k = 0; k < 6; k++)
