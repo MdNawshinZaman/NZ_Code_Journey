@@ -26,8 +26,6 @@ int main(void){
         printf("%d nota(s) de R$ %d.00\n", nota[k], note[k]);
     }
 
-    printf("\n");
-
     printf("MOEDAS:\n");
     for(int l = 0; l < 6; l++)
     {
