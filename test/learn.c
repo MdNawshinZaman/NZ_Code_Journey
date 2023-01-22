@@ -11,14 +11,14 @@ int main(void){
     for(int i = 0; i < 6; i++)
     {
         nota[i] = N / note[i];
-        N = N % note[i];
+        N = N -(nota[i] * note[i]);
+    }
+
+    for(int j = 0; j < 6; j++)
+    {
+        moeda[j] = N / coin[j];
+        N = N - (moeda[j] * coin[j]);
     }
     printf("%.2lf",N);
-    /*for(int j = 0; j < 6; j++)
-    {
-        moeda[i] = N / coin[i];
-        N = N % coin[i]
-    }*/
-
     return 0;
 }
