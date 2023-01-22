@@ -19,6 +19,6 @@ int main(void){
         moeda[j] = N / coin[j];
         N = N - (moeda[j] * coin[j]);
     }
-    printf("%d\n",moeda[4]);
+    printf("%d\n",moeda[5]);
     return 0;
 }
