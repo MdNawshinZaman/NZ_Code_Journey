@@ -20,7 +20,7 @@ int main(void){
         moeda[j] = N / coin[j];
         N = N - (moeda[j] * coin[j]);
     }
-    moeda[6] = round(N/ coin[5]);
+    moeda[5] = round(N/ coin[5]);
     //printf("%.2f\n",N);
     //printf("%f\n", N/0.01);
 
