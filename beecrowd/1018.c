@@ -4,6 +4,7 @@ int main() {
 
     int N, note[7]={100,50,20,10,5,2,1}, num[7];
     scanf("%d",&N);
+    printf("%d\n",N);
 
     for(int i = 0; i < 7; i++)
     {
@@ -13,7 +14,7 @@ int main() {
 
     for(int j = 0; j < 7; j++)
     {
-        printf("%d nota(s) de R$ %d,00", num[j], note[j]);
+        printf("%d nota(s) de R$ %d,00\n", num[j], note[j]);
     }
 
     return 0;
