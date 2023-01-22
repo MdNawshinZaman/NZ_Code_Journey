@@ -10,11 +10,11 @@ int main(void){
 
     if (a == 0 || d < 0)
     {
-        printf("Impossivel calcular;");
+        printf("Impossivel calcular\n");
     }
     else{
-    r1 = (-b + sqrt(d))/ 2*a ;
-    r2 = (-b - sqrt(d))/ 2*a ;
+    r1 = (-b + sqrt(d))/ (2*a) ;
+    r2 = (-b - sqrt(d))/ (2*a) ;
 
     printf("R1 = %.5lf\n",r1);
     printf("R2 = %.5lf\n",r2);
