@@ -2,21 +2,17 @@
 
 int main() {
 
-    int N;
-    int time[3];
+    //N=140153
+    int N, h, m, s;
     scanf("%d",&N);
 
-    for(int i =  0; i < 3; i++){
-        time[i] = N % 60;
-        int m = N % 60;
-        N = N - m;
-    }
-     printf("%d\n",time[1]);
+    h = N / 3600; // h = 38
+    N = N - (h*3600);//N=3353
+    m = N / 60; // m=55
+    N = N - (m*60); //N=53
+    s = N;//s=53
 
-   /* for(int j = 2; j >= 0; j--){
-        printf("%d:",time[j]);
-    }
-    printf("\n");
-*/
+    printf("%d:%d:%d\n",h,m,s);
+
     return 0;
 }
