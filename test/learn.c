@@ -41,10 +41,10 @@ int main(void){
         printf("Aluno reprovado.\n");
     }
 
-    printf("Media final: %f\n",avg_f);
+    printf("Media final: %.1f\n",avg_f);
 
     }
-    
+
     return 0;
 
 }
