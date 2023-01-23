@@ -10,9 +10,9 @@ int main(void){
     d *= 1;
 
     avg = (a+b+c+d)/10;
-
-    printf("%.2f\n",c);
-    printf("%.2f\n",avg);
+    //printf("%.2f\n",c);
+    //printf("%.2f\n",avg);
+    printf("Media: %.1f",avg);
 
 
     return 0;
