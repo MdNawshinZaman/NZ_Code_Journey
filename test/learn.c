@@ -31,7 +31,11 @@ int main(void){
     float avg_f;
     avg_f= (avg+n5)/2;
 
-    if()
+    if(avg_f >= 5.0)
+    {
+        printf("Aluno aprovado.\n")
+    }
+    else if()
 
     return 0;
 
