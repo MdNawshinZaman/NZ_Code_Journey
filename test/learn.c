@@ -15,7 +15,10 @@ int main(void){
     else if(avg < 5.0){
         printf("Aluno reprovado.\n");
     }
-    else 
+    else if(avg >= 5.0 && avg <= 6.9)
+    {
+        printf("")
+    }
 
     return 0;
 
