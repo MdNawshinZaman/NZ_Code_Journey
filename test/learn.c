@@ -20,7 +20,10 @@ int main(void){
         printf("Aluno em exame.\n");
     }
 
-    if()
+    if(avg >= 5.0)
+    {
+        print
+    }
 
     return 0;
 
