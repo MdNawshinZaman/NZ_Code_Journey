@@ -6,7 +6,7 @@ int main(void){
 
     a = a * 2;
     b = b * 3;
-    c *= 4;
+    c *= 4;  // this is the new way I have learned.
     d *= 1;
 
     avg = (a+b+c+d)/10;
