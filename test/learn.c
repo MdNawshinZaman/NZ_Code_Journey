@@ -20,6 +20,8 @@ int main(void){
         printf("Aluno em exame.\n");
     }
 
+    
+
     return 0;
 
 }
