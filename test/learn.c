@@ -7,6 +7,16 @@ int main(void){
 
     avg = (n1*a + n2*b + n3*c + n4*d)/(a+b+c+d);
 
-    printf("");
+    printf("Media: %.1f\n",avg);
+
+    if(avg >= 7.0){
+        printf("Aluno em exame.\n");
+    }
+    else if(avg < 5.0){
+        printf("Aluno reprovado.\n");
+    }
+    else 
+
+    return 0;
 
 }
