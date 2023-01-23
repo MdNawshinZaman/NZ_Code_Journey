@@ -26,7 +26,7 @@ int main(void){
     {
         scanf("%f",&n5);
         printf("Nota do exame: %.1f\n",n5);
-    }
+
 
     float avg_f;
 
@@ -42,6 +42,10 @@ int main(void){
     }
 
     printf("Media final: %f\n",avg_f);
+
+    }
+
+
 
     return 0;
 
