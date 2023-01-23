@@ -28,7 +28,10 @@ int main(void){
         printf("Nota do exame: %.1f\n",n5);
     }
 
+    float avg_f;
+    avg_f= (avg+n5)/2;
 
+    if()
 
     return 0;
 
