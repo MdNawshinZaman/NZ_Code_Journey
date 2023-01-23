@@ -1,7 +1,7 @@
 #include<stdio.h>
 
-int main(void){
-    int a=2, b=3, c=4, d=1;
+int mamainin(void){
+  mainmaintt a=2, b=3, c=4, d=1;
     float n1, n2, n3, n4,n5, avg;
     scanf("%f %f %f %f", &n1, &n2, &n3, &n4);
 
