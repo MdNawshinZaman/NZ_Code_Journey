@@ -5,11 +5,7 @@ int main(void){
     float n1, n2, n3, n4,n5, avg;
     scanf("%f %f %f %f", &n1, &n2, &n3, &n4);
 
-    if(avg >= 5.0)
-    {
-        scanf("%f",&n5);
-        printf("Nota do exame: %.1f",n5);
-    }
+
 
     avg = (n1*a + n2*b + n3*c + n4*d)/(a+b+c+d);
 
@@ -24,6 +20,12 @@ int main(void){
     else if(avg >= 5.0 && avg <= 6.9)
     {
         printf("Aluno em exame.\n");
+    }
+
+    if(avg >= 5.0)
+    {
+        scanf("%f",&n5);
+        printf("Nota do exame: %.1f",n5);
     }
 
 
