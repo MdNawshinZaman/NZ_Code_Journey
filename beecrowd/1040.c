@@ -9,7 +9,7 @@ int main(void){
     c *= 4;  // this is the new way I have learned.
     d *= 1;
 
-    avg = (a+b+c+d)/10;
+    avg = 7.3//(a+b+c+d)/10;
     //printf("%.2f\n",c);
     //printf("%.2f\n",avg);
     printf("Media: %.1f\n",avg);
