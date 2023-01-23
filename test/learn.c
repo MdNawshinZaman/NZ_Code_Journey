@@ -7,7 +7,17 @@ int main(void){
     if(a>=0 && a<=25){
         print("Intervalo [0,25]\n");
     }
-    else if(a>=0 && a<=25){
-        print("Intervalo [0,25]\n");
+    else if(a>25 && a<=50){
+        print("Intervalo (25,50]\n");
+    }
+    else if(a>50 && a<=75){
+        print("Intervalo (50,75]\n");
+    }
+    else if(a>75 && a<=100){
+        print("Intervalo (75,100]\n");
+    }
+    else
+    {
+        printf("Fora de intervalo\n");
     }
 }
