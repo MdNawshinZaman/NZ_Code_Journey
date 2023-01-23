@@ -25,7 +25,7 @@ int main(void){
     if(avg >= 5.0)
     {
         scanf("%f",&n5);
-        printf("Nota do exame: %.1f",n5);
+        printf("Nota do exame: %.1f\n",n5);
     }
 
 
