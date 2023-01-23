@@ -24,9 +24,19 @@ int main(void){
     {
         printf("Aluno em exame.\n");
         scanf("%f",&e);
-        printf("Nota do exame: %f\n",e);
+        printf("Nota do exame: %.1f\n",e);
 
         avg_f = (avg + e)/2.0;
+
+        if(avg_f >= 5.0)
+        {
+            printf("Aluno aprovado.\n");
+        }
+        else if (avg_f<= 4.9)
+        {
+            printf("Aluno reprovado.\n");
+        }
+        printf("Media final: %.1f\n",avg_f);
 
     }
 
