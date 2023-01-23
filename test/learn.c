@@ -44,9 +44,7 @@ int main(void){
     printf("Media final: %f\n",avg_f);
 
     }
-
-
-
+    
     return 0;
 
 }
