@@ -29,13 +29,19 @@ int main(void){
     }
 
     float avg_f;
-    avg_f= (avg+n5)/2;
+
+    avg_f = (avg+n5)/2;
 
     if(avg_f >= 5.0)
     {
-        printf("Aluno aprovado.\n")
+        printf("Aluno aprovado.\n");
     }
-    else if()
+    else
+    {
+        printf("Aluno reprovado.\n");
+    }
+
+    printf("Media final: %f\n",avg_f);
 
     return 0;
 
