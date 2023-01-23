@@ -20,7 +20,7 @@ int main(void){
         printf("Aluno em exame.\n");
     }
 
-    
+    if()
 
     return 0;
 
