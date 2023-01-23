@@ -11,8 +11,8 @@ int main(void){
 
     avg = (a+b+c+d)/10;
 
-    printf("%f",c);
-    printf("%f",avg);
+    printf("%.2f\n",c);
+    printf("%.2f\n",avg);
 
 
     return 0;
