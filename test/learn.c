@@ -22,7 +22,7 @@ int main(void){
 
     if(avg >= 5.0)
     {
-        print
+        printf("Nota do exame: 6.4")
     }
 
     return 0;
