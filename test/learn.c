@@ -17,7 +17,7 @@ int main(void){
     }
     else if(avg >= 5.0 && avg <= 6.9)
     {
-        printf("")
+        printf("Aluno em exame.\n");
     }
 
     return 0;
