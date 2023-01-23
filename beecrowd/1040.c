@@ -12,7 +12,7 @@ int main(void){
     avg = (a+b+c+d)/10;
     //printf("%.2f\n",c);
     //printf("%.2f\n",avg);
-    printf("Media: %.1f",avg);
+    printf("Media: %.1f\n",avg);
 
 
     return 0;
