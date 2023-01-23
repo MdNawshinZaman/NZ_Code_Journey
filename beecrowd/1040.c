@@ -15,7 +15,7 @@ int main(void){
     printf("Media: %.1f\n",avg);
 
     if(avg >= 7.0){
-        printf("Aluno em exame.\n");
+        printf("Aluno aprovado.\n");
     }
     else if(avg < 5.0){
         printf("Aluno reprovado.\n");
