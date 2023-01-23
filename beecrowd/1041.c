@@ -26,6 +26,5 @@ int main(void){
     else if(x>0 && y<0){
         printf("Q4\n");
     }
-
     return 0;
 }
