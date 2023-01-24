@@ -7,9 +7,5 @@ int main(void){
      A = (a + b + abs(a-b))/2;
      A = (A + c + abs(A-c))/2;
 
-     B = (a + b + abs(a-b))/2;
-     A = (A + c + abs(A-c))/2;
-
-     A = (a + b + abs(a-b))/2;
-     A = (A + c + abs(A-c))/2;
+    return 0;
 }
