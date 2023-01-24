@@ -7,7 +7,7 @@ int main(void){
 
     // input 7 21 -14
 
-    if(a>b){temp=a; a=b; b=c; c=temp;}    //temp=, a=, b=, c=
+    if(a>b){temp=a; a=b; b=c; c=temp;}    //temp=0, a=7, b=21, c=-14
     if(a>b){temp=a; a=b; b=c; c=temp;}    //temp=, a=, b=, c=
     if(b>c){temp=b; b=c; c=temp;}         //temp=, a=, b=, c=
 //a<b<c
