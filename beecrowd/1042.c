@@ -5,11 +5,12 @@ int main(void){
     scanf("%d %d %d", &a, &b, &c);
 
 
-    // input 7 21 -14
 
-    if(a>b){temp=a; a=b; b=c; c=temp;}    //temp=0, a=7, b=21, c=-14
-    if(a>c){temp=a; a=b; b=c; c=temp;}    //temp=7, a=21, b=-14, c=7
-    if(b>c){temp=b; b=c; c=temp;}         //temp=, a=, b=, c=
-//a<b<c
+    if(a>b){temp=a; a=b; b=temp;}
+    if(a>c){temp=a; a=c; c=temp;}
+    if(b>c){temp=b; b=c; c=temp;}
+
+    
+
     return 0;
 }
