@@ -2,7 +2,7 @@
 
 int main(void){
     int h1, m1, h2, m2;
-    float t1, t2, time;
+    double t1, t2, time, H, M;
     scanf("%d %d %d %d", &h1, &m1, &h2, &m2);
 
     t1 = h1 + (m1/60.0);
@@ -16,6 +16,8 @@ int main(void){
         time = t2 - t1;
     }
 
-    printf("%f\n",time);
+    H =
+
+    printf("%lf\n",time);
 
 }
