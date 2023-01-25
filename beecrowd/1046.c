@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<stdlib.h>
 
 int main(void){
     int a, b, t1, t2, time;
