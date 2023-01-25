@@ -9,7 +9,7 @@ int main(void){
     t2 = h2 + (m2/60.0);
 
     if(t2-t1<=0){
-        t1 = 1440 - t1;
+        t1 = 24 - t1;
         time = t1 + t2;
     }
     else{
