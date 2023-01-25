@@ -34,7 +34,7 @@ int main(void){
 
 
     if(b+c>a) {
-        perimetro = round(A + B + C);
+        perimetro = A + B + C;
         printf("Perimetro = %.1f\n",perimetro);
     }
     else{
