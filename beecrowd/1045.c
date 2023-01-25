@@ -22,3 +22,5 @@ int main(void){
 
     return 0;
 }
+
+//this program taught me the differance of "if" and "else if" :)
