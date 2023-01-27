@@ -8,12 +8,14 @@ int main(void)
     //4520.00
 
     n = sal - 2000.00; // 2520.00
-    sal = sal - n;
+    sal = sal - n; // 2520.00
 
-    s = sal - 1000.00;
+//1000, 1500, 20
+
+    s = sal - 1000.00; //1520
     sal = sal - s;
 
-    m = sal - 1500.00;
+    m = sal - 1500.00; // 520
     sal = sal - m;
 
     l = sal;
