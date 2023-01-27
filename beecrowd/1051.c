@@ -5,9 +5,9 @@ int main(void)
     float sal, n, s, m ,l, tax;
     scanf("%f",&sal);
 
-    //3002.00
+    //4520.00
 
-    n = sal - 2000.00; // 1002.00
+    n = sal - 2000.00; // 2520.00
     sal = sal - n;
 
     s = sal - 1000.00;
