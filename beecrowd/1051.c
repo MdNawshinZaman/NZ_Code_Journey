@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    float sal, s, m ,l, tax=0.00, small, medium, large;
+    float sal=0, s=0, m=0,l=0, tax=0.00, small=0, medium=0, large=0;
     scanf("%f",&sal);
 
     if(sal > 2000)
