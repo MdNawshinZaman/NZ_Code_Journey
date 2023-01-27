@@ -8,7 +8,7 @@ int main(void)
     switch (a)
     {
         case 1: printf("January\n"); break;
-        case 2: printf("Febuary\n"); break;
+        case 2: printf("February\n"); break;
         case 3: printf("March\n"); break;
         case 4: printf("April\n"); break;
         case 5: printf("May\n"); break;
