@@ -7,14 +7,15 @@ int main(void){
         scanf("%f", &a[i]);
     }
 
-    for(int j=0, k=0; j<6; j++){
+    int k=0;
+    for(int j=0; j<6; j++){
 
         if(a[j]>0){
             k++;
         }
     }
 
-    printf("&d valores positivos\n", k);
+    printf("%d valores positivos\n", k);
 
     return 0;
 }
