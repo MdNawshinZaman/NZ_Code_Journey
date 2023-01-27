@@ -9,6 +9,8 @@
 
 int main(void){
 
+    double day1, h1, m1, s1, day2, h2, m2 ,s2, t_s;
+
     
 
     return 0;
