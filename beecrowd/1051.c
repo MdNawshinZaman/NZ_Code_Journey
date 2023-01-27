@@ -7,14 +7,14 @@ int main(void)
 
     if(sal > 2000)
     {
-      //3002.00
-        s = sal - 2000; //1002.0
-        m = sal - 3000; //2.00
-        l = sal - 4500; //-1498
+      //2400
+        s = sal - 2000; //400
+        m = sal - 3000; //-600
+        l = sal - 4500; //-2100
 
-        s > 1000? (small = 1000 * 0.08) : (small = s *0.08); //80
-        m > 1500? (medium = 1500 * 0.18) : (medium = m * 0.18); //0.36
-        l > 0? (large = l * 0.28) : (large = 0); //0.00
+        s > 1000? (small = 1000 * 0.08) : (small = s *0.08); //32
+        m > 1500 && m !< 0? (medium = 1500 * 0.18) : (medium = m * 0.18); //
+        l > 0? (large = l * 0.28) : (large = 0); //
 
         tax = small + medium + large;
 
