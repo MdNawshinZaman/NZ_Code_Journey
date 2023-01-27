@@ -13,7 +13,7 @@ int main(void)
         l = sal - 4500; //-2100
 
         s > 1000? (small = 1000 * 0.08) : (small = s *0.08); //32
-        m > 1500 && m !< 0? (medium = 1500 * 0.18) : (medium = m * 0.18); //
+        m > 1500? (medium = 1500 * 0.18) : (m>0?(medium = m * 0.18):(medium = 0)); //
         l > 0? (large = l * 0.28) : (large = 0); //
 
         tax = small + medium + large;
