@@ -15,14 +15,19 @@ tax:
 
 
     s > 1000? small = 1000 * 0.08 : small = s *0.08; //80
-    m > 1500? medium = 1500 * 0.18 : medium = m * 0.18; //
-    l>0? large = l * 0.28 : large = 0;
+    m > 1500? medium = 1500 * 0.18 : medium = m * 0.18; //0.36
+    l>0? large = l * 0.28 : large = 0; //0.00
 
     tax = small + medium + large;
 
     printf("R$ %.2f\n", tax);
+    goto end;
 
 tax_free:
     printf("Isento\n");
+    return 0;
+
+end:
+
     return 0;
 }
