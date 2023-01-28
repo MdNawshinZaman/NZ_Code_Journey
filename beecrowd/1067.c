@@ -9,7 +9,7 @@ int main(void)
 
     printf("%d\n",n);
 
-    y = round(x /2.0);
+    y = ceil(x /2.0);
     printf("%f\n", y);
 
     /*for(int i = 0; i < ; i++ )
