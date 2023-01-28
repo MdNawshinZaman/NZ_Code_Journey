@@ -9,14 +9,12 @@
 
 int main(void){
 
-    int day1=0, h1, m1 , s1, day2=0, h2, m2 ,s2, tot_sec;
+    int day1=0, h1, m1 , s1, day2=0, h2, m2 ,s2, x, tot_sec;
+    char del[10];
 
-    scanf("Dia %d", &day1);
-    scanf("%d : %d : %d", &h1, &h1, &h1);
-    scanf("Dia %d", &day2);
-    scanf("%d : %d : %d", &h2, &h2, &h2);
+    scanf("%s %d %d %s %d %s %d %s %d %d %s %d %s %d", del, &day1, &h1, &m1, &s1, del, &day2, &h2, &m2, &s2);
 
-    printf("\n\n%d\n\n", day1);
+    printf("\n\n%d\n\n", day2);
 
     return 0;
 }
