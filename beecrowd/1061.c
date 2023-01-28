@@ -40,15 +40,17 @@ int main(void){
     printf("\n\n%d\n\n",w_sec);
     // Seccessfully scanned the values and converted all in secounds... ;) :)
 
-    int day, h, m, s;
+    int day, h, m, s, tmp;
 
     day = w_sec / 86400; //day = 3
-    h = w_sec % day; //79260
-    h = h / 3600 ; // h = 22
-    m = 
+    tmp = w_sec - (day*86400); //79260
+    h = tmp / 3600 ; // h = 22
+    tmp = tmp - (h*3600); //60
+    m = tmp / 60; // m = 1
+    tmp = tmp - (m*60);
+    s = tmp;
 
-
-
+    printf("%d dia(s)\n%d hora(s)\n%d minuto(s)\n%d segundo(s)\n", day, h, m, s);
 
     return 0;
 }
