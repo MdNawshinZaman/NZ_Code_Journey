@@ -24,7 +24,7 @@ int main(void){
     }
 
     float n = 0;
-    int m = strlen(b);
+    int m = sizeof(b);
 
     //printf("\n%.3f\n\n", m);
 
