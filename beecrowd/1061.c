@@ -9,13 +9,24 @@
 
 int main(void){
 
-    int day1=0, h1, m1 , s1, day2=0, h2, m2 ,s2, tot_sec;
+    int day1=0, h1, m1 , s1, day2=0, h2, m2 ,s2, t_day, t_h, t_m, t_s, w_second;
     char del[10], x[2];
 
     scanf("%s %d %d %s %d %s %d %s %d %d %s %d %s %d", del, &day1, &h1, x, &m1, x, &s1, del, &day2, &h2, x, &m2, x, &s2);
     //printf("\n\n%d\n\n", day2);
 
-    
+    t_day = day1 - day2 -1;
+    t_h = (24-h1-1)+h2;
+    t_m = (60-m1-1)+m2;
+    t_s = (60-s1)+s2;
+
+    w_second = (t_day * 24 *60 *60) + (t_h * 60 * 60) + (t_m * 60) + t_s;
+
+    printf("\n\n%d\n\n",w_second);
+
+
+
+
 
     return 0;
 }
