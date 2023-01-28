@@ -3,7 +3,9 @@
 
 int main(void)
 {
-    int x = 11;
+    int x;
+    scanf("%");
+
     float y;
     int n = 1;
 
