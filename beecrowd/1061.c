@@ -9,12 +9,11 @@
 
 int main(void){
 
-    double day1, h1, m1 , s1, day2, h2, m2 ,s2, tot_sec;
+    double day1=0, h1, m1 , s1, day2, h2, m2 ,s2, tot_sec;
     char in1[100], in2[100], in3[100], in4[100];
 
-    scanf("%s %s %s %s", &*in1, &*in2, &*in3, &*in4);
-
-    printf("%s\n%s\n%s\n%s\n",in1, in2, in3, in4);
+    scanf("Dia %lf", &day1);
+    printf("\n\n%lf\n\n",day1);
 
     return 0;
 }
