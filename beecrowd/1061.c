@@ -21,9 +21,14 @@ int main(void){
     t_m = (60-m1-1)+m2;
     t_s = (60-s1)+s2;
 
+    printf("%d\n", t_day);
+    printf("%d\n", t_h);
+    printf("%d\n", t_m);
+    printf("%d\n", t_s);
+
     w_second = (t_day * 24 *60 *60) + (t_h * 60 * 60) + (t_m * 60) + t_s;
 
-    printf("\n\n%lf\n\n",w_second);
+    //printf("\n\n%lf\n\n",w_second);
 
 
 
