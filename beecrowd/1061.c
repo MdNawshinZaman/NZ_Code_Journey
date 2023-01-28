@@ -3,6 +3,14 @@
    2. main objective is to calculate the event time.
 
     a. consider that the minimum duration is 1 minute.
+
+
+    demo input:
+    Dia 5
+    08 : 12 : 23
+    Dia 9
+    06 : 13 : 23
+
 */
 
 #include<stdio.h>
@@ -16,10 +24,10 @@ int main(void){
     scanf("%s %d %d %s %d %s %d %s %d %d %s %d %s %d", del, &day1, &h1, x, &m1, x, &s1, del, &day2, &h2, x, &m2, x, &s2);
     //printf("\n\n%d\n\n", day2);
 
-    t_day = day2 - day1 -1;
-    t_h = (24-h1-1)+h2;
-    t_m = (60-m1-1)+m2;
-    t_s = (60-s1)+s2;
+    t_day = day2 - day1 -1; //3
+    t_h = (24-h1-1)+h2; //21
+    t_m = (60-m1-1)+m2; //60
+    t_s = (60-s1)+s2; //60
 
     printf("%d\n", t_day);
     printf("%d\n", t_h);
