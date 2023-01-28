@@ -16,7 +16,7 @@ int main(void){
     scanf("Dia %d", &day2);
     scanf("%d : %d : %d", &h2, &h2, &h2);
 
-    //printf("\n\n%d\n\n",h2);
+    printf("\n\n%d\n\n", day1);
 
     return 0;
 }
