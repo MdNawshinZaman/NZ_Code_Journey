@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<string.h>
 
 int main(void){
 
@@ -10,11 +9,11 @@ int main(void){
     {
         scanf("%f",&a[i]);
     }
-    //printf("%f\n %f\n %f\n %f\n %f\n %f\n", a[0], a[1], a[2], a[3], a[4], a[5]);
+    //printf("\n%f\n %f\n %f\n %f\n %f\n %f\n", a[0], a[1], a[2], a[3], a[4], a[5]);
 
-    float b[10];
-    int k = 0;
-    for(int j=0; j<6; j++)
+    float b[10] ;
+    int j, k=0;
+    for(j=0; j<6; j++)
     {
         if(a[j]>0)
         {
@@ -23,10 +22,14 @@ int main(void){
         }
     }
 
-    float n = 0;
-    int m = sizeof(b);
+    //printf("\n%.1f %.1f %.1f %.1f %.1f %.1f\n", b[0], b[1], b[2], b[3], b[4], b[5]);
 
-    //printf("\n%.3f\n\n", m);
+
+    float n = 0;
+    //this is wrong, I must not use this formula for this code.  //int m =(sizeof(b)/sizeof(b[0]));
+    int m = k;
+
+    //printf("\n%d\n\n", m);
 
     for(int l=0; l < m; l++)
     {
@@ -36,8 +39,11 @@ int main(void){
 
     float avg = n / m;
 
-    printf("%d valores positivos\n", k);
+    printf("%d valores positivos\n", m);
     printf("%.1f\n", avg);
 
 return 0;
 }
+
+// this code taught me the use of sizeof() function. but this was not necessary here/.
+// My debug buddy for this code was Chat GTP... :)
