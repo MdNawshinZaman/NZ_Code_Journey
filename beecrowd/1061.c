@@ -17,7 +17,7 @@
 
 int main(void){
 
-    int day1=0, h1, m1 , s1, day2=0, h2, m2 ,s2, t_day, t_h, t_m, t_s, w_second;
+    int day1=0, h1, m1 , s1, day2=0, h2, m2 ,s2, t_day, t_h, t_m, t_s, w_sec;
     char del[10], x[2];
 
     scanf("%s %d %d %s %d %s %d %s %d %d %s %d %s %d", del, &day1, &h1, x, &m1, x, &s1, del, &day2, &h2, x, &m2, x, &s2);
@@ -35,13 +35,17 @@ int main(void){
     //printf("%d\n", t_m);
     //printf("%d\n", t_s);
 
-    w_second = (t_day * 24 *60 *60) + (t_h * 60 * 60) + (t_m * 60) + t_s; //338460
+    w_sec = (t_day * 24 *60 *60) + (t_h * 60 * 60) + (t_m * 60) + t_s; //338460
 
-    printf("\n\n%d\n\n",w_second);
+    printf("\n\n%d\n\n",w_sec);
     // Seccessfully scanned the values and converted all in secounds... ;) :)
 
-    
+    int day, h, m, s;
 
+    day = w_sec / 86400; //day = 3
+    h = w_sec % day; //79260
+    h = h / 3600 ; // h = 22
+    m = 
 
 
 
