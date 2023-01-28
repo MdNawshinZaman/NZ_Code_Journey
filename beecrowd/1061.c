@@ -15,5 +15,7 @@ int main(void){
     scanf("%s %d %d %s %d %s %d %s %d %d %s %d %s %d", del, &day1, &h1, x, &m1, x, &s1, del, &day2, &h2, x, &m2, x, &s2);
     //printf("\n\n%d\n\n", day2);
 
+    
+
     return 0;
 }
