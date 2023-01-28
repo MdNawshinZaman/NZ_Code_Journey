@@ -37,7 +37,7 @@ int main(void){
 
     w_sec = (t_day * 24 *60 *60) + (t_h * 60 * 60) + (t_m * 60) + t_s; //338460
 
-    printf("\n\n%d\n\n",w_sec);
+    //printf("\n\n%d\n\n",w_sec);
     // Seccessfully scanned the values and converted all in secounds... ;) :)
 
     int day, h, m, s, tmp;
