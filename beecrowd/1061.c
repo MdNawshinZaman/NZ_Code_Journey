@@ -47,8 +47,8 @@ int main(void){
     h = tmp / 3600 ; // h = 22
     tmp = tmp - (h*3600); //60
     m = tmp / 60; // m = 1
-    tmp = tmp - (m*60);
-    s = tmp;
+    tmp = tmp - (m*60); // 0
+    s = tmp; // s = 0
 
     printf("%d dia(s)\n%d hora(s)\n%d minuto(s)\n%d segundo(s)\n", day, h, m, s);
 
