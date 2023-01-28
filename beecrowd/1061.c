@@ -21,6 +21,8 @@ int main(void){
     char del[10], x[2];
 
     scanf("%s %d %d %s %d %s %d %s %d %d %s %d %s %d", del, &day1, &h1, x, &m1, x, &s1, del, &day2, &h2, x, &m2, x, &s2);
+    // took help from YouTube to know, "how to take all the inputs for this program?"
+
     //printf("\n\n%d\n\n", day2);
 
     t_day = day2 - day1 -1; //3
@@ -33,9 +35,12 @@ int main(void){
     //printf("%d\n", t_m);
     //printf("%d\n", t_s);
 
-    w_second = (t_day * 24 *60 *60) + (t_h * 60 * 60) + (t_m * 60) + t_s;
+    w_second = (t_day * 24 *60 *60) + (t_h * 60 * 60) + (t_m * 60) + t_s; //338460
 
     printf("\n\n%d\n\n",w_second);
+    // Seccessfully scanned the values and converted all in secounds... ;) :)
+
+    
 
 
 
