@@ -4,20 +4,19 @@
 int main(void)
 {
     int x;
-    scanf("%");
-
+    scanf("%d",&x);
     float y;
-    int n = 1;
-
-    printf("%d\n",n);
 
     y = ceil(x /2.0);
-    printf("%f\n", y);
+    //printf("%f\n", y);
 
-    /*for(int i = 0; i < ; i++ )
+    for(int i = 0, n = 1; i < y ; i++ )
     {
-        printf("%d\n", n+2 );
-    }*/
+        printf("%d\n", n);
+        n = n + 2;
+    }
 
     return 0;
 }
+
+// this code taught me the usage of ceil() function... :)
