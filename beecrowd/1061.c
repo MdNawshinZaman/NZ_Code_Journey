@@ -13,7 +13,10 @@ int main(void){
 
     scanf("Dia %d", &day1);
     scanf("%d : %d : %d", &h1, &h1, &h1);
-    //printf("\n\n%lf\n\n",day1);
+    scanf("Dia %d", &day2);
+    scanf("%d : %d : %d", &h2, &h2, &h2);
+
+    printf("\n\n%d\n\n",h2);
 
     return 0;
 }
