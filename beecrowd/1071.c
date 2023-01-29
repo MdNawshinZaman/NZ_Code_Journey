@@ -9,6 +9,8 @@ int main(void)
 
    if(x<y){temp = x; x = y; y = temp;} //now x is the highest value and y is the lowest
 
+    printf("\n%d\n",x);
+
     if( y == x) {sum = 0;}
    else if(y%2 == 0){sum = y + 1; }
    else{sum = y + 2;}
