@@ -1,23 +1,24 @@
 #include<stdio.h>
+#include<math.h>
 
 int main(void)
 {
 
-   int x, y, temp, sum;
+   int x, y, temp, sum, j;
    scanf("%d %d", &x, &y);
 
    if(x<y){temp = x; x = y; y = temp;} //now x is the highest value and y is the lowest
 
    if(y%2 == 0){sum = y + 2; }
-   eles{sum = y + 1;}
+   else{sum = y + 1;}
    //now sum has the first value from where it would start summation.
 
-   for(int i=0; i<x; i++)
-   {
+    j = floor((x - y)/2);
 
-        y = y+2;
+   for(int i=0; i<j; i++)
+   {
+        sum = sum + 2;
    }
-   sum = ();
 
    printf("%d\n",sum);
 
