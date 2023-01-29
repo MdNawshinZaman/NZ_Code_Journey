@@ -15,7 +15,7 @@ int main(void)
 
     j = floor((x - y)/2);
 
-   for(int i=0; i<j; i++)
+   for(int i=0; i<j-1; i++)
    {
         sum = sum + 2;
    }
