@@ -9,7 +9,8 @@ int main(void)
 
    if(x<y){temp = x; x = y; y = temp;} //now x is the highest value and y is the lowest
 
-   if(y%2 == 0){sum = y + 1; }
+    if( y == x) {sum = 0;}
+   else if(y%2 == 0){sum = y + 1; }
    else{sum = y + 2;}
    //now sum has the first value from where it would start summation.
 
@@ -24,3 +25,5 @@ int main(void)
 
     return 0;
 }
+
+//Learned the usage of floor() function from this code.... :)
