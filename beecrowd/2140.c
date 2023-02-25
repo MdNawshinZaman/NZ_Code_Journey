@@ -20,10 +20,12 @@ int main(void)
 
             //printf("%d ", change_note[i]);
             sum += change_note[i];
+
+            if(change_note[i] >=2){sum = 3; break;}
         }
 
 
-        if(sum <= 2)
+        if(sum == 2)
         {
             printf("possible\n");
         }
