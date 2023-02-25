@@ -28,15 +28,16 @@ int main(void)
     }
 
 
-    int comp = num[0], count = 0;
+    while(comp != \0)
+        int comp = num[0], count = 0;
 
-    for(int i = 0; i < n; i++)
-    {
-        if(comp == num[i])
+        for(int i = 0; i < n; i++)
         {
-            count++;
+            if(comp == num[i])
+            {
+                count++;
+            }
         }
-    }
 
     /*for(int i = 0; i < n; i++)
     {
