@@ -27,9 +27,10 @@ int main(void)
         }
     }
 
-
+    int comp = num[0];
     while(comp != \0)
-        int comp = num[0], count = 0;
+    {
+        int count = 0;
 
         for(int i = 0; i < n; i++)
         {
@@ -38,6 +39,7 @@ int main(void)
                 count++;
             }
         }
+    }
 
     /*for(int i = 0; i < n; i++)
     {
