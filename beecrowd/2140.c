@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
 
 int main(void)
 {
@@ -9,7 +10,7 @@ int main(void)
         sum = 0;
         scanf("%d %d", &price, &paid);
 
-        change = paid - price;
+        change = round(paid - price);
 
         int change_note[6];
         for(int i = 5; i >= 0; i--)
