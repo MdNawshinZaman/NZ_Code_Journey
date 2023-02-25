@@ -19,11 +19,11 @@ int main()
             if(paid < 500)
             {
                 get = 1;
-                change = trunc(paid - price);
+                change = round(paid - price);
             }
             else if(paid >= 500)
             {
-                unit = paid / 500;
+                unit = round(paid / 500);
                 get = (unit * 3);
                 price = unit * 500;
                 change = paid - price;
