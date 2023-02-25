@@ -28,7 +28,7 @@ int main(void)
     }
 
     int comp = num[0];
-    while(comp != \0)
+    while(comp != '\0')
     {
         int count = 0;
 
