@@ -27,10 +27,21 @@ int main(void)
         }
     }
 
+
+    int comp = num[0], count = 0;
+
+    for(int i = 0; i < n; i++)
+    {
+        if(comp == num[i])
+        {
+            count++;
+        }
+    }
+
     /*for(int i = 0; i < n; i++)
     {
         printf("%d ", num[i]);
     }*/
 
     return 0;
-}  
+}
