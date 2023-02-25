@@ -11,7 +11,7 @@ int main(void)
     int change_note[6];
     for(int i = 5; i >= 0; i--)
     {
-
+        
     }
 
 
