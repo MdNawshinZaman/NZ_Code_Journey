@@ -28,7 +28,7 @@ int main(void)
     }
 
     int comp = num[0];
-    while(comp != '\0')
+    while(1)
     {
         int count = 0;
 
@@ -48,6 +48,8 @@ int main(void)
                 break;
             }
         }
+
+        if(comp == '\0'){break;}
     }
 
     /*for(int i = 0; i < n; i++)
