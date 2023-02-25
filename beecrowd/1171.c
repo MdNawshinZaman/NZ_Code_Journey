@@ -39,7 +39,7 @@ int main(void)
                 count++;
             }
         }
-        printf("%d aparece 1 vez(es)\n")
+        printf("%d aparece %d vez(es)\n",comp, count);
         for(int i = 0; i < n; i++)
         {
             if(comp < num[i])
