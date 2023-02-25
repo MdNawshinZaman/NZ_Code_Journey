@@ -13,7 +13,8 @@ int main(void)
             scanf("%d", &speed[i]);
         }
 
-        int sp = speed[0], level = 0;
+        int sp;
+        sp = speed[0];
         for(int j = 0; j < l; j++)
         {
             if(sp < speed[j]){sp = speed[j];}
