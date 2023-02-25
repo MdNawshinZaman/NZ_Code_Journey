@@ -8,14 +8,14 @@ int main(void)
     while(1)
     {
         sum = 0;
-        scanf("%d %d", &price, &paid);
+        scanf("%d %d", &price, &paid); // 11 23
 
-        change = round(paid - price);
+        change = paid - price; // 23-11 = 12
 
         int change_note[6];
         for(int i = 5; i >= 0; i--)
         {
-            change_note[i] = round(paid / bills[i]);
+            change_note[i] = round(change / bills[i]);
             paid -= change_note[i] * bills[i];
 
             printf("%d ", change_note[i]);
