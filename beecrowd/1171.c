@@ -39,6 +39,15 @@ int main(void)
                 count++;
             }
         }
+        printf("%d aparece 1 vez(es)\n")
+        for(int i = 0; i < n; i++)
+        {
+            if(comp < num[i])
+            {
+                comp = num[i];
+                break;
+            }
+        }
     }
 
     /*for(int i = 0; i < n; i++)
