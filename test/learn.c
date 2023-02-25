@@ -3,7 +3,7 @@
 
 int main()
 {
-    double price = 250, paid, change, unit, get; // 1 unit = 2+1 pizza
+    double price = 250.0, paid, change, unit, get; // 1 unit = 2+1 pizza
     while(1)
     {
         change = 0;
@@ -19,11 +19,11 @@ int main()
             if(paid < 500)
             {
                 get = 1;
-                change = paid - price;
+                change = trunc(paid - price);
             }
             else if(paid >= 500)
             {
-                unit = trunc(paid / 500);
+                unit = paid / 500;
                 get = (unit * 3);
                 price = unit * 500;
                 change = paid - price;
