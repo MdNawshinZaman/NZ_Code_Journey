@@ -28,7 +28,7 @@ int main(void)
         {
             printf("2\n");
         }
-        else if(sp > 20)
+        else if(sp >= 20)
         {
             printf("3\n");
         }
