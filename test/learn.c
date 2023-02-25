@@ -26,6 +26,10 @@ int main()
                 price = unit * 500;
                 change = paid - price;
             }
+            if(change >= 250)
+            {
+                
+            }
         }
         else
         {
