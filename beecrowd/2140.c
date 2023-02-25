@@ -10,6 +10,8 @@ int main(void)
         sum = 0;
         scanf("%d %d", &price, &paid); // 11 23
 
+        if((price == 0) && (paid == 0)){break;}
+
         change = paid - price; // 23-11 = 12
 
         int change_note[6];
@@ -24,7 +26,6 @@ int main(void)
             if(change_note[i] >=2){sum = 3; break;}
         }
 
-
         if(sum == 2)
         {
             printf("possible\n");
@@ -34,8 +35,6 @@ int main(void)
             printf("impossible\n");
         }
     }
-
-
 
     return 0;
 }
