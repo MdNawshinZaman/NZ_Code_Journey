@@ -2,14 +2,14 @@
 
 int main()
 {
-    int price = 250, paid, change, unit; // 1 unit = 2+1 pizza
+    long long int price = 250, paid, change, unit; // 1 unit = 2+1 pizza
     while(1)
     {
         change = 0;
         unit = 0;
         paid = 0;
         printf("\nEnter the ammount you paid: ");
-        scanf("%d", &paid);
+        scanf("%lld", &paid);
         if(paid == EOF){break;}
 
         if(paid > 250)
@@ -22,7 +22,7 @@ int main()
             else if(paid >= 500)
             {
                 unit = paid / 500;
-                printf("You are getting %d pizza's, sir!\n", (unit*3));
+                printf("You are getting %lld pizza's, sir!\n", (unit*3));
                 price = unit * 500;
                 change = paid - price;
             }
@@ -33,7 +33,7 @@ int main()
             change = paid;
         }
 
-        printf("Your Change is: %d$\n", change);
+        printf("Your Change is: %lld$\n", change);
 
     }
     return 0;
