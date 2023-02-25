@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    int bills[] = {2, 5, 10, 20, 50, 100};
+    int bills[6] = {2, 5, 10, 20, 50, 100};
     int price, paid, change, sum;
     while(1)
     {
