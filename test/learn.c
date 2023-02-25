@@ -2,15 +2,15 @@
 
 int main()
 {
-    int price = 250, paid = 0, change, unit; // 1 unit = 2+1 pizza
+    int price = 250, paid, change, unit; // 1 unit = 2+1 pizza
     while(1)
     {
+        change = 0;
+        unit = 0;
+        paid = 0;
         printf("\nEnter the ammount you paid: ");
         scanf("%d", &paid);
         if(paid == EOF){break;}
-
-        change = 0;
-        unit = 0;
 
         if(paid > 250)
         {
