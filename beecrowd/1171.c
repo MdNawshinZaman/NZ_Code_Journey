@@ -40,6 +40,7 @@ int main(void)
             }
         }
         printf("%d aparece %d vez(es)\n",comp, count);
+        if()
         for(int i = 0; i < n; i++)
         {
             if(comp < num[i])
