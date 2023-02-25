@@ -3,9 +3,10 @@
 int main(void)
 {
     int bills[] = {2, 5, 10, 20, 50, 100};
-    int price, paid, change, sum = 0;
+    int price, paid, change, sum;
     while(1)
     {
+        sum = 0;
         scanf("%d %d", &price, &paid);
 
         change = paid - price;
