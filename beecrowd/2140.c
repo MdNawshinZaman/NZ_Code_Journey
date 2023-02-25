@@ -19,7 +19,11 @@ int main(void)
 
     if(sum <= 2)
     {
-        printf("")
+        printf("possible\n");
+    }
+    else
+    {
+        printf("impossible\n");
     }
 
 
