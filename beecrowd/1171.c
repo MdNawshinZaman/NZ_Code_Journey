@@ -15,7 +15,10 @@ int main(void)
 
     for(int i = 0; i < n; i++)
     {
-        
+        for(int j = ; j < ; j++)
+        {
+            
+        }
     }
 
     return 0;
