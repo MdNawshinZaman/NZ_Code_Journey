@@ -4,7 +4,8 @@ int main(void)
 {
     int bills[] = {2, 5, 10, 20, 50, 100};
     int price, paid, change, sum = 0;
-    while
+    while(1)
+    {
         scanf("%d %d", &price, &paid);
 
         change = paid - price;
@@ -26,7 +27,7 @@ int main(void)
         {
             printf("impossible\n");
         }
-
+    }
 
 
 
