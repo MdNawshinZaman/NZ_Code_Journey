@@ -18,19 +18,19 @@ int main(void)
             change_note[i] = change / bills[i];
             change -= change_note[i] * bills[i];
 
-            printf("%d ", change_note[i]);
-            //sum += change_note[i];
+            //printf("%d ", change_note[i]);
+            sum += change_note[i];
         }
 
 
-        /*if(sum <= 2)
+        if(sum <= 2)
         {
             printf("possible\n");
         }
         else
         {
             printf("impossible\n");
-        }*/
+        }
     }
 
 
