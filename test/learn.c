@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
 
 int main()
 {
@@ -17,20 +18,22 @@ int main()
         {
             if(paid < 500)
             {
-                change = paid - price;
                 get = 1;
+                change = paid - price;
             }
             else if(paid >= 500)
             {
-                unit = paid / 500;
+                unit = trunc(paid / 500);
                 get = (unit * 3);
                 price = unit * 500;
                 change = paid - price;
             }
             if(change >= 250)
             {
-
+                get += 1;
+                change -= 250;
             }
+            printf("You are getting %.0lf pizza, sir!\n", get);
         }
         else
         {
