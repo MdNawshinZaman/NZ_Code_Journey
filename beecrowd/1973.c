@@ -29,7 +29,7 @@ int main(void)
     {
         if(sheep[j] > 0){non_stolen += (sheep[j] - 1); attacked++;}
         if(j % 2 != 0){j += 1;}
-        else{j -= 1;}
+        else if((j % 2) == 2){j -= 1;}
 
         if((j < 0) || (j > n)) {break;}
     }
