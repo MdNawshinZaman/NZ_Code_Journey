@@ -9,7 +9,7 @@ int main(void)
     char que[100];
     for(int i = 0; i < n; i++)
     {
-        gets(que);
+        gets();
         printf("gzuz\n");
         if(i == (n-1)) break;
     }
