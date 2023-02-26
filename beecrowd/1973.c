@@ -32,6 +32,8 @@ int main(void)
         if(sheep[j] % 2 != 0){sheep[j] -= 1; j += 1;}
         else if((sheep[j] % 2) == 0){sheep[j] -= 1; j -= 1;}
 
+        if(sheep[j] == 0){attacked = 0;}
+
         if((j < 0) || (j > n)) {break;}
     }
 
