@@ -4,11 +4,12 @@ int main(void)
 {
     int n;
     scanf("%d", &n);
+    getchar();
 
     char que[100];
     for(int i = 0; i < n; i++)
     {
-        fgets(que);
+        gets(que);
         printf("gzuz\n");
     }
 
