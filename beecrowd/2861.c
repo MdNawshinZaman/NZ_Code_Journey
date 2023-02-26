@@ -11,6 +11,7 @@ int main(void)
     {
         gets(que);
         printf("gzuz\n");
+        if()
     }
 
     return 0;
