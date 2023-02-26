@@ -1,5 +1,5 @@
 /*
-Phudo code;
+Phsudo code;
 1. first firm named Star 1 and the name contuniues serially
 2. he steals 1 sheep from each farm if there are any
 then,
@@ -25,7 +25,13 @@ int main(void)
 
     int attacked = 0; non_stolen = 0;
 
-    
+    for(int j = 0; j < n;)
+    {
+        if(sheep[j] > 0){non_stolen += sheep[j]; attacked++;}
+        if(j % 2 == 0){}
+
+    }
+
 
 
     return 0;
