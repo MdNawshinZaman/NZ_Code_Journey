@@ -23,16 +23,18 @@ int main(void)
         scanf("%d", &sheep[i]);
     }
 
-    int attacked = 0; non_stolen = 0;
+    int attacked = 0, non_stolen = 0;
 
     for(int j = 0; j < n;)
     {
-        if(sheep[j] > 0){non_stolen += sheep[j]; attacked++;}
-        if(j % 2 == 0){}
+        if(sheep[j] > 0){non_stolen += (sheep[j] - 1); attacked++;}
+        if(j % 2 != 0){j += 1;}
+        else{j -= 1;}
 
+        if((j < 0) || (j > n)) {break;}
     }
 
-
+    printf("%d %d\n", attacked, non_stolen);
 
     return 0;
 }
