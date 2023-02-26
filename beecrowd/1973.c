@@ -6,7 +6,8 @@ then,
 3. moves to i+1 th farm depending on whether the number of sheep in Star i was, respectively, odd
     or
     moves to i-1 th farm depending on whether the number of sheep in Star i was, respectively, even
-
+4. if there is not stars left for him to go, he stops
+5. 
 
 */
 #include<stdio.h>
