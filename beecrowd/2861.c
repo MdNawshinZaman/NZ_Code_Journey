@@ -8,7 +8,7 @@ int main(void)
     char que[100];
     for(int i = 0; i < n; i++)
     {
-        gets(que);
+        fgets(que);
         printf("gzuz\n");
     }
 
