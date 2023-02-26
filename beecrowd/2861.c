@@ -1,3 +1,4 @@
+//gets is not accepted in this IDE
 #include<stdio.h>
 
 int main(void)
