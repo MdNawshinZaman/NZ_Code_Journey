@@ -29,8 +29,8 @@ int main(void)
     {
         if(sheep[j] > 0){non_stolen += (sheep[j] - 1); attacked++;}
         else {non_stolen += (sheep[j+1] - 1); attacked++;}
-        if(sheep[j] % 2 != 0){j += 1;}
-        else if((sheep[j] % 2) == 0){j -= 1;}
+        if(sheep[j] % 2 != 0){sheep[j] -= 1; j += 1;}
+        else if((sheep[j] % 2) == 0){sheep[j] -= 1; j -= 1;}
 
         if((j < 0) || (j > n)) {break;}
     }
