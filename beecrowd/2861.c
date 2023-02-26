@@ -11,7 +11,7 @@ int main(void)
     {
         gets(que);
         printf("gzuz\n");
-        if()
+        if(i == (n-1)) break;
     }
 
     return 0;
