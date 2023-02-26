@@ -14,3 +14,6 @@ int main(void)
 
     return 0;
 }
+
+//The article about gets:
+//https://blogcwi.wordpress.com/2015/04/27/gets-docx/
