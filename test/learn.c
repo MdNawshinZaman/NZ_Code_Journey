@@ -17,10 +17,10 @@ int main(void)
     int n;
     scanf("%d", &n);
 
-    long long int sheep[n], ref[n];
+    long int sheep[n], ref[n];
     for (int i = 0; i < n; i++)
     {
-        scanf("%lld", &sheep[i]);
+        scanf("%ld", &sheep[i]);
     }
 
     for (int i = 0; i < n; i++)
@@ -30,8 +30,8 @@ int main(void)
 
     // sheep[2] --- 5 6
 
-    long long int attacked = 0;   //
-    long long int non_stolen = 0; //
+    long int attacked = 0;   //
+    long int non_stolen = 0; //
 
     for (int j = 0;;)
     {
@@ -68,7 +68,7 @@ int main(void)
         non_stolen += sheep[i];
     }
 
-    printf("%lld %lld\n", attacked, non_stolen);
+    printf("%ld %ld\n", attacked, non_stolen);
 
     return 0;
 }
