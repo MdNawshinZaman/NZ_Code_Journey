@@ -39,7 +39,7 @@ int main(void)
         if(sheep[j] % 2 != 0){sheep[j] -= 1; j += 1;}
         else if((sheep[j] % 2) == 0){sheep[j] -= 1; j -= 1;}
 
-        if((j < 0) || (j > n)) {break;}
+        if((j < 0) || (j >= n)) {break;}
     }
 
 
