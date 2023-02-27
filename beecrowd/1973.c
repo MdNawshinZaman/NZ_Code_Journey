@@ -17,25 +17,44 @@ int main(void)
     int n;
     scanf("%d", &n);
 
-    int sheep[n];
+    int sheep[n], ref[n];
     for(int i = 0; i < n; i++)
     {
         scanf("%d", &sheep[i]);
     }
 
-    int attacked = 0, non_stolen = 0;
-
-    for(int j = 0; j < n;)
+    for(int i = 0; i < n; i++)
     {
-        if(sheep[j] > 0){non_stolen += (sheep[j] - 1); attacked++;}
-        else {non_stolen += (sheep[j+1] - 1); attacked++;}
+        ref[i] = sheep[i];
+    }
+
+    //sheep[2] --- 5 6
+
+    int attacked = 0; //
+    int non_stolen = 0; //
+
+
+    for(int j = 0;;)
+    {
         if(sheep[j] % 2 != 0){sheep[j] -= 1; j += 1;}
         else if((sheep[j] % 2) == 0){sheep[j] -= 1; j -= 1;}
 
-        if(sheep[j] == 0){attacked = 0;}
-
         if((j < 0) || (j > n)) {break;}
     }
+
+
+    //checking the number of attacked stars
+    for(int i = 0; i < n; i++)
+    {
+        if(sheep[i] != ref[i]){attacked++;}
+    }
+
+    // checking the number of remaining sheeps
+    for(int i = 0; i < n; i++)
+    {
+        non_stolen += sheep[i];
+    }
+
 
     printf("%d %d\n", attacked, non_stolen);
 
