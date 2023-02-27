@@ -10,7 +10,7 @@ then,
 5. The mad brother starts his Star Trek in Star 1, stealing a sheep from his own farm.
 
 */
-#include<stdio.h>
+#include <stdio.h>
 
 int main(void)
 {
@@ -18,43 +18,55 @@ int main(void)
     scanf("%d", &n);
 
     int sheep[n], ref[n];
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         scanf("%d", &sheep[i]);
     }
 
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         ref[i] = sheep[i];
     }
 
-    //sheep[2] --- 5 6
+    // sheep[2] --- 5 6
 
-    int attacked = 0; //
+    int attacked = 0;   //
     int non_stolen = 0; //
 
-
-    for(int j = 0;;)
+    for (int j = 0;;)
     {
-        if(sheep[j] % 2 != 0){sheep[j] -= 1; j += 1;}
-        else if((sheep[j] % 2) == 0){sheep[j] -= 1; j -= 1;}
+        if (sheep[j] % 2 != 0)
+        {
+            if(sheep[j] > 0){sheep[j] -= 1;}
+            j += 1;
+        }
+        else if ((sheep[j] % 2) == 0)
+        {
+            if(sheep[j] > 0){sheep[j] -= 1;}
+            j -= 1;
+        }
 
-        if((j < 0) || (j >= n)) {break;}
+        //breaking
+        if ((j < 0) || (j >= n))
+        {
+            break;
+        }
     }
 
-
-    //checking the number of attacked stars
-    for(int i = 0; i < n; i++)
+    // checking the number of attacked stars
+    for (int i = 0; i < n; i++)
     {
-        if(sheep[i] != ref[i]){attacked++;}
+        if (sheep[i] != ref[i])
+        {
+            attacked++;
+        }
     }
 
     // checking the number of remaining sheeps
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         non_stolen += sheep[i];
     }
-
 
     printf("%d %d\n", attacked, non_stolen);
 
