@@ -1,48 +1,74 @@
-#include<stdio.h>
-#include<math.h>
+/*
+Phsudo code;
+1. first firm named Star 1 and the name contuniues serially
+2. he steals 1 sheep from each farm if there are any
+then,
+3. moves to i+1 th farm depending on whether the number of sheep in Star i was, respectively, odd
+    or
+    moves to i-1 th farm depending on whether the number of sheep in Star i was, respectively, even
+4. if there is not stars left for him to go, he stops
+5. The mad brother starts his Star Trek in Star 1, stealing a sheep from his own farm.
 
-int main()
+*/
+#include <stdio.h>
+
+int main(void)
 {
-    double price = 250.0, paid, change, unit, get; // 1 unit = 2+1 pizza
-    while(1)
+    int n;
+    scanf("%d", &n);
+
+    int sheep[n], ref[n];
+    for (int i = 0; i < n; i++)
     {
-        change = 0;
-        unit = 0;
-        paid = 0;
-        get = 0;
-        printf("\nEnter the ammount you paid: ");
-        scanf("%lf", &paid);
-        if(paid == EOF){break;}
-
-        if(paid > 250)
-        {
-            if(paid < 500)
-            {
-                get = 1;
-                change = trunc(paid - price);
-            }
-            else if(paid >= 500)
-            {
-                unit = paid / 500;
-                get = (unit * 3);
-                price = unit * 500;
-                change = paid - price;
-            }
-            if(change >= 250)
-            {
-                get += 1;
-                change -= 250;
-            }
-            printf("You are getting %.0lf pizza, sir!\n", get);
-        }
-        else
-        {
-            printf("You are getting no pizza!\n");
-            change = paid;
-        }
-
-        printf("Your Change is: %.0lf$\n", change);
-
+        scanf("%d", &sheep[i]);
     }
+
+    for (int i = 0; i < n; i++)
+    {
+        ref[i] = sheep[i];
+    }
+
+    // sheep[2] --- 5 6
+
+    int attacked = 0;   //
+    int non_stolen = 0; //
+
+    for (int j = 0;;)
+    {
+        if (sheep[j] % 2 != 0)
+        {
+            if(sheep[j] > 0){sheep[j] -= 1;}
+            j += 1;
+        }
+        else if ((sheep[j] % 2) == 0)
+        {
+            if(sheep[j] > 0){sheep[j] -= 1;}
+            j -= 1;
+        }
+
+        //breaking
+        if ((j < 0) || (j >= n))
+        {
+            break;
+        }
+    }
+
+    // checking the number of attacked stars
+    for (int i = 0; i < n; i++)
+    {
+        if (sheep[i] != ref[i])
+        {
+            attacked++;
+        }
+    }
+
+    // checking the number of remaining sheeps
+    for (int i = 0; i < n; i++)
+    {
+        non_stolen += sheep[i];
+    }
+
+    printf("%d %d\n", attacked, non_stolen);
+
     return 0;
 }
