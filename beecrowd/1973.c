@@ -14,32 +14,29 @@ then,
 
 int main(void)
 {
-    int n;
-    scanf("%d", &n);
+    unsigned long long int n;
+    scanf("%llu", &n);
 
-    int sheep[n], ref[n];
-    for (int i = 0; i < n; i++)
+    unsigned long long int sheep[n], ref[n];
+    //taking sheep value and an identical copy
+    for (unsigned long long int i = 0; i < n; i++)
     {
-        scanf("%d", &sheep[i]);
-    }
-
-    for (int i = 0; i < n; i++)
-    {
+        scanf("%llu", &sheep[i]);
         ref[i] = sheep[i];
     }
 
+    unsigned long long int attacked = 0, non_stolen = 0;
 
-
-    int attacked = 0;
-    int non_stolen = 0; 
-
-    for (int j = 0;;)
+    for (unsigned long long int j = 0;;)
     {
+        //odd condision
         if (sheep[j] % 2 != 0)
         {
             if(sheep[j] > 0){sheep[j] -= 1;}
             j += 1;
         }
+
+        //even condision
         else if ((sheep[j] % 2) == 0)
         {
             if(sheep[j] > 0){sheep[j] -= 1;}
@@ -54,7 +51,7 @@ int main(void)
     }
 
     // checking the number of attacked stars
-    for (int i = 0; i < n; i++)
+    for (unsigned long long int i = 0; i < n; i++)
     {
         if (sheep[i] != ref[i])
         {
@@ -63,12 +60,12 @@ int main(void)
     }
 
     // checking the number of remaining sheeps
-    for (int i = 0; i < n; i++)
+    for (unsigned long long int i = 0; i < n; i++)
     {
         non_stolen += sheep[i];
     }
 
-    printf("%d %d\n", attacked, non_stolen);
+    printf("%llu %llu\n", attacked, non_stolen);
 
     return 0;
 }
