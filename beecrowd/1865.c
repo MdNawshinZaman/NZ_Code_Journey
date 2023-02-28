@@ -14,9 +14,9 @@ int main(void)
 
         if(strcmp(name,thor) == 0){printf("Y\n");}
         else{printf("N\n");}
-
-
     }
 
     return 0;
 }
+
+//used the strcmp() after a long time
