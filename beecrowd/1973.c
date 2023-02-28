@@ -14,26 +14,26 @@ then,
 
 int main(void)
 {
-    double n;
-    scanf("%lf", &n);
+    int n;
+    scanf("%d", &n);
 
-    double sheep[n], ref[n];
-    for (double i = 0; i < n; i++)
+    int sheep[n], ref[n];
+    for (int i = 0; i < n; i++)
     {
-        scanf("%lf", &sheep[i]);
+        scanf("%d", &sheep[i]);
     }
 
-    for (double i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         ref[i] = sheep[i];
     }
 
 
 
-    double attacked = 0;
-    double non_stolen = 0;
+    int attacked = 0;
+    int non_stolen = 0; 
 
-    for (double j = 0;;)
+    for (int j = 0;;)
     {
         if (sheep[j] % 2 != 0)
         {
@@ -54,7 +54,7 @@ int main(void)
     }
 
     // checking the number of attacked stars
-    for (double i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         if (sheep[i] != ref[i])
         {
@@ -63,12 +63,12 @@ int main(void)
     }
 
     // checking the number of remaining sheeps
-    for (double i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         non_stolen += sheep[i];
     }
 
-    printf("%lf %lf\n", attacked, non_stolen);
+    printf("%d %d\n", attacked, non_stolen);
 
     return 0;
 }
