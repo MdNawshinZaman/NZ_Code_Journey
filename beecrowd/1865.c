@@ -11,7 +11,10 @@ int main(void)
         int force = 0;
         scanf("%s %d", name, &force);
 
-        
+        if(name * == "Thor"){printf("Y\n");}
+        else{printf("N\n");}
+
+
     }
 
     return 0;
