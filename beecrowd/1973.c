@@ -28,10 +28,10 @@ int main(void)
         ref[i] = sheep[i];
     }
 
-    // sheep[2] --- 5 6
 
-    int attacked = 0;   //
-    int non_stolen = 0; //
+
+    int attacked = 0;
+    int non_stolen = 0; 
 
     for (int j = 0;;)
     {
