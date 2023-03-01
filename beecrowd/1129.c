@@ -26,7 +26,7 @@ int main(void)
             c = (c <= 127)? 1 : 0;
             d = (d <= 127)? 1 : 0;
             e = (e <= 127)? 1 : 0;
-
+            int comp = a;
             for(int i = 0; i < 5; i++)
             {
                 
