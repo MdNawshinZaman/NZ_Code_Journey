@@ -27,9 +27,16 @@ int main(void)
             d = (d <= 127)? 1 : 0;
             e = (e <= 127)? 1 : 0;
 
-            int black = 0;
+            int black = 0, ans = 0;
 
-            (a == 1)? black++ :;
+            if(a == 1){ans = 'A'; black++;}
+            if(b == 1){ans = 'B'; black++;}
+            if(c == 1){ans = 'C'; black++;}
+            if(d == 1){ans = 'D'; black++;}
+            if(e == 1){ans = 'E'; black++;}
+
+            if(black == 1){printf("%c\n", ans);}
+            else{printf("*\n");}
         }
     }
 
