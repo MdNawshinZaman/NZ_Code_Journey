@@ -1,52 +1,16 @@
-#include <stdio.h>
-
+#include<stdio.h>
 int main(void)
 {
-    int n;
-    scanf("%d", &n);
-    int sheep[n],ref[n];
-    for (int i = 0; i < n; i++)
-    {
-        scanf("%d", &sheep[i]);
-    }
-    for (int i = 0; i < n; i++)
-    {
-        ref[i] = sheep[i];
-    }
+    int a=4;
+    float b=5.5678;
+    double c=10.543567;
+    char ch = 'a';
 
-    int attacked = 0;
-    int non_stolen = 0;
 
-    for (int j = 0;;)
-    {
-        if (sheep[j] % 2 != 0)
-        {
-            if(sheep[j] > 0){sheep[j] -= 1;}
-            j += 1;
-        }
-        else if ((sheep[j] % 2) == 0)
-        {
-            if(sheep[j] > 0){sheep[j] -= 1;}
-            j -= 1;
-        }
-        if ((j < 0) || (j >= n))
-        {
-            break;
-        }
-    }
-    for (int i = 0; i < n; i++)
-    {
-        if (sheep[i] != ref[i])
-        {
-            attacked++;
-        }
-    }
-    for (int i = 0; i < n; i++)
-    {
-        non_stolen += sheep[i];
-    }
-
-    printf("%d %d\n", attacked, non_stolen);
+    printf("Integer = %d\n",a);
+    printf("Float = %.2f\n",(int)(b*100)/100.0);
+    printf("Double = %.4lf\n",(int)(c*10000)/10000.0);
+    printf("Chareacter = %c\n",ch);
 
     return 0;
 }
