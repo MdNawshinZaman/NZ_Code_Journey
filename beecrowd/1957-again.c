@@ -48,6 +48,10 @@ int main(void)
         }
         if(v == 0){break;}
     }
-    printf("\n");
+
+    for(int j = digit_num - 1; j > 0; j--)
+    {
+        printf("%c", num[j]);
+    }
     return 0;
 }
