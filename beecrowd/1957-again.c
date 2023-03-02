@@ -52,6 +52,7 @@ int main(void)
             num[i] = hex_digit;
             break;
         }
+        i++;
         if (v == 0)
         {
             break;
