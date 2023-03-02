@@ -48,9 +48,9 @@ int main(void)
         case 15:
             num[i] = 'F';
             break;
-        default:
-            num[i] = hex_digit;
-            break;
+        //default:
+          //  num[i] = hex_digit;
+           // break;
         }
         i++;
         if (v == 0)
