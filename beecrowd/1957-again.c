@@ -5,7 +5,8 @@ int main(void)
     unsigned long long int v;
     scanf("%llu", &v);
 
-    int digit_num = 1;
+    /*int digit_num = 1;
+
     for(;;)
     {
         v = v / 10;
@@ -13,11 +14,13 @@ int main(void)
         if(v == 0){break;}
     }
     //printf("%d\n", digit_num);
+    */
 
     int hex_digit;
     for(;;)
     {
         hex_digit = v % 16;
+        v = v / 16;
         switch(hex_digit)
         {
             case 10:
@@ -42,9 +45,7 @@ int main(void)
                 printf("%d", hex_digit);
                 break;
         }
+        if(v == 0){break;}
     }
-
-
-
     return 0;
 }
