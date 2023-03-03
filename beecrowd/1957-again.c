@@ -5,16 +5,18 @@ int main(void)
     int v;
     scanf("%d", &v);
 
-    int digit_num = 1;
+    int digit_num = 1, num_in;
+
+    num_in = v;
 
     for (;;)
     {
-        v = v / 10;
-        if (v > 0)
+        num_in = num_in / 10;
+        if (num_in > 0)
         {
             digit_num++;
         }
-        if (v == 0)
+        if (num_in == 0)
         {
             break;
         }
