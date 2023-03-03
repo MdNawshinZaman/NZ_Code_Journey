@@ -1,16 +1,14 @@
 #include<stdio.h>
+
 int main(void)
 {
-    int a=4;
-    float b=5.5678;
-    double c=10.543567;
-    char ch = 'a';
+    char name[20];
 
+    printf("Enter you name: ");
+    fgets(name, 20, stdin);
 
-    printf("Integer = %d\n",a);
-    printf("Float = %.2f\n",(int)(b*100)/100.0);
-    printf("Double = %.4lf\n",(int)(c*10000)/10000.0);
-    printf("Chareacter = %c\n",ch);
+    printf("Your name is %s\n",name);
+
 
     return 0;
 }
