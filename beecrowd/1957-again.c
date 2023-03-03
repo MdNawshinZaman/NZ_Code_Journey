@@ -28,7 +28,7 @@ int main(void)
     {
         hex_digit = v % 16;
         v = v / 16;
-
+        printf("%d ", hex_digit);
         num[i] = hex_digit;
 
         i++;
