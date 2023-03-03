@@ -33,14 +33,14 @@ int main(void)
         //printf("%d ", hex_digit);
         num[i] = hex_digit;
 
-        i++;
         if (v == 0)
         {
             break;
         }
+        i++;
     }
 
-    for (int j = digit_num - 1; j >= 0; j--)
+    for (int j = i; j >= 0; j--)
     {
         if(num[j] == 10){printf("A");}
         else if(num[j] == 11){printf("B");}
