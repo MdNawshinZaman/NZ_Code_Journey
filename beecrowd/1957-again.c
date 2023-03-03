@@ -2,8 +2,8 @@
 
 int main(void)
 {
-    int v;
-    scanf("%d", &v);
+    unsigned long long int v;
+    scanf("%llu", &v);
 
     int digit_num = 1, num_in;
 
@@ -21,7 +21,7 @@ int main(void)
             break;
         }
     }
-    //printf("%d\n", digit_num);
+    // printf("%d\n", digit_num);
 
     int num[digit_num];
 
@@ -30,7 +30,7 @@ int main(void)
     {
         hex_digit = v % 16;
         v = v / 16;
-        //printf("%d ", hex_digit);
+        // printf("%d ", hex_digit);
         num[i] = hex_digit;
 
         if (v == 0)
@@ -39,16 +39,36 @@ int main(void)
         }
         i++;
     }
-
     for (int j = i; j >= 0; j--)
     {
-        if(num[j] == 10){printf("A");}
-        else if(num[j] == 11){printf("B");}
-        else if(num[j] == 12){printf("C");}
-        else if(num[j] == 13){printf("D");}
-        else if(num[j] == 14){printf("E");}
-        else if(num[j] == 15){printf("F");}
-        else {printf("%d", num[j]);}
+        if (num[j] == 10)
+        {
+            printf("A");
+        }
+        else if (num[j] == 11)
+        {
+            printf("B");
+        }
+        else if (num[j] == 12)
+        {
+            printf("C");
+        }
+        else if (num[j] == 13)
+        {
+            printf("D");
+        }
+        else if (num[j] == 14)
+        {
+            printf("E");
+        }
+        else if (num[j] == 15)
+        {
+            printf("F");
+        }
+        else
+        {
+            printf("%d", num[j]);
+        }
     }
     printf("\n");
     return 0;
