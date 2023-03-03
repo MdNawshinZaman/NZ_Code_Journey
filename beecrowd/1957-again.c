@@ -38,9 +38,9 @@ int main(void)
         }
     }
 
-    for(int z = 0, z < digit_num; z++)
+    for(int y = 0; y < digit_num; y++)
     {
-        printf("%d\n", num[z]);
+        printf("%d\n", num[y]);
     }
 
     /*for (int j = digit_num - 1; j >= 0; j--)
