@@ -30,7 +30,7 @@ int main(void)
     {
         hex_digit = v % 16;
         v = v / 16;
-        printf("%d ", hex_digit);
+        //printf("%d ", hex_digit);
         num[i] = hex_digit;
 
         i++;
@@ -40,12 +40,7 @@ int main(void)
         }
     }
 
-    for(int y = 0; y < digit_num; y++)
-    {
-        printf("%d\n", num[y]);
-    }
-
-    /*for (int j = digit_num - 1; j >= 0; j--)
+    for (int j = digit_num - 1; j >= 0; j--)
     {
         if(num[j] == 10){printf("A");}
         else if(num[j] == 11){printf("B");}
@@ -54,8 +49,7 @@ int main(void)
         else if(num[j] == 14){printf("E");}
         else if(num[j] == 15){printf("F");}
         else {printf("%d", num[j]);}
-        printf("\n");
     }
-    printf("\n");*/
+    printf("\n");
     return 0;
 }
