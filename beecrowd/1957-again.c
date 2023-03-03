@@ -19,7 +19,7 @@ int main(void)
             break;
         }
     }
-    // printf("%d\n", digit_num);
+    //printf("%d\n", digit_num);
 
     int num[digit_num];
 
