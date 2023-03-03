@@ -24,7 +24,7 @@ int main(void)
     int num[digit_num];
 
     int hex_digit, i = 0;
-    for (;;)
+    while (1)
     {
         hex_digit = (int)v % 16;
         v = v / 16;
