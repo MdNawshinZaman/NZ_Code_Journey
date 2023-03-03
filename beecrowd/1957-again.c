@@ -2,8 +2,8 @@
 
 int main(void)
 {
-    unsigned long long int v;
-    scanf("%llu", &v);
+    long long int v;
+    scanf("%lld", &v);
 
     int digit_num = 1;
 
@@ -21,9 +21,9 @@ int main(void)
     }
     //printf("%d\n", digit_num);
 
-    int num[digit_num];
+    long long int num[digit_num];
 
-    int hex_digit, i = 0;
+    long long int hex_digit, i = 0;
     while (1)
     {
         hex_digit = v % 16;
@@ -40,7 +40,7 @@ int main(void)
 
     for(int y = 0; y < digit_num; y++)
     {
-        printf("%d\n", num[y]);
+        printf("%lld\n", num[y]);
     }
 
     /*for (int j = digit_num - 1; j >= 0; j--)
