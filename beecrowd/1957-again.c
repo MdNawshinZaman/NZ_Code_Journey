@@ -38,7 +38,12 @@ int main(void)
         }
     }
 
-    for (int j = digit_num - 1; j >= 0; j--)
+    for(int z = 0, z < digit_num; z++)
+    {
+        printf("%d\n", num[z]);
+    }
+
+    /*for (int j = digit_num - 1; j >= 0; j--)
     {
         if(num[j] == 10){printf("A");}
         else if(num[j] == 11){printf("B");}
@@ -49,6 +54,6 @@ int main(void)
         else {printf("%d", num[j]);}
         printf("\n");
     }
-    printf("\n");
+    printf("\n");*/
     return 0;
 }
