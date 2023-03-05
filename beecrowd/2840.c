@@ -17,3 +17,5 @@ int main(void)
 
     return 0;
 }
+
+//first time used #define in my life.
