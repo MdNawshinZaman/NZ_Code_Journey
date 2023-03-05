@@ -1,10 +1,11 @@
 #include<stdio.h>
 #include<math.h>
 #define PI 3.1415
-#define int long long int
 
 int main(void)
 {
+    #define int long long int
+
     int R, L, balloon_num;
     double volume;
     scanf("%lld %lld", &R, &L);
@@ -12,7 +13,7 @@ int main(void)
     volume = ((float)4/3) * PI * pow(R , 3);
     balloon_num = floor(L / volume);
 
-    printf("%d", balloon_num);
+    printf("%lld\n", balloon_num);
 
     return 0;
 }
