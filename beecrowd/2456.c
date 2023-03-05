@@ -43,7 +43,7 @@ int main(void)
     {
         printf("D\n");
     }
-    else
+    else if((a > 0) && (d > 0))
     {
         printf("N\n");
     }
