@@ -53,4 +53,7 @@ int main(void)
     }
 
     return 0;
-}  
+}
+
+//This code taught me that there is no !< or !> sign in C.
+// I have to use !(a < b) OR !(a > b) to make the sence
