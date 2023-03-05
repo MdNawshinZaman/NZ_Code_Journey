@@ -15,7 +15,7 @@ int main(void)
         card1 = card[1];
         for (int j = 2; j < 5; j++)
         {
-            if(card1 !< card[j]){a++;}
+            if(card1 !< card[j]){a++;}//if a == 0 then ascending
         }
     }
     else if (card1 > card[1])
@@ -23,7 +23,7 @@ int main(void)
         card1 = card[1];
         for (int j = 2; j < 5; j++)
         {
-            if(card1 !> card[j]){d++;}
+            if(card1 !> card[j]){d++;}//if d == 0 then descending
         }
     }
 
