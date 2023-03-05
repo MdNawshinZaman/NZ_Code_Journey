@@ -19,6 +19,7 @@ int main(void)
             {
                 a++;
                 d++;
+                break;
             } // if a == 0 then ascending
         }
     }
@@ -31,6 +32,7 @@ int main(void)
             {
                 a++;
                 d++;
+                break;
             } // if d == 0 then descending
         }
     }
