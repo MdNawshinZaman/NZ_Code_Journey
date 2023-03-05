@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    int card[5], a = 0;
+    int card[5], a = 0, d = 0;
     for (int i = 0; i < 5; i++)
     {
         scanf("%d", &card[i]);
@@ -15,7 +15,7 @@ int main(void)
         card1 = card[1];
         for (int j = 2; j < 5; j++)
         {
-            if(card1 !< card[j]){a;}
+            if(card1 !< card[j]){a++;}
         }
     }
     else if (card1 > card[1])
@@ -23,7 +23,7 @@ int main(void)
         card1 = card[1];
         for (int j = 2; j < 5; j++)
         {
-            if(card1 !> card[j]){a++;}
+            if(card1 !> card[j]){d++;}
         }
     }
 
