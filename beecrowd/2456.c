@@ -27,7 +27,7 @@ int main(void)
         card1 = card[1];
         for (int j = 2; j < 5; j++)
         {
-            if (!(card1 < card[j]))
+            if (!(card1 > card[j]))
             {
                 a++;
                 d++;
@@ -43,7 +43,7 @@ int main(void)
     {
         printf("D\n");
     }
-    else if((a > 0) && (d > 0))
+    else if((a > 0) || (d > 0))
     {
         printf("N\n");
     }
