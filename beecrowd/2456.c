@@ -21,6 +21,7 @@ int main(void)
                 d++;
                 break;
             } // if a == 0 then ascending
+            card1 = card[j];
         }
     }
     else if (card1 > card[1])
@@ -34,6 +35,7 @@ int main(void)
                 d++;
                 break;
             } // if d == 0 then descending
+            card1 = card[j];
         }
     }
 
