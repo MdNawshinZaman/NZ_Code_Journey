@@ -11,7 +11,6 @@ then,
 
 */
 #include <stdio.h>
-//#define m (int)1e6+7
 int main(void)
 {
     #define int unsigned long long
