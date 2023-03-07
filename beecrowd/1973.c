@@ -14,7 +14,7 @@ then,
 
 int main(void)
 {
-    #define int unsigned long long int
+    #define int unsigned long long
     int n;
     scanf("%llu", &n);
 
