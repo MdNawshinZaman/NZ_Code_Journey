@@ -10,6 +10,7 @@ int main(void)
         r = d / 2.0;
         h = v/(pi * pow(r , 2));
 
+        printf("ALTURA = %.2lf\nAREA = %.2lf", h, r);
     }
 
     return 0;
