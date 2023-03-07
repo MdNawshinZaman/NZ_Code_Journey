@@ -11,14 +11,14 @@ then,
 
 */
 #include <stdio.h>
-#define m (int)1e6+7
+//#define m (int)1e6+7
 int main(void)
 {
     #define int unsigned long long
     int n;
     scanf("%llu", &n);
 
-    int sheep[m], ref[m];
+    int sheep[n+1], ref[n+1];
     //taking sheep value and an identical copy
     for (int i = 0; i < n; i++)
     {
