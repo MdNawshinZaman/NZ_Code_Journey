@@ -10,7 +10,8 @@ int main(void)
     while(scanf("%d %d %d %d", &n, &h, &c, &l) != EOF)
     {
         x = sqrt(pow(c , 2) + pow(h , 2));
-        area = x * l;
+        area = n * ((x/100.0) * (l/100.0));//in square meter
+
 
         printf("%.4lf\n", area);
     }
