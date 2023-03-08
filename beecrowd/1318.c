@@ -15,10 +15,10 @@ int main(void)
             scanf("%d", &people[i]);
         }
 
-        sorted[0] = people[0];
         for(int i = 0; i < m; i++)
         {
-            for(int j = i+1; j < m; j++)
+            sorted[i] = people[];
+            for(int j = 0; j < m; j++)
             {
                 if(sorted[i] > people[j])
                 {
