@@ -34,19 +34,14 @@ int main(void)
         }
         printf("\n");
 
-        int count = 1, test = people[0];
-
-        for(int i = 1; i < m; i++)
+        for(int i = 1, test = people[0], count = 1; i < m; i++)
         {
-            if(test < people[i])
+            if(test == people[i])
             {
-                test = people[i];
-                if(i == (m-1))
-                {
-                    break;
-                }
                 count++;
             }
+            test = people[i];
+
         }
 
         printf("%d\n", count);
