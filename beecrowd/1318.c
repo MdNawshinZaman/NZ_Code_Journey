@@ -34,10 +34,14 @@ int main(void)
         }
         printf("\n");
 
-        int test = people[0], unique = 0;
-        for(int i = 0; i < m; i++)
+        int nonCopy = 1, num = people[0];
+        for(int i = 1; i < m; i++)
         {
-            
+            if(num < people[i])
+            {
+                nonCopy++;
+                num = people[i];
+            }
         }
 
         printf("%d\n", count);
