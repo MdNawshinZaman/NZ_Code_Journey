@@ -40,7 +40,6 @@ int main(void)
             {
                 count++;
             }
-            test = people[i];
 
         }
 
