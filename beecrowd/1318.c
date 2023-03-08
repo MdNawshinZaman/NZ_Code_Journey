@@ -34,7 +34,7 @@ int main(void)
         }
         printf("\n");
 
-        int nonCopy = 1, num = people[0];
+        int nonCopy = 0, num = people[0];
         for(int i = 1; i < m; i++)
         {
             if(num < people[i])
@@ -44,7 +44,7 @@ int main(void)
             }
         }
 
-        printf("%d\n", count);
+        printf("%d\n", nonCopy);
 
     }
 
