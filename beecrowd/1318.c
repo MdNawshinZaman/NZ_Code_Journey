@@ -34,14 +34,24 @@ int main(void)
         }
         printf("\n");
 
-        int count = 0;
+        int unique_p[m], unique_p[0] = people[0];
+
+        for(int x = 1, i = 0; i < m; i++)
+        {
+            if(people[i] < people[i+1])
+            {
+                unique_p[x] = people[i];
+            }
+        }
+
+        /*int count = 0;
         for(int i = 0; i < m-1; i++)
         {
             if(people[i] < people[i+1])
             {
                 count++;
             }
-        }
+        }*/
 
         /*int nonCopy = 1, num = people[0];
         for(int i = 1; i < m; i++)
