@@ -41,6 +41,7 @@ int main(void)
             if(people[i] < people[i+1])
             {
                 unique_p[x] = people[i];
+                x++;
             }
         }
 
