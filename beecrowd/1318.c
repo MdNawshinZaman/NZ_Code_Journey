@@ -34,7 +34,16 @@ int main(void)
         }
         printf("\n");
 
-        int nonCopy = 1, num = people[0];
+        int count = 0;
+        for(int i = 0; i < m-1; i++)
+        {
+            if(people[i] < people[i+1])
+            {
+                count++;
+            }
+        }
+
+        /*int nonCopy = 1, num = people[0];
         for(int i = 1; i < m; i++)
         {
             if(num < people[i])
@@ -42,9 +51,9 @@ int main(void)
                 nonCopy++;
                 num = people[i];
             }
-        }
+        }*/
 
-        printf("%d\n", nonCopy);
+        printf("%d\n", count);
 
     }
 
