@@ -37,10 +37,7 @@ int main(void)
         int test = people[0], unique = 0;
         for(int i = 0; i < m; i++)
         {
-            for(int j = i; j < m; j++)
-            {
-                if(test != people)
-            }
+            
         }
 
         printf("%d\n", count);
