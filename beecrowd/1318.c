@@ -2,13 +2,24 @@
 
 int main(void)
 {
-    int n, m;
-    scanf("%d %d", &n, &m);
-
-    int people[m];
-    for(int i = 0; i < m; i++)
+    while(1)
     {
-        scanf("%d", &people[i]);
+        int n, m;
+        scanf("%d %d", &n, &m);
+
+        if((n == 0) && (m == 0)){break;}
+
+        int people[m];
+        for(int i = 0; i < m; i++)
+        {
+            scanf("%d", &people[i]);
+        }
+
+        for(int i = 0; i < m; i++)
+        {
+            for(int j = )
+        }
+
     }
 
     return 0;
