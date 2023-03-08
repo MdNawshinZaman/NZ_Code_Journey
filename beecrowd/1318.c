@@ -27,9 +27,9 @@ int main(void)
             }
         }
 
-        for(int i = 0; i < m, i++)
+        for(int i = 0; i < m; i++)
         {
-            printf("%d \n", sorted[i]);
+            printf("%d ", sorted[i]);
         }
 
     }
