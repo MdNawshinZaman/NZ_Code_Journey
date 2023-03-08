@@ -38,7 +38,7 @@ int main(void)
 
         for(int i = 1; i < m; i++)
         {
-            if(test < people[i])
+            if((test < people[i]) && (test == people[i+1]))
             {
                 test = people[i];
                 if(i == (m-1))
