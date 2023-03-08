@@ -36,7 +36,7 @@ int main(void)
 
         int unique_p[m], unique_p[0] = people[0];
 
-        for(int x = 1, i = 0; i < m; i++)
+        for(int x = 1, i = 0; i < m-1; i++)
         {
             if(people[i] < people[i+1])
             {
