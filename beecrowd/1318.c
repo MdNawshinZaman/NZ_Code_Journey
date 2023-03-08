@@ -34,10 +34,13 @@ int main(void)
         }
         printf("\n");
 
-        int test = people[0], count = 1, ini = 0
+        int test = people[0], unique = 0;
         for(int i = 0; i < m; i++)
         {
-            
+            for(int j = i; j < m; j++)
+            {
+                if(test != people)
+            }
         }
 
         printf("%d\n", count);
