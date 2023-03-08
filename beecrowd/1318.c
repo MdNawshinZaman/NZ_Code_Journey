@@ -39,12 +39,16 @@ int main(void)
         {
             if(test < people[i])
             {
-                count++;
                 test = people[i];
+                if(i == (m-1))
+                {
+                    break;
+                }
+                count++;
             }
         }
 
-        printf("%d\n", m - test);
+        printf("%d\n", (m - count));
 
     }
 
