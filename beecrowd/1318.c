@@ -9,7 +9,7 @@ int main(void)
 
         if((n == 0) && (m == 0)){break;}
 
-        int people[m], sorted[m];
+        int people[m], temp;
         for(int i = 0; i < m; i++)
         {
             scanf("%d", &people[i]);
@@ -17,19 +17,20 @@ int main(void)
 
         for(int i = 0; i < m; i++)
         {
-            sorted[i] = people[];
-            for(int j = 0; j < m; j++)
+            for(int j = i+1; j < m; j++)
             {
-                if(sorted[i] > people[j])
+                if(people[i] > people[j])
                 {
-                    sorted[i] = people[j];
+                    temp = people[i];
+                    people[i] = people[j];
+                    people[j] = temp;
                 }
             }
         }
 
         for(int i = 0; i < m; i++)
         {
-            printf("%d ", sorted[i]);
+            printf("%d ", people[i]);
         }
 
     }
