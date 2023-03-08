@@ -48,7 +48,7 @@ int main(void)
             }
         }
 
-        printf("%d\n", (m - count));
+        printf("%d\n", count);
 
     }
 
