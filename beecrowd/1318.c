@@ -33,6 +33,19 @@ int main(void)
             printf("%d ", people[i]);
         }*/
 
+        int count = 1, test = people[0];
+
+        for(int i = 1; i < m; i++)
+        {
+            if(test < people[i])
+            {
+                count++;
+                test = people[i];
+            }
+        }
+
+        printf("%d\n", m - test);
+
     }
 
     return 0;
