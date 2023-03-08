@@ -28,10 +28,11 @@ int main(void)
             }
         }
 
-        /*for(int i = 0; i < m; i++)
+        for(int i = 0; i < m; i++)
         {
             printf("%d ", people[i]);
-        }*/
+        }
+        printf("\n");
 
         int count = 1, test = people[0];
 
