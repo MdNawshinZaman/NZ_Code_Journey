@@ -34,15 +34,22 @@ int main(void)
         }
         printf("\n");
 
-        int unique_p[m], unique_p[0] = people[0];
+        int unique_p[m];
+        unique_p[0] = people[0];
 
-        for(int x = 1, i = 0; i < m-1; i++)
+        int x = 1;
+        for(int i = 0; i < m-1; i++)
         {
             if(people[i] < people[i+1])
             {
                 unique_p[x] = people[i];
                 x++;
             }
+        }
+
+        for(int i = 0; i < x; i++)
+        {
+            printf("%d ", unique_p[i]);
         }
 
         /*int count = 0;
@@ -64,7 +71,7 @@ int main(void)
             }
         }*/
 
-        printf("%d\n", count);
+        //printf("%d\n", );
 
     }
 
