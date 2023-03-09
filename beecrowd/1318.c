@@ -15,7 +15,7 @@ int main(void)
             scanf("%d", &people[i]);
         }
 
-        int test;
+        int test, num =  0, count = 0;
         for(int i = 0; i < m; i++)
         {
             test = people[i];
@@ -23,12 +23,17 @@ int main(void)
             {
                 if(test == people[j])
                 {
-                    
+                    num++;
                 }
+            }
+            if(num > 1)
+            {
+                count++;
+                num = 0;
             }
         }
 
-
+        printf("%d\n", count);
     }
 
     return 0;
