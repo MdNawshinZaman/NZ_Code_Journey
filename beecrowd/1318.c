@@ -39,16 +39,24 @@ int main(void)
 
         //check how many unique digits
         int check_u = people[0], unique_n = 1, unique[m];
-        for(int i = 1, j = 0; i < m; i++)
+        unique[0] = check_u;
+        for(int i = 1, j = 1; i < m; i++)
         {
             if(check_u < people[i+1])
             {
-                unique[j] = check_u;
                 unique_n++;
                 check_u = people[i];
+                unique[j] = check_u;
+                j++;
             }
         }
-        //printf("%d\n", unique_n);
+        printf("%d\n", unique_n);
+
+        for(int i = 0; i < unique_n; i++)
+        {
+            printf("%d ", unique[i]);
+        }
+        printf("\n");
 
         /*int test, num =  0, count = 0;
         for(int i = 0; i < m; i++)
