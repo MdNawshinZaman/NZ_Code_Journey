@@ -54,17 +54,18 @@ int main(void)
         }
         //printf("%d\n", unique_n);
 
-         // checking the unique values
+        /*// checking the unique values
         for(int i = 0; i < unique_n; i++)
         {
             printf("%d ", unique[i]);
         }
         printf("\n");
-        
+        */
 
-       int count_i = 0, count_f = 0, z = 0;
-       for(int i = 0; i < m; i++)
-       {
+
+        int count_i = 0, count_f = 0, z = 0;
+        for(int i = 0; i < m; i++)
+        {
             if(people[i] == unique[z])
             {
                 count_i++;
