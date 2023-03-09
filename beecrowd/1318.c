@@ -66,17 +66,8 @@ int main(void)
         int count_i = 0, count_f = 0, z = 0;
         for(int i = 0; i < m; i++)
         {
-            if(people[i] == unique[z])
-            {
-                count_i++;
-                z++;
-            }
-            if(count_i > 1)
-            {
-                count_f++;
-                count_i = 0;
-            }
-       }
+
+        }
 
         printf("%d\n", count_f);
 
