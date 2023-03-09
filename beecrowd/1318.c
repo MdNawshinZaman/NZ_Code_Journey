@@ -42,7 +42,7 @@ int main(void)
         unique[0] = check_u;
         for(int i = 1, j = 1; i < m; i++)
         {
-            if(check_u < people[i+1])
+            if(check_u < people[i])
             {
                 unique_n++;
                 check_u = people[i];
