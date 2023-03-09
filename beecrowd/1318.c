@@ -62,25 +62,23 @@ int main(void)
         printf("\n");
         */
 
-        /*int test, num =  0, count = 0;
-        for(int i = 0; i < m; i++)
-        {
-            test = people[i];
-            for(int j = 0; j < m; j++)
+       int count_i = 0, count_f = 0, z = 0;
+       for(int i = 0; i < m; i++)
+       {
+            if(people[i] == unique[z])
             {
-                if(test == people[j])
-                {
-                    num++;
-                }
+                count_i++;
+                z++;
             }
-            if(num > 1)
+            if(count_i > 1)
             {
-                count++;
-                num = 0;
+                count_f++;
+                count_i = 0;
             }
-        }
+       }
 
-        printf("%d\n", count);*/
+        printf("%d\n", count_f);
+
     }
 
     return 0;
