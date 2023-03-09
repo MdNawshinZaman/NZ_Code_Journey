@@ -47,10 +47,14 @@ int main(void)
                 check_u = people[i];
             }
         }
+        //printf("%d\n", unique_n);
 
-        printf("%d\n", unique_n);
         //take all unique numbers in a array
-        int unique[m];
+        int unique[unique_n];
+        for(int i = 0; i < unique_n; i++)
+        {
+            unique[i] = 
+        }
 
         /*int test, num =  0, count = 0;
         for(int i = 0; i < m; i++)
