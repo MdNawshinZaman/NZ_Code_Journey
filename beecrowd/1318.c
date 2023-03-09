@@ -37,8 +37,22 @@ int main(void)
         }
         printf("\n");
 
+        //check how many unique digits
+        int check_u = people[0], unique_n = 1;
+        for(int i = 1; i < m; i++)
+        {
+            if(check_u < people[i])
+            {
+                unique_n++;
+                check_u = people[i];
+            }
+        }
 
-        int test, num =  0, count = 0;
+        printf("%d\n", unique_n);
+        //take all unique numbers in a array
+        int unique[m];
+
+        /*int test, num =  0, count = 0;
         for(int i = 0; i < m; i++)
         {
             test = people[i];
@@ -56,7 +70,7 @@ int main(void)
             }
         }
 
-        printf("%d\n", count);
+        printf("%d\n", count);*/
     }
 
     return 0;
