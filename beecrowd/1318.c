@@ -30,12 +30,14 @@ int main(void)
             }
         }
 
+        /*
         //check if sorted or not
         for(int i = 0; i < m; i++)
         {
             printf("%d ", people[i]);
         }
         printf("\n");
+        */
 
         //check how many unique digits
         int check_u = people[0], unique_n = 1, unique[m];
