@@ -15,6 +15,16 @@ int main(void)
             scanf("%d", &people[i]);
         }
 
+        int test;
+        for(int i = 0; i < m; i++)
+        {
+            test = people[i];
+            for(int j = i; j < m; j++)
+            {
+                if()
+            }
+        }
+
 
     }
 
