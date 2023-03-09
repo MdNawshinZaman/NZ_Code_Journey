@@ -19,9 +19,12 @@ int main(void)
         for(int i = 0; i < m; i++)
         {
             test = people[i];
-            for(int j = i; j < m; j++)
+            for(int j = 0; j < m; j++)
             {
-                if()
+                if(test == people[j])
+                {
+                    
+                }
             }
         }
 
