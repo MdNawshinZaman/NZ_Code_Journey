@@ -50,13 +50,15 @@ int main(void)
                 j++;
             }
         }
-        printf("%d\n", unique_n);
+        //printf("%d\n", unique_n);
 
+        /* // checking the unique values
         for(int i = 0; i < unique_n; i++)
         {
             printf("%d ", unique[i]);
         }
         printf("\n");
+        */
 
         /*int test, num =  0, count = 0;
         for(int i = 0; i < m; i++)
