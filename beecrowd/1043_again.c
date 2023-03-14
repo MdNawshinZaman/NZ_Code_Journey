@@ -29,7 +29,7 @@ int main(void){
     if(b < c){temp = b; b = c; c = temp;}
     if(a < b){temp = a; a = b; b = temp;}
 
-    printf("%d %d %d\n\n", a, b, c);
+    printf("%.2f %.2f %.2f\n\n", a, b, c);
 
     if(b+c>a) {
         perimetro = A + B + C;
