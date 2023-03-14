@@ -5,7 +5,7 @@ int main()
     int a = 2, b = 1, c = 3, d = 4, e = 6;
 
     //Equation 1
-    a += a && b & c || d | e + 7;
+    //a += a && b & c || d | e + 7;
 
     //Equation 2
     a *= a++ + ++a * b / c % d;
