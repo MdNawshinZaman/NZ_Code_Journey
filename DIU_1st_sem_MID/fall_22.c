@@ -6,7 +6,7 @@ int main(void)
 
 
     //Equation 1
-    //a += a * b / c % d++ + a | b;
+    a += a * b / c % d++ + a | b;
 
     //Equation 2
     b *= (a/b) >= c + d + e++ - e;
