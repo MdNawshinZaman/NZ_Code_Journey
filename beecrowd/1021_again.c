@@ -15,13 +15,15 @@ int main(void)
         n -= (notas[i] * notes[i]);
     }
 
-    for(int i = 0; i < 6; i++)
+    for(int i = 0; i < 5; i++)
     {
-        printf("%f ", n);
+        //printf("%f ", n);
         moedas[i] = n / coins[i];
         n -= (moedas[i] * coins[i]);
     }
-    printf("\n");
+    //printf("\n");
+
+    moedas[5] = (round(n * 100)/100) / coins[5];
 
     printf("NOTAS:\n");
     for(int i = 0; i < 6; i++)
