@@ -17,7 +17,7 @@ int main(void)
 
     for(int i = 0; i < 6; i++)
     {
-         n = round(n);
+        n = 
         printf("%f ", n);
         moedas[i] = n / coins[i];
         n -= (moedas[i] * coins[i]);
