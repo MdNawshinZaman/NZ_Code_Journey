@@ -2,7 +2,13 @@
 
 int main(void)
 {
-    printf("")
+    printf("---------------------------------------\n");
+    printf("|x = 35                               |\n");
+    printf("|                                     |\n");
+    printf("|               x = 35                |\n");
+    printf("|                                     |\n");
+    printf("|                               x = 35|\n");
+    printf("---------------------------------------\n");
 
     return 0;
 }
