@@ -5,8 +5,8 @@ int main(void)
     float n;
     scanf("%f", &n);
 
-    float notes[] = {100, 50, 20, 10, 5, 2}, coins[] = {1, 0.50, 0.10, 0.05, 0.01};
-    float notas[6], moedas[6];
+    float notes[] = {100, 50, 20, 10, 5, 2}, coins[] = {1, 0.50, 0.25, 0.10, 0.05, 0.01};
+    int notas[6], moedas[6];
 
     for(int i = 0; i < 6; i++)
     {
@@ -23,9 +23,14 @@ int main(void)
     printf("NOTAS:\n");
     for(int i = 0; i < 6; i++)
     {
-        
+        printf("%d nota(s) de R$ %.2f\n", notas[i], notes[i]);
     }
 
+    printf("MOEDAS:\n");
+    for(int i = 0; i < 6; i++)
+    {
+        printf("%d moeda(s) de R$ %.2f\n", moedas[i], coins[i]);
+    }
 
     return 0;
 }
