@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
 
 int main(void)
 {
@@ -17,7 +18,7 @@ int main(void)
     for(int i = 0; i < 6; i++)
     {
         moedas[i] = n / coins[i];
-        n -= (moedas[i] * coins[i]);
+        n -= round(moedas[i] * coins[i]);
     }
 
     printf("NOTAS:\n");
