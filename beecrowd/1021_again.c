@@ -10,7 +10,20 @@ int main(void)
 
     for(int i = 0; i < 6; i++)
     {
-        notas[i] = n / notes[i]
+        notas[i] = n / notes[i];
+        n -= (notas[i] * notes[i]);
+    }
+
+    for(int i = 0; i < 6; i++)
+    {
+        moedas[i] = n / coins[i];
+        n -= (moedas[i] * coins[i]);
+    }
+
+    printf("NOTAS:\n");
+    for(int i = 0; i < 6; i++)
+    {
+        
     }
 
 
