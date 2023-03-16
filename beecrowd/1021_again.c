@@ -10,7 +10,7 @@ int main(void)
 
     for(int i = 0; i < 6; i++)
     {
-        notas[i] = n / notes[]
+        notas[i] = n / notes[i]
     }
 
 
