@@ -45,7 +45,7 @@ int main(void)
 
     if(c == 1){printf("C\n");}
     else if(d == 1){printf("D\n");}
-    else{printf("N\n");}
+    else if(n == 1){printf("N\n");}
 
     return 0;
 }
