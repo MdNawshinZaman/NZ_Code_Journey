@@ -8,12 +8,12 @@ int main(void)
         scanf("%d", &cards[i]);
     }
 
-    int comp, c = 1, d = 1, n = 1;
+    int comp, c, d, n;
     comp = card[0];
 
     if(comp < card[1])
     {
-        c = 1
+        c = 1;
         d = 0;
         n = 0;
         for(int i = 1; i < 5; i++)
@@ -31,6 +31,7 @@ int main(void)
     else if(comp > card[1])
     {
         c = 0;
+        d = 1;
         n = 0;
         for(int i = 1; i < 5; i++)
         {
