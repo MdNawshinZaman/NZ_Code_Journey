@@ -15,10 +15,10 @@ int main(void)
     {
         d = 0;
         n = 0;
-        for(int i = 1; i < 5; i++)
+        for(int i = 1; i < 4; i++)
         {
             comp = card[i];
-            if(!(comp < card[i]))
+            if(!(comp < card[i+1]))
             {
                 c = 0;
                 n = 1;
@@ -31,10 +31,10 @@ int main(void)
     {
         c = 0;
         n = 0;
-        for(int i = 1; i < 5; i++)
+        for(int i = 1; i < 4; i++)
         {
             comp = card[i];
-            if(!(comp > card[i]))
+            if(!(comp > card[i+1]))
             {
                 d = 0;
                 n = 1;
