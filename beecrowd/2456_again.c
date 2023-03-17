@@ -2,10 +2,10 @@
 
 int main(void)
 {
-    int cards[5];
+    int card[5];
     for(int i = 0; i < 5; i++)
     {
-        scanf("%d", &cards[i]);
+        scanf("%d", &card[i]);
     }
 
     int comp, c, d, n;
