@@ -26,7 +26,7 @@ int main(void)
         }
     }
 
-    printf("%d\n%d", big, small);
+    printf("%d\n%d\n", big, small);
 
     return 0;
 }
