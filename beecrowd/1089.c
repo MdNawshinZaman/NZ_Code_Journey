@@ -11,8 +11,7 @@ int main(void)
             scanf("%d", &in[i]);
         }
         //I have value in 0 to n-1 index.
-
-        
+    
 
     }
 
