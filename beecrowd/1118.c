@@ -8,23 +8,23 @@ int main(void)
     {
         do
         {
-            scanf("%d", &a);
+            scanf("%lf", &a);
             if((a < 0) ||(a > 10)){printf("nota invalida\n");}
         }while((a < 0) || (a > 10));
 
         do
         {
-            scanf("%d", &b);
+            scanf("%lf", &b);
             if((b < 0) ||(b > 10)){printf("nota invalida\n");}
         }while((b < 0) || (b > 10));
 
         media = (a + b) / 2.0;
-        printf("%d", media);
+        printf("%.2lf", media);
 
         int z;
         do
         {
-            printf("novo calculo (1-sim 2-nao)\n")
+            printf("novo calculo (1-sim 2-nao)\n");
             scanf("%d", &z);
 
             if(z == 1)
