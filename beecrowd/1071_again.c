@@ -12,7 +12,7 @@ int main(void)
         y = temp;
     }
 
-    for
+    for(int i = x; i <)
 
     return 0;
 }
