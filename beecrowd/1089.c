@@ -11,7 +11,9 @@ int main(void)
             scanf("%d", &in[i]);
         }
         //I have value in 0 to n-1 index.
-    
+
+        int copy[n+2];
+        copy[0] = in[]
 
     }
 
