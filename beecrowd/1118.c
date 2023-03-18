@@ -19,7 +19,7 @@ int main(void)
         }while((b < 0) || (b > 10));
 
         media = (a + b) / 2.0;
-        printf("%.2lf\n", media);
+        printf("media = %.2lf\n", media);
 
         int z;
         do
