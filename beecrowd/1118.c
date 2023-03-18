@@ -19,7 +19,7 @@ int main(void)
         }while((b < 0) || (b > 10));
 
         media = (a + b) / 2.0;
-        printf("%.2lf", media);
+        printf("%.2lf\n", media);
 
         int z;
         do
@@ -36,7 +36,7 @@ int main(void)
                 goto END;
             }
 
-        }while((test != 1) || (test != 2) )
+        }while((z != 1) && (z != 2));
     }
 
 END:
