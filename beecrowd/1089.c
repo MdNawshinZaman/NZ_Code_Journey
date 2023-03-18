@@ -21,7 +21,7 @@ int main(void)
             copy[i] = in[j];
         }
 
-        for(int i = 0; i < n+2; i++)
+        for(int i = 0; i < m; i++)
         {
             printf("%d ", copy[i]);
         }
