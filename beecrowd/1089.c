@@ -7,8 +7,8 @@ int main(void)
     {
         scanf("%d", &n);
         if(n == 0)break;
-        
-        int peaks, in[n];
+
+        int in[n];
         for(int i = 0; i < n; i++)
         {
             scanf("%d", &in[i]);
@@ -24,11 +24,16 @@ int main(void)
             copy[i] = in[j];
         }
 
-        for(int i = 0; i < m; i++)
+        /*for(int i = 0; i < m; i++)
         {
             printf("%d ", copy[i]);
         }
-        printf("\n");
+        printf("\n");*/
+
+        int peaks = 0;
+
+        for(int i = 1; i < m-1)
+
 
     }
 
