@@ -11,10 +11,10 @@ int main(void)
             scanf("%d", &in[i]);
         }
         //I have value in 0 to n-1 index.
-
-        int copy[n+2];
+        int m = n + 2;
+        int copy[m];
         copy[0] = in[n-1];
-        copy[n+1] = in[0];
+        copy[m-1] = in[0];
 
         for(int i = 1, j = 0; i <= n; i++, j++)
         {
