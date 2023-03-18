@@ -12,21 +12,21 @@ int main(void)
         scanf("%d", &num[i]);
     }
 
-    int big = 0, small = 0, my_num = num[0];
+    int more = 0, less = 0, my_num = num[0];
 
     for(int i = 1; i < n; i++)
     {
         if(num[i] > my_num)
         {
-            big++;
+            more++;
         }
         else if(num[i] < my_num)
         {
-            small++;
+            less++;
         }
     }
 
-    printf("%d\n%d\n", big, small);
+    printf("%d\n%d\n",less, more);
 
     return 0;
 }
