@@ -10,7 +10,7 @@ int main(void)
         scanf("%d", &arr[i]);
     }
 
-    int count, z = 0;
+    int count, z = 2;
     for(int i = 2; i <= 5; i++)
     {
         count = 0;
@@ -21,7 +21,7 @@ int main(void)
                 count++;
             }
         }
-        printf("%d Multiplo(s) de %d\n", count, arr[z]);
+        printf("%d Multiplo(s) de %d\n", count, z);
         z++;
     }
 
