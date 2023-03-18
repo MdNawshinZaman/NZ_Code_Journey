@@ -27,12 +27,13 @@ int main(void)
             printf("novo calculo (1-sim 2-nao)\n")
             scanf("%d", &z);
 
-            switch(z)
+            if(z == 1)
             {
-                case 1:
-                    continue;
-                case 2:
-                    goto END;
+                continue;
+            }
+            else if(z == 2)
+            {
+                goto END;
             }
 
         }while((test != 1) || (test != 2) )
