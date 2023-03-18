@@ -1,4 +1,4 @@
-#include<stfio.h>
+#include<stdio.h>
 
 int main(void)
 {
@@ -20,12 +20,13 @@ int main(void)
         {
             big++;
         }
-        else
+        else if(num[i] < my_num)
         {
-            
+            small++;
         }
     }
 
+    printf("%d\n%d", big, small);
 
     return 0;
 }
