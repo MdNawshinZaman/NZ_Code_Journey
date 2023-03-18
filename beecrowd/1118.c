@@ -21,11 +21,24 @@ int main(void)
         media = (a + b) / 2.0;
         printf("%d", media);
 
+        int z;
         do
         {
-            printf("")
-        }
+            printf("novo calculo (1-sim 2-nao)\n")
+            scanf("%d", &z);
+
+            switch(z)
+            {
+                case 1:
+                    continue;
+                case 2:
+                    goto END;
+            }
+
+        }while((test != 1) || (test != 2) )
     }
+
+END:
 
     return 0;
 }
