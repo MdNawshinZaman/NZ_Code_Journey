@@ -3,7 +3,7 @@
 int main(void)
 {
     int n;
-    while((scanf("%d", &n)) != 0)
+    while(scanf("%d", &n) != 0)
     {
 
         //if(n == 0)break;
