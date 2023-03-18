@@ -3,10 +3,10 @@
 int main(void)
 {
     int n;
-    while(1)
+    while((scanf("%d", &n)) != 0)
     {
-        scanf("%d", &n);
-        if(n == 0)break;
+
+        //if(n == 0)break;
 
         int in[n];
         for(int i = 0; i < n; i++)
