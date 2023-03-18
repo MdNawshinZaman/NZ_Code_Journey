@@ -3,8 +3,11 @@
 int main(void)
 {
     int n;
-    while(scanf("%d", &n) != 0)
+    while(1)
     {
+        scanf("%d", &n);
+        if(n == 0)break;
+        
         int peaks, in[n];
         for(int i = 0; i < n; i++)
         {
