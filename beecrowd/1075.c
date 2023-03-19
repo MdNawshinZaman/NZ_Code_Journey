@@ -2,8 +2,17 @@
 
 int main(void)
 {
-    int i = 0;
-    
+    int n;
+    scanf("%d",&n);
+
+    int i = n;
+    while(i < 1000)
+    {
+        if(i % n == 2)
+        {
+            printf("%d", i)
+        }
+    }
 
     return 0;
 }
