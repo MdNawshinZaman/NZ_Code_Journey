@@ -6,7 +6,7 @@ int main(void)
     scanf("%d",&n);
 
     int i = 1;
-    while(i < 1000)
+    while(i < 10000)
     {
         if(i % n == 2)
         {
