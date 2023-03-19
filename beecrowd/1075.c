@@ -5,13 +5,14 @@ int main(void)
     int n;
     scanf("%d",&n);
 
-    int i = n;
+    int i = 1;
     while(i < 1000)
     {
         if(i % n == 2)
         {
-            printf("%d", i)
+            printf("%d\n", i);
         }
+        i++;
     }
 
     return 0;
