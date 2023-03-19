@@ -9,7 +9,7 @@ int main(void)
     {
         temp = x;
         x = y;
-        y = temp;
+        y =temp;
     }// now x is less than y
 
     int i = x, sum = 0;
