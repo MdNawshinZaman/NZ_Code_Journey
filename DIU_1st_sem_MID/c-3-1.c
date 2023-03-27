@@ -3,10 +3,10 @@
 int main()
 {
     char a = '9';
-    while(a < 101){
-        int b = a++;
+    while(a > '0'){
+        int b = --a;
         printf("a \"%c\" & b\"%05d\"\n", b, a);
-        if(a == 'f')break;
+        if(a-- == '7')break;
     }
 
     return 0;
