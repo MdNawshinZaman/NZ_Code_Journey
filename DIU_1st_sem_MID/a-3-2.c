@@ -6,7 +6,7 @@ int main()
     while(i < num)
         while(j < num)
         {
-            printf("j = %d\ti = %d\n", i = j*10, j++);
+            printf("j = %d\ti = %d\n", i = (j*10), j++);
         }
 
     return 0;
