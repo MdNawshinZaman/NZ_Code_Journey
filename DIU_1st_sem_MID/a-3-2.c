@@ -2,7 +2,7 @@
 
 int main()
 {
-    int num = 10, i = 1; j = 1;
+    int num = 10, i = 1, j = 1;
     while(i < num)
         while(j < num)
         {
