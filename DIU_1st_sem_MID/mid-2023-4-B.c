@@ -31,7 +31,8 @@ int main(void)
     printf("\n");*/
 
     int a, b, c, d;
-
+    // 65 76 45 69
+    // 76 69 65 45
     for(int i = 0; i < 4; i++){if(weight[0] == c_weight[i]){a = i;}}
     for(int i = 0; i < 4; i++){if(weight[1] == c_weight[i]){b = i;}}
     for(int i = 0; i < 4; i++){if(weight[2] == c_weight[i]){c = i;}}
