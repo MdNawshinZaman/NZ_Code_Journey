@@ -19,16 +19,16 @@ int main(void)
         }
     }
     //Checking if the sorting method has worked or not
-    /*for(int i = 0; i < 4; i++)
+    for(int i = 0; i < 4; i++)
     {
         printf("%d ",weight[i]);
     }
-    printf("\n");
+    printf("\n\n");
     for(int i = 0; i < 4; i++)
     {
         printf("%d ",c_weight[i]);
     }
-    printf("\n");*/
+    printf("\n\n");
 
     int a, b, c, d;
     // 65 76 45 69
