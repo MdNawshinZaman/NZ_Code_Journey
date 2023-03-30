@@ -38,6 +38,9 @@ int main(void)
     for(int i = 0; i < 4; i++){if(weight[2] == c_weight[i]){c = i;}}
     for(int i = 0; i < 4; i++){if(weight[3] == c_weight[i]){d = i;}}
 
+    printf("\na = %d\nb = %d\nc = %d\nd = %d\n\n", a, b ,c, d);
+
+
     printf("Oldest will get %s\n", food[a]);
     printf("Second oldest will get %s\n", food[b]);
     printf("Third oldest will get %s\n", food[c]);
