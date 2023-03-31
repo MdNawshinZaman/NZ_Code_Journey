@@ -15,7 +15,15 @@ int main(void)
             scanf("%d", &num);
             for(int k = 2; k < num; k++)
             {
-                if
+                if(num % k == 0){is_prime = 0; break;}
+            }
+
+            if((is_prime == 1) &&(num > 9 && num < 100))
+            {
+                if(big_2_digit_prime < num)
+                {
+                    big_2_digit_prime < num
+                }
             }
 
 
