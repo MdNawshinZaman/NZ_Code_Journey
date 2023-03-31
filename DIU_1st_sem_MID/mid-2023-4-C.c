@@ -25,11 +25,10 @@ int main(void)
                     big_2_digit_prime = num;
                 }
             }
-
-            if(big_2_digit_prime > 0){printf("%d\nYes, I am going home.\n", big_2_digit_prime);}
-            else{printf("Well, I am stuck here.\n");}
-
         }
+
+        if(big_2_digit_prime > 0){printf("%d\nYes, I am going home.\n", big_2_digit_prime);}
+        else{printf("Well, I am stuck here.\n");}
     }
 
     return 0;
