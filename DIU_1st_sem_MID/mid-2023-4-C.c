@@ -13,7 +13,10 @@ int main(void)
         for(int j = 0; j < m; j++)
         {
             scanf("%d", &num);
-            for(int k = 2; k < num)
+            for(int k = 2; k < num; k++)
+            {
+                if
+            }
 
 
         }
