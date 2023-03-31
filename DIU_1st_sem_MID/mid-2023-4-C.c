@@ -7,13 +7,14 @@ int main(void)
 
     for(int i = 0; i < n; i++)
     {
-        int m, num, big_2_digit_prime = 0;
+        int m, num, big_2_digit_prime = 0, is_prime = 0;
         scanf("%d", &m);
 
         for(int j = 0; j < m; j++)
         {
             scanf("%d", &num);
-            
+            for(int k = 2; k <)
+
 
         }
     }
