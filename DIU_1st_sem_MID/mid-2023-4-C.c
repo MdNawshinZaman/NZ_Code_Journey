@@ -3,7 +3,7 @@
 int main(void)
 {
     int n;
-    scanf("%d", n);
+    scanf("%d", &n);
 
     for(int i = 0; i < n; i++)
     {
@@ -26,7 +26,7 @@ int main(void)
                 }
             }
 
-            if(big_2_digit_prime > 0){printf("%d\nYes, I am going home.\n");}
+            if(big_2_digit_prime > 0){printf("%d\nYes, I am going home.\n", big_2_digit_prime);}
             else{printf("Well, I am stuck here.\n");}
 
         }
