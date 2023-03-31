@@ -22,10 +22,12 @@ int main(void)
             {
                 if(big_2_digit_prime < num)
                 {
-                    big_2_digit_prime < num
+                    big_2_digit_prime = num;
                 }
             }
 
+            if(big_2_digit_prime > 0){printf("%d\nYes, I am going home.\n");}
+            else{printf("Well, I am stuck here.\n");}
 
         }
     }
