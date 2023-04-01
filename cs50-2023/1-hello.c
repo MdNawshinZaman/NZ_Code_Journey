@@ -5,6 +5,6 @@ int main(void)
 {
     string first = get_string("What's your first name? ");
     string last  = get_string("What's your last name? ");
-    printf("Hello, %s %s\n", first, last);
+    printf("Hello, %s %s %%s\n", first, last);
     printf("I got 100%%\n");
 }
