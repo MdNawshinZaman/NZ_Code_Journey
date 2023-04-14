@@ -14,7 +14,7 @@ int main(void)
 
         if(n == r)
         {
-            printf("* \n");
+            printf("*\n");
             continue;
         }
 
