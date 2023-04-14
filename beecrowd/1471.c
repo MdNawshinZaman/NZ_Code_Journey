@@ -14,8 +14,8 @@ int main(void)
 
         for (int i = 1; i <= n; i++)
         {
-            int match = 0
-            for (int j = 0; j < r; J++)
+            int match = 0;
+            for (int j = 0; j < r; j++)
             {
                 if(i == volunteers[j])
                 {
@@ -28,6 +28,7 @@ int main(void)
                 printf("%d ", i);
             }
         }
+        printf("\n");
     }
 
     return 0;
