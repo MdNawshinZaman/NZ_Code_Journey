@@ -14,9 +14,18 @@ int main(void)
 
         for (int i = 1; i <= n; i++)
         {
+            int match = 0
             for (int j = 0; j < r; J++)
             {
-                
+                if(i == volunteers[j])
+                {
+                    match = 1;
+                    break;
+                }
+            }
+            if (match == 0)
+            {
+                printf("%d ", i);
             }
         }
     }
