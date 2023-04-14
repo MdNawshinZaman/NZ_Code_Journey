@@ -2,17 +2,18 @@
 
 int main(void)
 {
+    #define int unsigned long long
     int t, n;
-    scanf("%d", &t);
+    scanf("%llu", &t);
 
     for (int z = 0; z < t; z++)
     {
-        scanf("%d", &n);
+        scanf("%llu", &n);
         int sheep[n];
 
         for(int i = 0; i < n; i++)
         {
-            scanf("%d", &sheep[i]);
+            scanf("%llu", &sheep[i]);
         }
 
         int temp;
@@ -39,7 +40,7 @@ int main(void)
             }
         }
 
-        printf("%d\n", count);
+        printf("%llu\n", count);
 
     }
 
