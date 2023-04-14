@@ -5,6 +5,12 @@ int main(void)
     int n, r;
     while (scanf("%d %d", &n, &r) != EOF)
     {
+        if(n == r)
+        {
+            printf("* \n");
+            continue;
+        }
+
         int volunteers[r];
 
         for (int i = 0; i < r; i++)
