@@ -11,11 +11,13 @@ int main(void)
         scanf("%llu", &n);
         int sheep[n];
 
+        //scanning all sheep value
         for(int i = 0; i < n; i++)
         {
             scanf("%llu", &sheep[i]);
         }
 
+        //sorting sheeps in ascending order
         int temp;
         for(int i = 0; i < n; i++)
         {
@@ -30,6 +32,7 @@ int main(void)
             }
         }
 
+        //counting unique sheeps
         int unique = sheep[0], count = 1;
         for(int i = 1; i < n; i++)
         {
@@ -40,6 +43,7 @@ int main(void)
             }
         }
 
+        //the final ans
         printf("%llu\n", count);
 
     }
