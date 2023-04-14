@@ -3,7 +3,7 @@
 int main(void)
 {
     int t, n;
-    sacnf("%d", &t);
+    scanf("%d", &t);
 
     for (int z = 0; z < t; z++)
     {
@@ -12,19 +12,19 @@ int main(void)
 
         for(int i = 0; i < n; i++)
         {
-            sacnf("%d", &sheep[i]);
+            scanf("%d", &sheep[i]);
         }
 
         int temp;
         for(int i = 0; i < n; i++)
         {
-            for(int i = 0, m = n - 1; i < m; i++)
+            for(int j = 0, m = n - 1; j < m; j++)
             {
-                if (sheep[i] > sheep[i + 1])
+                if (sheep[j] > sheep[j + 1])
                 {
-                    temp = sheep[i];
-                    sheep[i] = sheep[i + 1];
-                    sheep[i + 1] = temp;
+                    temp = sheep[j];
+                    sheep[j] = sheep[j + 1];
+                    sheep[j + 1] = temp;
                 }
             }
         }
@@ -39,6 +39,7 @@ int main(void)
             }
         }
 
+        printf("%d\n", count);
 
     }
 
