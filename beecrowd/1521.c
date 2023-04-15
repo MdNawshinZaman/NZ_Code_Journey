@@ -19,7 +19,7 @@ int main(void)
         {
             for (int j = 0, m = n - 1 ; j < m; j++)
             {
-                if (arr[j] < arr[j + 1])
+                if (arr[j] > arr[j + 1])
                 {
                     temp = arr[j];
                     arr[j] = arr[j + 1];
