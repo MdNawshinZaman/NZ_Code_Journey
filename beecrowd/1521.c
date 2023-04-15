@@ -14,23 +14,10 @@ int main(void)
             scanf("%d", &arr[i]);
         }
 
-        int k, guilty;
+        int k;
         scanf("%d", &k);
 
-        guilty = k;
-
-        for(int i = 0; i < n; i++)
-        {
-            if(guilty == arr[i])
-            {
-                printf("%d\n", guilty);
-                break;
-            }
-            else
-            {
-                guilty = arr[i];
-            }
-        }
+        while()
     }
 
     return 0;
