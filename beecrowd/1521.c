@@ -6,6 +6,7 @@ int main(void)
     {
         int n;
         scanf("%d",&n);
+        if (n == 0){break;}
 
         int arr[n];
         for (int i = 0; i < n; i++)
@@ -30,8 +31,6 @@ int main(void)
             }
         }
     }
-
-
 
     return 0;
 }
