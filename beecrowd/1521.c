@@ -2,14 +2,15 @@
 
 int main(void)
 {
-    int n;
-    do
+    while(1)
     {
+        int n;
         scanf("%d",&n);
-    }
-    while (n < 3 || n > 50);
 
-    
+        
+    }
+
+
 
     return 0;
 }
