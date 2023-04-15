@@ -22,7 +22,7 @@ int main(void)
             }
         }
 
-        printf("Case %d: %d", i, capt_age);
+        printf("Case %d: %d\n", i, capt_age);
 
     }
 
