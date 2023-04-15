@@ -8,31 +8,12 @@ int main(void)
         scanf("%d",&n);
         if (n == 0){break;}
 
-        int arr[n];
+        int arr[n], copy_arr[n];
         for (int i = 0; i < n; i++)
         {
             scanf("%d", &arr[i]);
+            copy_arr[i] = arr[i];
         }
-
-        int temp;
-        for (int i = 0; i < n; i++)
-        {
-            for (int j = 0, m = n - 1 ; j < m; j++)
-            {
-                if (arr[j] > arr[j + 1])
-                {
-                    temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
-            }
-        }
-
-        for (int i = 0; i < n; i++)
-        {
-            printf("%d ", arr[i]);
-        }
-        printf("\n");
 
         int k, guilty;
         scanf("%d", &k);
@@ -44,12 +25,34 @@ int main(void)
             if(guilty == arr[i])
             {
                 printf("%d\n", guilty);
+                break;
             }
             else
             {
                 guilty = arr[i];
             }
         }
+
+
+        /*int temp;
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0, m = n - 1 ; j < m; j++)
+            {
+                if (copy_arr[j] > copy_arr[j + 1])
+                {
+                    temp = copy_arr[j];
+                    copy_arr[j] = copy_arr[j + 1];
+                    copy_arr[j + 1] = copy_temp;
+                }
+            }
+        }*/
+
+        /*for (int i = 0; i < n; i++)
+        {
+            printf("%d ", arr[i]);
+        }
+        printf("\n");*/
     }
 
     return 0;
