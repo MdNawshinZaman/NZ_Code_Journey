@@ -28,11 +28,11 @@ int main(void)
             }
         }
 
-        /*for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++)
         {
             printf("%d ", arr[i]);
         }
-        printf("\n");*/
+        printf("\n");
 
         int k, guilty;
         scanf("%d", &k);
