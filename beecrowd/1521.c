@@ -17,7 +17,13 @@ int main(void)
         int k;
         scanf("%d", &k);
 
-        while()
+        while(1)
+        {
+            if(arr[k] == k) {break;}
+            k = arr[k];
+        }
+
+        printf("%d\n", k);
     }
 
     return 0;
