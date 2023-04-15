@@ -15,8 +15,6 @@ int main(void)
         }
         sum /= m;
 
-        printf("\nBest Avg: %.3f\n", sum);
-
         if (sum > best_avg)
         {
             best_avg = sum;
