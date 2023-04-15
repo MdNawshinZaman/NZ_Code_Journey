@@ -16,7 +16,43 @@ int main(void)
             arr_comp[i] = arr[i];
         }
 
-        for(int i = 0; i )
+        int max = 0;
+        for(int i = 0; i < n; i++)
+        {
+            if(max < arr[i])
+            {
+                max = arr[i];
+            }
+        }
+
+        for(int i = 0; i < n; i++)
+        {
+            if(arr[i] == max)
+            {
+                arr[i] = -1;
+            }
+        }
+
+        int second_max = 0;
+        for(int i = 0; i < n; i++)
+        {
+            if(second_max < arr[i])
+            {
+                second_max = arr[i];
+            }
+        }
+
+        int position = 0;
+        for(int i = 0; i < n; i++)
+        {
+            if(arr_comp[i] == second_max)
+            {
+                position = i + 1;
+            }
+        }
+
+        printf("%d\n", position);
+
     }
 
     return 0;
