@@ -7,7 +7,10 @@ int main(void)
 
     int factorials[8] = {1, 2, 6, 24, 120, 720, 5040, 40320};
 
-    
+    while(n > 0)
+    {
+        
+    }
 
     return 0;
 }
