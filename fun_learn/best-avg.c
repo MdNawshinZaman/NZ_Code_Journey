@@ -13,7 +13,7 @@ int main(void)
             scanf("%f", &goal);
             sum += goal;
         }
-        sum /= m;
+        sum =sum /(float)m;
 
         if (sum > best_avg)
         {
