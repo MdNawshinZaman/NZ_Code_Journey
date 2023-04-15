@@ -33,7 +33,7 @@ int main(void)
 
         for(int i = 0; i < q; i++)
         {
-            printf("%d\n",grade[position[i] + 1]);
+            printf("%d\n",grade[position[i] - 1]);
         }
     }
 
