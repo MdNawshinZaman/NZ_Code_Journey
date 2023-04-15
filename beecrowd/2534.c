@@ -3,7 +3,7 @@
 int main(void)
 {
     int n, q;
-    whiel(scanf("%d %d", &n, &q) != EOF)
+    while(scanf("%d %d", &n, &q) != EOF)
     {
         int grade[n], position[q];
 
@@ -13,7 +13,7 @@ int main(void)
         }
 
         int temp;
-        for (int i = 0; i < n;; i++)
+        for (int i = 0; i < n; i++)
         {
             for (int j = 0, m = n - 1 ; j < m; j++)
             {
@@ -28,7 +28,12 @@ int main(void)
 
         for(int i = 0; i < q; i++)
         {
-            printf("%d",grade[])
+            scanf("%d", &position[i]);
+        }
+
+        for(int i = 0; i < q; i++)
+        {
+            printf("%d\n",grade[position[i] + 1]);
         }
     }
 
