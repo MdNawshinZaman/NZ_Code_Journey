@@ -25,7 +25,7 @@ int main(void)
 
     for (int i = 6; i <= 10; i++)
     {
-        for (int j = 11-i+1 ; j <= 12 ; j++)
+        for (int j = 12-i ; j <= 11 ; j++)
         {
             sum += M[i][j];
         }
