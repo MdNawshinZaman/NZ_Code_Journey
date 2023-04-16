@@ -2,11 +2,16 @@
 
 int main(void)
 {
-    int arr[10];
+    int arr[51];
     //while(1)
     //{
         int n;
-        scanf("%d",&n);
+        do
+        {
+            scanf("%d",&n);
+        }
+        while (n < 3 || n > 50);
+
         //if (n == 0){break;}
 
         for (int i = 0; i < n; i++)
