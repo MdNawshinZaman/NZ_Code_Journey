@@ -3,11 +3,11 @@
 int main(void)
 {
     int arr[51];
-    while(1)
-    {
+    //while(1)
+    //{
         int n;
         scanf("%d",&n);
-        if (n == 0){break;}
+        //if (n == 0){break;}
 
         for (int i = 0; i < n; i++)
         {
@@ -24,7 +24,7 @@ int main(void)
         }
 
         printf("%d\n", k);
-    }
+    //}
 
     return 0;
 }
