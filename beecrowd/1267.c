@@ -19,10 +19,10 @@ int main(void)
 
         int yesno = 0;
 
-        for (int i = 0; i < d; i++)
+        for (int j = 0; j < n; j++)
         {
             int sum = 0;
-            for(int j = 0; j < n; j++)
+            for(int i = 0; i < d; i++)
             {
                 sum += arr[i][j];
             }
