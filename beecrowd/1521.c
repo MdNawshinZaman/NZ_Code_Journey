@@ -21,11 +21,13 @@ int main(void)
 
         int k;
         scanf("%d", &k);
+        printf("%d\n", k);
 
         while(1)
         {
             if (arr[k] == k){break;}
             else {k = arr[k];}
+            printf("%d\n", k);
         }
 
         printf("%d\n", k);
