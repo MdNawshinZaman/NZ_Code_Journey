@@ -32,6 +32,17 @@ int main(void)
 
     }
 
+    switch(c)
+    {
+        case 'S':
+        printf("%.1f\n", sum);
+        break;
+
+        case 'M':
+        printf("%.1f\n", sum /);
+        break;
+    }
+
 
 
     return 0;
