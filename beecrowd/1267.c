@@ -2,8 +2,8 @@
 
 int main(void)
 {
-    int m, n;
-    scanf("%d %d",&m, &n);
+    int n, d;
+    scanf("%d %d",&n, &d);
     if (m == 0 && n == 0){break;}
 
     
