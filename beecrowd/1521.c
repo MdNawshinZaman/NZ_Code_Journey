@@ -25,7 +25,7 @@ int main(void)
 
         while(1)
         {
-            if (arr[k] == k){break;}
+            if (arr[k-1] == k){break;}
             else {k = arr[k];}
             //printf("%d\n", k);
         }
