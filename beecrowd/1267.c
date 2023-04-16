@@ -24,7 +24,7 @@ int main(void)
             int sum = 0;
             for(int j = 0; j < n; j++)
             {
-                sum += arr[j][i];
+                sum += arr[i][j];
             }
             if (sum == d)
             {
