@@ -19,8 +19,8 @@ int main(void)
 
         while(1)
         {
-            if(arr[k] == k) {break;}
-            k = arr[k];
+            if (arr[k] == k){break;}
+            else {k = arr[k]};
         }
 
         printf("%d\n", k);
