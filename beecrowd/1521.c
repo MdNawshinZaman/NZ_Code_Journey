@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    int arr[4];
+    int arr[10];
     //while(1)
     //{
         int n;
