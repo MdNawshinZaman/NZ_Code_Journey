@@ -2,6 +2,7 @@
 
 int main(void)
 {
+    int count = 0;
     float M[12][12], sum = 0;
     char c;
     scanf(" %c",&c);
@@ -19,6 +20,7 @@ int main(void)
         for (int j = 12 - i; j <= 11 ; j++)
         {
             sum += M[i][j];
+            count++;
         }
 
     }
@@ -28,6 +30,7 @@ int main(void)
         for (int j = i + 1 ; j <= 11 ; j++)
         {
             sum += M[i][j];
+            count++;
         }
 
     }
@@ -39,11 +42,9 @@ int main(void)
         break;
 
         case 'M':
-        printf("%.1f\n", sum /);
+        printf("%.1f\n", sum / count);
         break;
     }
-
-
 
     return 0;
 }
