@@ -2,13 +2,13 @@
 
 int main(void)
 {
+    int arr[51];
     while(1)
     {
         int n;
         scanf("%d",&n);
         if (n == 0){break;}
 
-        int arr[n];
         for (int i = 0; i < n; i++)
         {
             scanf("%d", &arr[i]);
