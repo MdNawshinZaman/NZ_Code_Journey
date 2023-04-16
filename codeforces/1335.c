@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <math.h>
 int main(void)
 {
     int t;
@@ -13,6 +13,7 @@ int main(void)
 
         result = ceil(num/2.0) - 1;
 
+        printf("%d\n", result);
     }
 
     return 0;
