@@ -2,17 +2,13 @@
 
 int main(void)
 {
-    int arr[51];
-    //while(1)
-    //{
-        int n;
-        do
-        {
-            scanf("%d",&n);
-        }
-        while (n < 3 || n > 50);
 
-        //if (n == 0){break;}
+    while(1)
+    {
+        int arr[51];
+        int n;
+        scanf("%d",&n);
+        if (n == 0){break;}
 
         for (int i = 0; i < n; i++)
         {
@@ -21,17 +17,16 @@ int main(void)
 
         int k;
         scanf("%d", &k);
-        printf("%d\n", k);
 
         while(1)
         {
-            if (arr[k-1] == k){break;}
-            else {k = arr[k];}
+            if (arr[k - 1] == k){break;}
+            else {k = arr[k - 1];}
             //printf("%d\n", k);
         }
 
         printf("%d\n", k);
-    //}
+    }
 
     return 0;
 }
