@@ -15,9 +15,10 @@ int main(void)
 
         if(rpm_i < rpm0)
         {
-            fall = i;
+            fall = i + 1;
             break;
         }
+        rpm0 = rpm_i;
     }
 
     for(int j = 0, o = n - i - 1; j < o; j++)
