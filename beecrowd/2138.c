@@ -2,7 +2,11 @@
 
 int main(void)
 {
-    while()
+    char number[1002];
+    while(scanf("%s", number) != EOF)
+    {
+        
+    }
 
     return 0;
 }
