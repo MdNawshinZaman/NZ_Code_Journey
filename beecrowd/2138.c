@@ -46,6 +46,19 @@ int main(void)
             }
         }
 
+        int max = digit_arr[0];
+        for(int i = 1; i < 10; i++)
+        {
+            if(max < digit_arr[i])
+            {
+                max = digit_arr[i];
+            }
+        }
+
+        for(int i = 0; i < 10; i++)
+        {
+            
+        }
         /*for(int i = 0; i < 10; i++)
         {
             printf("%d ", digit_arr[i]);
