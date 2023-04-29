@@ -8,7 +8,7 @@ int main(void)
 
     for(int i = 0; i < n; i++)
     {
-        char number[101] = "0";
+        char number[101];
         scanf("%s", number);
 
         int len = strlen(number), led = 0;
