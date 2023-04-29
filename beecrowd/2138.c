@@ -55,7 +55,7 @@ int main(void)
             }
         }
 
-        int num;
+        int num = 0;
         for(int i = 0; i < 10; i++)
         {
             if(max == digit_arr[i])
