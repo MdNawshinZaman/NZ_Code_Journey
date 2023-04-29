@@ -9,7 +9,7 @@ int main(void)
         int len = strlen(number);
 
         int digit_arr[10];
-        for(int i = 0; i < len, i++)
+        for(int i = 0; i < len; i++)
         {
             switch(number[i])
             {
@@ -45,6 +45,12 @@ int main(void)
                     break;
             }
         }
+
+        for(int i = 0; i < 10; i++)
+        {
+            printf("%d ", digit_arr[i]);
+        }
+        printf("\n");
     }
 
     return 0;
