@@ -61,7 +61,6 @@ int main(void)
             if(max == digit_arr[i])
             {
                 num = i;
-                break;
             }
         }
         /*for(int i = 0; i < 10; i++)
