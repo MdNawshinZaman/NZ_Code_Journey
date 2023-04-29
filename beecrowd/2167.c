@@ -16,7 +16,10 @@ int main(void)
         if(rpm_i < rpm0)
         {
             fall = i + 1;
+            break;
         }
     }
+
+    for(int i = 0, o = )
     return 0;
 }
