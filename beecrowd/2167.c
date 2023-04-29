@@ -15,17 +15,17 @@ int main(void)
 
         if(rpm_i < rpm0)
         {
-            fall = i + 1;
+            fall = i;
             break;
         }
     }
 
-    for(int j = 0, o = n - i; j < o; j++)
+    for(int j = 0, o = n - i - 1; j < o; j++)
     {
         scanf("%d", &rpm_i);
     }
 
     printf("%d\n", fall);
-    
+
     return 0;
 }
