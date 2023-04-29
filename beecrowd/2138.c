@@ -14,34 +14,34 @@ int main(void)
             switch(number[i])
             {
                 case '0':
-                    led += 6;
+                    digit_arr[0]++;
                     break;
                 case '1':
-                    led += 2;
+                    digit_arr[1]++;
                     break;
                 case '2':
-                    led += 5;
+                    digit_arr[2]++;
                     break;
                 case '3':
-                    led += 5;
+                    digit_arr[3]++;
                     break;
                 case '4':
-                    led += 4;
+                    digit_arr[4]++;
                     break;
                 case '5':
-                    led += 5;
+                    digit_arr[5]++;
                     break;
                 case '6':
-                    led += 6;
+                    digit_arr[6]++;
                     break;
                 case '7':
-                    led += 3;
+                    digit_arr[7]++;
                     break;
                 case '8':
-                    led += 7;
+                    digit_arr[8]++;
                     break;
                 case '9':
-                    led += 6;
+                    digit_arr[9]++;
                     break;
             }
         }
