@@ -8,7 +8,7 @@ int main(void)
     {
         int len = strlen(number);
 
-        int digit_arr[10] = 0000000000;
+        int digit_arr[10] = {0000000000};
         for(int i = 0; i < len; i++)
         {
             switch(number[i])
