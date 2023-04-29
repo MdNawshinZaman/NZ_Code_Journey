@@ -55,15 +55,22 @@ int main(void)
             }
         }
 
+        int num;
         for(int i = 0; i < 10; i++)
         {
-            
+            if(max == digit_arr[i])
+            {
+                num = i;
+                break;
+            }
         }
         /*for(int i = 0; i < 10; i++)
         {
             printf("%d ", digit_arr[i]);
         }
         printf("\n");*/
+
+        printf("%d\n", num);
     }
 
     return 0;
