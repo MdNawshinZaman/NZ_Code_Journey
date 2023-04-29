@@ -8,8 +8,8 @@ int main(void)
     int rpm0, rpm_i;
     scanf("%d", &rpm0);
 
-    int fall = 0;
-    for(int i = 1; i < n; i++)
+    int fall = 0, i;
+    for(i = 1; i < n; i++)
     {
         scanf("%d", &rpm_i);
 
@@ -20,6 +20,12 @@ int main(void)
         }
     }
 
-    for(int i = 0, o = )
+    for(int j = 0, o = n - i; j < o; j++)
+    {
+        scanf("%d", &rpm_i);
+    }
+
+    printf("%d\n", fall);
+    
     return 0;
 }
