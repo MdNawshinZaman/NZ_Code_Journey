@@ -8,9 +8,10 @@ int main(void)
     {
         int len = strlen(number);
 
+        int digit_arr[len];
         for(int i = 0; i < len, i++)
         {
-            
+
         }
     }
 
