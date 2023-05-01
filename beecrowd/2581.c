@@ -5,10 +5,11 @@ int main(void)
     int n;
     while(scanf("%d", &n) != EOF)
     {
-        char q[100];
+        char ch[100];
         for (int i = 0; i < n; i++)
         {
-            scanf("%[^\n]%*c",q);
+            getchar();
+            fgets(ch, 100, stdin);
             printf("I am Toorg!\n");
         }
     }
