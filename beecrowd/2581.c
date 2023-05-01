@@ -8,7 +8,7 @@ int main(void)
         char q[100];
         for (int i = 0; i < n; i++)
         {
-            scanf("%*[^\n]", q);
+            scanf("%[^\n]", q);
             printf("I am Toorg!\n");
         }
     }
