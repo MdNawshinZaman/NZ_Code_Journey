@@ -16,9 +16,18 @@ int main(void)
         }
     }
 
-    if()
+    if(num_of_one % 2 == 0)
+    {
+        s[len] = '0';
+        s[len + 1] = '\0';
+    }
+    else
+    {
+        s[len] = '1';
+        s[len + 1] = '\0';
+    }
 
-
+    printf("%s\n", s);
 
     return 0;
 }
