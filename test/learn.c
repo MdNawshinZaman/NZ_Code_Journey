@@ -1,11 +1,18 @@
-#include <stdio.h>
-#include <math.h>
+#include<stdio.h>
+//#include<string.h>
+
 int main(void)
 {
-    float a = 2.234888;
-    printf("%.6f\n", a);
+    char name[50];
+    //int len;
+    printf("Enter your name: ");
+    scanf("%[^\n]s", name);
+    //scanf("%s", name);
 
-    printf("%.6f\n", ceil(a*1000)/1000.0);
-
+    /*fgets(name, 50, stdin);
+    len = strlen(name);
+    name[len-1] = '\0';*/
+    printf("Hello, %s. How are you?\n\n", name);
+    //printf("%d", len);
     return 0;
 }
