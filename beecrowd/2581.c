@@ -8,8 +8,9 @@ int main(void)
         char ch[100];
         for (int i = 0; i < n; i++)
         {
-            getchar();
-            fgets(ch, 100, stdin);
+            //getchar();
+            //fgets(ch, 100, stdin);
+            scanf("%[]")
             printf("I am Toorg!\n");
         }
     }
