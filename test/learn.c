@@ -11,7 +11,7 @@ int main(void)
 
     char c;
     int i = 0;
-    while(getchar(c) != '\0')
+    while(getchar() != '\0')
     {
         printf("%c", str[i++]);
     }
