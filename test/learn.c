@@ -1,18 +1,20 @@
-#include<stdio.h>
-//#include<string.h>
-
+#include <stdio.h>
+#include <string.h>
 int main(void)
 {
-    char name[50];
-    //int len;
-    printf("Enter your name: ");
-    scanf("%[^\n]s", name);
-    //scanf("%s", name);
+    int n;
+    scanf("%d", &n);
+    char str[n+1];
+    scanf("%s", str);
 
-    /*fgets(name, 50, stdin);
-    len = strlen(name);
-    name[len-1] = '\0';*/
-    printf("Hello, %s. How are you?\n\n", name);
-    //printf("%d", len);
+    printf("%s\n", str);
+
+    char c;
+    int i = 0;
+    while(getchar(c) != '\0')
+    {
+        printf("%c", str[i++]);
+    }
+
     return 0;
 }
