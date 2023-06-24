@@ -24,15 +24,6 @@ int main(void)
     long long int z = a % k;
     //printf("z = %lld\n", z);
 
-    /*if (a > k)
-    {
-
-    }
-    else
-    {
-        factorial = 1;
-    }*/
-
     if(z == 0)
         {
         for(long long int j = a - k; j >= k; j-=k)
