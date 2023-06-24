@@ -28,7 +28,7 @@ int main(void)
     {
         if(z == 0)
         {
-            for(int j = a - k; j >= k; j-=k)
+            for(long long int j = a - k; j >= k; j-=k)
             {
                 factorial *= j;
             }
@@ -36,7 +36,7 @@ int main(void)
 
         else
         {
-            for(int j = a - k; j >= z; j-=k)
+            for(long long int j = a - k; j >= z; j-=k)
             {
                 factorial *= j;
             }
