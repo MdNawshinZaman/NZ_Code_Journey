@@ -24,26 +24,19 @@ int main(void)
     int z = a % k;
     //printf("z = %d\n", z);
 
-    if (k >= a || a == 0)
+    if(z == 0)
     {
-        factorial = 1;
+        for(int j = a - k; j >= k; j-=k)
+        {
+            factorial *= j;
+        }
     }
+
     else
     {
-        if(z == 0)
+        for(int j = a - k; j >= z; j-=k)
         {
-            for(int j = a - k; j >= k; j-=k)
-            {
-                factorial *= j;
-            }
-        }
-
-        else
-        {
-            for(int j = a - k; j >= z; j-=k)
-            {
-                factorial *= j;
-            }
+            factorial *= j;
         }
     }
 
