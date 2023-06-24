@@ -17,11 +17,13 @@ int main(void)
         i++;
     }
 
-    printf("k = %d\n\n", k);
+    printf("a = %d\nk = %d\n", a, k);
 
     long long int factorial = 1;
 
     int z = a % k;
+    printf("z = %d\n", z);
+
     if(z == 0)
     {
         for(int j = a; j <= k; j-=k)
