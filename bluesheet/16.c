@@ -24,27 +24,28 @@ int main(void)
     long long int z = a % k;
     //printf("z = %lld\n", z);
 
-    if (a > k)
+    /*if (a > k)
     {
-        if(z == 0)
-        {
-            for(long long int j = a - k; j >= k; j-=k)
-            {
-                factorial *= j;
-            }
-        }
 
-        else
-        {
-            for(long long int j = a - k; j >= z; j-=k)
-            {
-                factorial *= j;
-            }
-        }
     }
     else
     {
         factorial = 1;
+    }*/
+
+    if(z == 0)
+        {
+        for(long long int j = a - k; j >= k; j-=k)
+        {
+            factorial *= j;
+        }
+    }
+     else
+    {
+        for(long long int j = a - k; j >= z; j-=k)
+        {
+            factorial *= j;
+        }
     }
 
     printf("%lld\n", factorial);
