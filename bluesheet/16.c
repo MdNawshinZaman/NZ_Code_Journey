@@ -2,27 +2,27 @@
 
 int main(void)
 {
-    int a;
+    long long int a;
     char str[22];
 
-    scanf("%d", &a);
+    scanf("%lld", &a);
     fflush(stdin);
     scanf("%s", str);
 
-    int k = 0;
-    int i = 0;
+    long long int k = 0;
+    long long int i = 0;
     while(str[i] != '\0')
     {
         k++;
         i++;
     }
 
-    printf("a = %d\nk = %d\n", a, k);
+    printf("a = %lld\nk = %lld\n", a, k);
 
     long long int factorial = a;
 
-    int z = a % k;
-    printf("z = %d\n", z);
+    long long int z = a % k;
+    printf("z = %lld\n", z);
 
     if(z == 0)
     {
