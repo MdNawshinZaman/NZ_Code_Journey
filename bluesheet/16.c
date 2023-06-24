@@ -17,11 +17,28 @@ int main(void)
         i++;
     }
 
-    long long int factorial;
+    printf("k = %d\n\n", k);
 
-    if()
+    long long int factorial = 1;
 
+    int z = a % k;
+    if(z == 0)
+    {
+        for(int j = a; j <= k; j-=k)
+        {
+            factorial *= j;
+        }
+    }
 
+    else
+    {
+        for(int j = a; j <= z; j-=k)
+        {
+            factorial *= j;
+        }
+    }
+
+    printf("%lld\n", factorial);
 
     return 0;
 }
