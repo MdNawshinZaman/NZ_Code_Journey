@@ -2,9 +2,10 @@
 
 int main(void)
 {
-    int a, b;
+    int a, b, total;
     scanf("%d %d", &a, &b);
-    printf("%d %d\n", 10-a, 10-b);
+    total = a + b - 1;
+    printf("%d %d\n", total - a, total - b);
 
     return 0;
 }
