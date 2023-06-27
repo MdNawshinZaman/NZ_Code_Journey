@@ -34,7 +34,7 @@ int main()
     if (ppslab == 1)n++;
     if (eng == 1)n++;
 
-    //ppslab /= 2;
+    ppslab /= 2;
 
     double unknown = (avg - (phy + math + funda + pps + ppslab + eng)) + n;
     printf("n = %d",n);
