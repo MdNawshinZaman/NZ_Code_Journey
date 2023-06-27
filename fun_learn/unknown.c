@@ -37,7 +37,7 @@ int main()
     ppslab /= 2;
 
     double unknown = (avg - (phy + math + funda + pps + ppslab + eng)) + n;
-
+    printf("n = %d",n);
     printf("\n%.3lf\n\n", unknown);
 
     return 0;
