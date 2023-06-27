@@ -34,14 +34,9 @@ int main()
     if (ppslab == 1)n++;
     if (eng == 1)n++;
 
-    int z = 1;
-    if (ppslab == 1) z = 2;
+    double unknown = (avg - (phy + math + funda/2.0 + pps + ppslab + eng)) + n;
 
-    ppslab /= 2;
-
-    double unknown = (avg - (phy + math + funda + pps + ppslab + eng)) + n;
     printf("n = %d",n);
-    if (ppslab == 1) unknown *= z;
     printf("\n%.3lf\n\n", unknown);
 
     return 0;
