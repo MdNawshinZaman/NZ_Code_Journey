@@ -7,7 +7,6 @@ int main(void)
     char str[22];
 
     scanf("%d", &n);
-    //fflush(stdin);
     getch();
     scanf("%s", str);
 
