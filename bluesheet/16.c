@@ -10,16 +10,8 @@ int main(void)
     fflush(stdin);
     scanf("%s", str);
 
-    int k = 0;
-    int i = 0;
-    while(str[i] != '\0')
-    {
-        k++;
-        i++;
-    }
-
-    //printf("a = %lld\nk = %lld\n", a, k);
-
+    int k = strlen(str);
+    //printf("a = %d\nk = %d\n", a, k);
     int factorial = a;
 
     int z = a % k;
