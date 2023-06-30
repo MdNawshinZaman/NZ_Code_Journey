@@ -2,15 +2,15 @@
 
 int main(void)
 {
-    long long int a;
+    int a;
     char str[22];
 
-    scanf("%lld", &a);
+    scanf("%d", &a);
     fflush(stdin);
     scanf("%s", str);
 
-    long long int k = 0;
-    long long int i = 0;
+    int k = 0;
+    int i = 0;
     while(str[i] != '\0')
     {
         k++;
@@ -19,27 +19,27 @@ int main(void)
 
     //printf("a = %lld\nk = %lld\n", a, k);
 
-    long long int factorial = a;
+    int factorial = a;
 
-    long long int z = a % k;
+    int z = a % k;
     //printf("z = %lld\n", z);
 
     if(z == 0)
         {
-        for(long long int j = a - k; j >= k; j-=k)
+        for(int j = a - k; j >= k; j-=k)
         {
             factorial *= j;
         }
     }
      else
     {
-        for(long long int j = a - k; j >= z; j-=k)
+        for(int j = a - k; j >= z; j-=k)
         {
             factorial *= j;
         }
     }
 
-    printf("%lld\n", factorial);
+    printf("%d\n", factorial);
 
     return 0;
 }
