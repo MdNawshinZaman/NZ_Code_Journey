@@ -1,6 +1,4 @@
-#include <cstdio>
-
-using namespace std;
+#include <stdio.h>
 
 int main(){
     int n,k = 0;
@@ -8,7 +6,7 @@ int main(){
 
     char c;
 
-    while(true){
+    while(1){
         c = getc(stdin);
         if(c=='\n') break;
         if(c=='!') ++k;
