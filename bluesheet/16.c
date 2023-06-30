@@ -11,16 +11,26 @@ int main(void)
     scanf("%s", str);
 
     int k = strlen(str);
-
     int z = n % k;
+
+    int fact = n;
 
     if(z != 0)
     {
-        
+        for(int i = n - k; i >= z; i -= k)
+        {
+            fact *= i;
+        }
+    }
+    else
+    {
+        for(int i = n - k; i >= k; i -= k)
+        {
+            fact *= i;
+        }
     }
 
-
-    printf("%d\n", factorial);
+    printf("%d\n", fact);
 
     return 0;
 }
