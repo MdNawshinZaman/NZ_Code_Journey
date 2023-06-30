@@ -1,48 +1,27 @@
-#include <stdio.h>
+#include <cstdio>
 
-int main(void)
-{
-    long long int a;
-    char str[22];
+using namespace std;
 
-    scanf("%lld", &a);
-    scanf("%s", str);
+int main(){
+    int n,k = 0;
+    scanf("%d",&n);
 
-    long long int k = 0;
-    long long int i = 0;
-    while (str[i] != '\0')
-    {
-        k++;
-        i++;
+    char c;
+
+    while(true){
+        c = getc(stdin);
+        if(c=='\n') break;
+        if(c=='!') ++k;
     }
 
-    long long int factorial = a;
+    int ans = 1;
 
-    long long int z = a % k;
-
-    if (a > k)
-    {
-        if (z == 0)
-        {
-            for (long long int j = a - k; j >= k; j -= k)
-            {
-                factorial *= j;
-            }
-        }
-        else
-        {
-            for (long long int j = a - k; j >= z; j -= k)
-            {
-                factorial *= j;
-            }
-        }
-    }
-    else
-    {
-        factorial = 1;
+    while(n>0){
+        ans *= n;
+        n -= k;
     }
 
-    printf("%lld\n", factorial);
+    printf("%d\n",ans);
 
     return 0;
 }
