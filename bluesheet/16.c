@@ -17,16 +17,16 @@ int main(void)
     int z = a % k;
     //printf("z = %lld\n", z);
 
-    if(z == 0)
-        {
-        for(int j = a - k; j >= k; j-=k)
+    if(z != 0)
+    {
+        for(int j = a - k; j >= z; j-=k)
         {
             factorial *= j;
         }
     }
-     else
+    else
     {
-        for(int j = a - k; j >= z; j-=k)
+        for(int j = a - k; j >= k; j-=k)
         {
             factorial *= j;
         }
