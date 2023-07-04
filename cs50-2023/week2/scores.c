@@ -27,7 +27,7 @@ int main(void)
 
 
     //printf("Avgerage: %.4lf\n", (s[0] + s[1] + s[2]) / (float)3);
-    printf("Avgerage: %.4lf\n", average(scores));
+    printf("Avgerage: %.4lf\n", average(s));
 
     return 0;
 
