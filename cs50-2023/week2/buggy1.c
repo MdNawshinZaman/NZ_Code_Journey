@@ -10,5 +10,11 @@ int main(void)
 
 int get_negative_int(void)
 {
-    
+    int n;
+    do
+    {
+        scanf("%d", &n);
+    }
+    while(n < 0);
+    return n;
 }
