@@ -35,5 +35,11 @@ int main(void)
 
 float average(int arr[])
 {
-
+    //return (arr[0] + arr[1] + arr[2]) / 3.0;
+    int sum = 0;
+    for (int i = 0; i < N; i++)
+    {
+        sum += arr[i];
+    }
+    return sum / (float) N;
 }
