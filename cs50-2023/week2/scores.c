@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+float average(int arr[]);
+
 int main(void)
 {
     int s[3];
@@ -23,8 +25,14 @@ int main(void)
    }
 
 
-    printf("Avgerage: %.4lf\n", (s[0] + s[1] + s[2]) / (float)3);
+    //printf("Avgerage: %.4lf\n", (s[0] + s[1] + s[2]) / (float)3);
+    printf("Avgerage: %.4lf\n", average(scores));
 
     return 0;
 
+}
+
+float average(int arr[])
+{
+    
 }
