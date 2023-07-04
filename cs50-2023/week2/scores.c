@@ -1,10 +1,11 @@
 #include<stdio.h>
+const int N = 3;
 
 float average(int arr[]);
 
 int main(void)
 {
-    int s[3];
+    int s[N];
     //s[0] = 72;
     //s[1] = 73;
     //s[2] = 33;
@@ -18,7 +19,7 @@ int main(void)
     scanf("%d", &s[2]);
     */
 
-   for(int i = 0; i < 3; i++)
+   for(int i = 0; i < N; i++)
    {
         printf("Enter Score%d: ", i + 1);
         scanf("%d", &s[i]);
@@ -34,5 +35,5 @@ int main(void)
 
 float average(int arr[])
 {
-    
+
 }
