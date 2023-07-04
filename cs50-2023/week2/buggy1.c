@@ -16,6 +16,6 @@ int get_negative_int(void)
         printf("Negative integer: ");
         scanf("%d", &n);
     }
-    while(n < 0);
+    while(n >= 0);
     return n;
 }
