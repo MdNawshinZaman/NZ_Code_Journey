@@ -4,11 +4,11 @@
 
 int main(void)
 {
-    long arr[MAX] = {1};
-    int prime[MAX] = {0};
+    long arr[200000] = {1};
+    int prime[200000] = {0};
     int p = 0;
 
-    for(int i = 2; i <= sqrt(MAX); i++)
+    for(int i = 2; i <= sqrt(200000); i++)
     {
         if (arr[i] == 1)
         {
