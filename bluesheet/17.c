@@ -5,28 +5,31 @@
 
 int main(void)
 {
-    int arr[MAX];
-    memset(arr, 1, sizeof(arr));
-    int prime[200000] = {0};
+    int arr[MAX] = {0};
+    int prime[20000] = {0};
     int p = 0;
 
-    printf("\n%d\n", arr[1]);
-
-    for(int i = 2; i <= sqrt(200000); i++)
+    for(int i = 2; i <= sqrt(MAX); i++)
     {
-        if (arr[i] == 1)
+        if (arr[i] == 0)
         {
-            prime[p] = i;
-            p++;
-
             for (int j = i*i; j <= MAX; j+=i)
             {
-                arr[j] = 0;
+                arr[j] = 1;
             }
         }
     }
 
-    /*int n;
+    for(int i = 2, j = 0; i <= MAX; i++)
+    {
+        if(arr[i] == 0)
+        {
+            prime[j] = i;
+            j++;
+        }
+    }
+
+    int n;
     scanf("%d", &n);
 
     int temp;
@@ -34,9 +37,9 @@ int main(void)
     {
         scanf("%d", &temp);
         printf("%d\n", prime[temp - 1]);
-    }*/
+    }
 
-    printf("\n%d\n", prime[0]);
+    //printf("\n%d\n", prime[600]);
 
     return 0;
 }
