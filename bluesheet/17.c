@@ -1,10 +1,12 @@
 #include<stdio.h>
 #include<math.h>
+#include<string.h>
 #define MAX 200000
 
 int main(void)
 {
-    int arr[200000] = {1};
+    int arr[200000];
+    memset(arr, 1, sizeof(arr));
     int prime[200000] = {0};
     int p = 0;
 
