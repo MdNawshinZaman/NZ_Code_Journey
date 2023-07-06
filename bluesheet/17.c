@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    long arr[200000] = {1};
+    int arr[200000] = {1};
     int prime[200000] = {0};
     int p = 0;
 
