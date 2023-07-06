@@ -8,7 +8,7 @@ int main(void)
     int prime[200000] = {0};
     int p = 0;
 
-    printf("\n%d\n", arr[2]);
+    printf("\n%d\n", arr[1]);
 
     for(int i = 2; i <= sqrt(200000); i++)
     {
