@@ -22,7 +22,7 @@ int main(void)
         }
     }
 
-    int n;
+    /*int n;
     scanf("%d", &n);
 
     int temp;
@@ -30,7 +30,9 @@ int main(void)
     {
         scanf("%d", &temp);
         printf("%d\n", prime[temp - 1]);
-    }
+    }*/
+
+    printf("\n%d\n", prime[0]);
 
     return 0;
 }
