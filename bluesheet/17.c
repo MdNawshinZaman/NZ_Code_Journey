@@ -2,9 +2,9 @@
 
 int main(void)
 {
-    long arr[200000];
+    long arr[200000] = {0};
 
-    
+    for()
 
     return 0;
 }
