@@ -5,7 +5,7 @@
 
 int main(void)
 {
-    int arr[200000];
+    int arr[MAX];
     memset(arr, 1, sizeof(arr));
     int prime[200000] = {0};
     int p = 0;
