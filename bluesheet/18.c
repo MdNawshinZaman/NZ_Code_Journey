@@ -1,10 +1,10 @@
 #include<stdio.h>
-int arr[10000000009] = {0};
+unsigned long arr[4294967299] = {0};
 
 int main(void)
 {
     int x = 0;
-    for(long i = 1; i < 10000000007; i+=x)
+    for(unsigned long i = 1; i < 4294967296; i+=x)
     {
         arr[i] = 1;
         x++;
@@ -13,11 +13,11 @@ int main(void)
     int n;
     scanf("%d", &n);
 
-    int temp;
+    unsigned long temp;
     for (int i = 0; i < n; i++)
     {
-        scanf("%d", &temp);
-        printf("%d", arr[temp]);
+        scanf("%lu", &temp);
+        printf("%lu", arr[temp]);
     }
 
     return 0;
