@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    unsigned long arr[];
+    int arr[];
 
     return 0;
 }
