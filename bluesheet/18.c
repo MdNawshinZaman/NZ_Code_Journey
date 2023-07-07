@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    printf("%ld\n", sizeof(long));
+    unsigned long arr[];
 
     return 0;
 }
