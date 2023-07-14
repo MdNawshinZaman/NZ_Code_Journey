@@ -36,7 +36,7 @@ int main(void)
     int r = binary_search(arr, n, x);
 
     if (r == -1) printf("Number not found!\n\n");
-    else printf("Your number is at %dth position.\n\n", r + 1);
+    else printf("Your number is at position %d.\n\n", r + 1);
 
     return 0;
 }
