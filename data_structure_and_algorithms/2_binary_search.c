@@ -18,11 +18,11 @@ int binary_search(int arr[], int n, int x)
         }
         else
         {
-            
+            right = mid - 1;
         }
-
     }
 
+    return -1;
 }
 
 int main(void)
