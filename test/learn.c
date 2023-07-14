@@ -1,25 +1,32 @@
 #include <stdio.h>
 
-int main(){
-    int n,k = 0;
-    scanf("%d",&n);
+unsigned int arr[4294967296u] = {0};
 
-    char c;
-
-    while(1){
-        c = getc(stdin);
-        if(c=='\n') break;
-        if(c=='!') ++k;
+int main(void)
+{
+    int x = 0;
+    for (unsigned int i = 1; i < 4294967296u; i += x)
+    {
+        arr[i] = 1;
+        x++;
     }
 
-    int ans = 1;
+    int n;
+    scanf("%d", &n);
 
-    while(n>0){
-        ans *= n;
-        n -= k;
+    unsigned int temp;
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%u", &temp);
+        if (temp < 0 || temp >= 4294967296u)
+        {
+            printf("Invalid input\n");
+        }
+        else
+        {
+            printf("%u\n", arr[temp]);
+        }
     }
-
-    printf("%d\n",ans);
 
     return 0;
 }
