@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void selection_sort(int arr[], int n);
+void selection_sort(int arr[], int n)
 {
     int i, index_min, temp;
 
