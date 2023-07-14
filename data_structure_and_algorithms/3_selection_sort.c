@@ -32,7 +32,7 @@ int main(void)
     selection_sort(arr, n);
 
     printf("The sorted array is: ");
-    for(int i = 0; i < n)
+    for(int i = 0; i < n; i++)
     {
         printf("%d ", arr[i]);
     }
