@@ -8,7 +8,8 @@ int main(void)
 
     int position_of_ones[65540];
 
-    for(int pos_of_one = 1,  i = 0; i <= 2147483647, )
+    int i = 0;
+    for(int pos_of_one = 1; pos_of_one <= 2147483647; )
 
     return 0;
 }
