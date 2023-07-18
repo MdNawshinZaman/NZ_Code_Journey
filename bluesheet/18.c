@@ -1,9 +1,9 @@
 #include<stdio.h>
-#include<math.h>
+//(2 power 31) - 1 = 2147483648 - 1 = 2147483647
 
 int main(void)
 {
-    int a = pow(2, 31);
+    printf("%lf\n",pow(2, 31));
 
     return 0;
 }
