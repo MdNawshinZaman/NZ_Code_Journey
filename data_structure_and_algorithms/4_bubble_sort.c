@@ -7,7 +7,10 @@ int main(void)
 
     for(int i = 0; i < s - 1; i++)
     {
-        for(int j = ; j < )
+        for(int j = i; j < s; j++)
+        {
+            if(arr[j] )
+        }
     }
     return 0;
 }
