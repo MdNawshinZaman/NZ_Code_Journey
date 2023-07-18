@@ -11,7 +11,7 @@ int main(void)
     for(int pos_of_one = 1, i = 0; pos_of_one <= 2147483647; i++)
     {
         position_of_ones[i] = pos_of_one;
-        pos_of_one += 
+        pos_of_one += i + 1;
     }
 
     return 0;
