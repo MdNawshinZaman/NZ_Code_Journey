@@ -1,31 +1,45 @@
 #include <stdio.h>
 
-unsigned int arr[4294967296u] = {0};
-
-int main(void)
+int binary_search(int ara[], int n, int ara_size)
 {
-    int x = 0;
-    for (unsigned int i = 1; i < 4294967296u; i += x)
+    int min, max, mid;
+
+    min = 0;
+    max = ara_size - 1;
+
+    while(min <= max)
     {
-        arr[i] = 1;
-        x++;
+        mid = min + (max - min) / 2;
+
+        if(ara[mid] == n) {
+            return 1;
+        } else if(ara[mid] < n) {
+            min = mid + 1;
+        } else {
+            max = mid - 1;
+        }
     }
 
-    int n;
-    scanf("%d", &n);
+    return 0;
+}
 
-    unsigned int temp;
-    for (int i = 0; i < n; i++)
+int main()
+{
+    int N, K, i;
+    int ones_indexes[65536]; // there will be total 65536 ones in the 110100100010001... sequence for 1 to 2^31 - 1 index
+    unsigned int ones_index;
+
+    for(ones_index = 1, i = 0; ones_index <= 2147483647; i++, ones_index += i)
     {
-        scanf("%u", &temp);
-        if (temp < 0 || temp >= 4294967296u)
-        {
-            printf("Invalid input\n");
-        }
-        else
-        {
-            printf("%u\n", arr[temp]);
-        }
+        ones_indexes[i] = ones_index;
+    }
+
+    scanf("%d", &N);
+
+    for(i = 0; i < N; i++)
+    {
+        scanf("%d", &K);
+        printf("%d\n", binary_search(ones_indexes, K, 65536));
     }
 
     return 0;
