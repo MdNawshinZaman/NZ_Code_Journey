@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    printf("%lf\n",pow(2, 31));
-    
+    //printf("%lf\n",pow(2, 31));
+
     return 0;
 }
