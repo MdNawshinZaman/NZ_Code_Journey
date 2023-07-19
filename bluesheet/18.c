@@ -33,7 +33,13 @@ int main(void)
     // }
     // printf("\n");
 
-    for()
+    unsigned int n, temp;
+    scanf("%u", &n);
+    for(int i = 0; i < n; i++)
+    {
+        scanf("%u", &temp);
+        printf("%d ",binary_search(position_of_ones, 65540, temp));
+    }
 
     return 0;
 }
