@@ -27,11 +27,11 @@ int main(void)
         pos_of_one += i + 1;
     }
 
-    // for(int i = 0; i < 10; i++)
-    // {
-    //     printf("%d ",position_of_ones[i]);
-    // }
-    // printf("\n");
+    for(int i = 0; i < 10; i++)
+    {
+        printf("%d ",position_of_ones[i]);
+    }
+    printf("\n");
 
     unsigned int n, temp;
     scanf("%u", &n);
