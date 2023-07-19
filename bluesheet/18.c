@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 //(2 power 31) - 1 = 2147483648 - 1 = 2147483647
-int binary_search(unsigned int *arr, int size, unsigned int a)
+int binary_search(unsigned int arr[], int size, unsigned int a)
 {
     int min = 0, max = size - 1, mid;
     while(min <= max)
