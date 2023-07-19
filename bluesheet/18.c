@@ -32,12 +32,15 @@ int main(void)
     //     printf("%u ",position_of_ones[i]);
     // }
 
-    int z = 0;
-    while(position_of_ones[z] > 0)
-    {
-        z++;
-    }
-    printf("%d", z);
+
+    // int z = 0;
+    // while(position_of_ones[z] > 0)
+    // {
+    //     z++;
+    // }
+    // printf("%d", z);
+
+    printf("%u", position_of_ones[32768]);
     printf("\n");
 
     unsigned int n, temp;
