@@ -4,7 +4,7 @@ int main(void)
 {
     int arr[100];
 
-    arr[] = {}
+    arr[] = {1, 2, 3, 4, 5, }
 
     return 0;
 }
