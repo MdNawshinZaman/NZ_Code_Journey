@@ -11,8 +11,14 @@ int main(void)
     for(unsigned int pos_of_one = 1, i = 0; pos_of_one <= 2147483647; i++)
     {
         position_of_ones[i] = pos_of_one;
-        pos_of_one += i;
+        pos_of_one += i + 1;
     }
+
+    for(int i = 0; i < 5; i++)
+    {
+        printf("%d ",position_of_ones[i]);
+    }
+    printf("\n");
 
     return 0;
 }
