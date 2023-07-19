@@ -2,6 +2,8 @@
 #include<math.h>
 //(2 power 31) - 1 = 2147483648 - 1 = 2147483647
 
+int binary_search(int a)
+
 int main(void)
 {
     //printf("%lf\n",pow(2, 32));
@@ -14,11 +16,11 @@ int main(void)
         pos_of_one += i + 1;
     }
 
-    for(int i = 0; i < 5; i++)
-    {
-        printf("%d ",position_of_ones[i]);
-    }
-    printf("\n");
+    // for(int i = 0; i < 10; i++)
+    // {
+    //     printf("%d ",position_of_ones[i]);
+    // }
+    // printf("\n");
 
     return 0;
 }
