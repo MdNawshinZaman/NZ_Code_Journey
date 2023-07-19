@@ -27,10 +27,17 @@ int main(void)
         pos_of_one += i + 1;
     }
 
-    for(int i = 0; i < 10; i++)
+    // for(int i = 0; i < 10; i++)
+    // {
+    //     printf("%u ",position_of_ones[i]);
+    // }
+
+    int z = 0;
+    while(position_of_ones[z] > 0)
     {
-        printf("%u ",position_of_ones[i]);
+        z++;
     }
+    printf("%d", z);
     printf("\n");
 
     unsigned int n, temp;
