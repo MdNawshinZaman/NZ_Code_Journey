@@ -6,6 +6,7 @@ int main(void)
     double a, s;
     while(scanf("%d %d", &v, &t) != EOF)
     {
+        s = 0;
         a = v / (float)t;
         s = .5 * a * (t * 2) * (t  * 2);
 
