@@ -2,11 +2,14 @@
 
 int main(void)
 {
-    int v, y;
-    double a,  
-    while(scanf("%d %d", &v, &y) != EOF)
+    int v, t;
+    double a, s;
+    while(scanf("%d %d", &v, &t) != EOF)
     {
+        a = v / (float)t;
+        s = .5 * a * (t * 2) * (t  * 2);
 
+        printf("%.lf\n", s);
     }
 
     return 0;
