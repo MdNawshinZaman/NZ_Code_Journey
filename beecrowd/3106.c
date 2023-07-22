@@ -12,7 +12,7 @@ int main(void)
         sum += temp / 3;
     }
 
-    printf("%d", sum);
+    printf("%d\n", sum * 3);
 
     return 0;
 }
