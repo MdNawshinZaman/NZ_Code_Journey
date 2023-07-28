@@ -4,7 +4,7 @@ int main(void)
 {
     char a[107], b[107], c[107];
     scanf("%[^\n]s", a);
-    fflush(stdin);
+    getchar();
     scanf("%[^\n]s", b);
     fflush(stdin);
     scanf("%[^\n]s", c);
