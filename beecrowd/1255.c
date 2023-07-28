@@ -13,7 +13,7 @@ int main(void)
         char text[209];
         getchar();
         scanf("%[^\n]s", text);
-        freq[strlen(text)] = '\0';
+        text[strlen(text)] = '\0';
 
         int j = 0;
         while(text[j] != '\0')
