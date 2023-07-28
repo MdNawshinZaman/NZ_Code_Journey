@@ -5,10 +5,10 @@ int main(void)
 {
     int n;
     scanf("%d", &n);
-
+    
     for(int i = 0; i < n; i++)
     {
-        char freq[200] = '\0', text[209] = '\0';
+        char freq[200] = 0, text[209] = '\0';
         scanf("%[^\n]s", text);
         freq[strlen(text)] = '\0';
 
