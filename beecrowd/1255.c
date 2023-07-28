@@ -3,11 +3,9 @@
 int main(void)
 {
     int n;
-    float z = 123.456;
-    n = z;
+    scanf("%d", &n);
 
-    printf("%d", n);
-    printf("%f", z - n);
+    for(int i = 0; )
 
     return 0;
 }
