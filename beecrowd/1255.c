@@ -18,17 +18,17 @@ int main(void)
         while(text[j] != '\0')
         {
             if((text[j] >= 'A') && (text[j] <= 'Z')) freq[text[j] + 32]++;
-            else freq[text[j]]++;
+            else freq[(int)text[j]]++;
         }
 
         int max = 0;
 
-        for(int i = 'a'; i <= 'z'; i++)
+        for(int k = 'a'; i <= 'z'; i++)
         {
             if(max < freq[i]) max = freq[i];
         }
 
-        for(int i = 'a'; i <= 'z'; i++)
+        for(int k = 'a'; i <= 'z'; i++)
         {
             if(max == freq[i])
             printf("%c", i);
