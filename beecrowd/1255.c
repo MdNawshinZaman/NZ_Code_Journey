@@ -18,8 +18,8 @@ int main(void)
         int j = 0;
         while(text[j] != '\0')
         {
-            if((text[j] >= 65) && (text[j] <= 90)) freq[(int)text[j] + 32]++;
-            else freq[(int)text[j]]++;
+            if((text[j] >= 65) && (text[j] <= 90)) freq[text[j] + 32]++;
+            else freq[text[j]]++;
             j++;
         }
 
