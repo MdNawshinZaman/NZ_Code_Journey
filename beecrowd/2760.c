@@ -6,7 +6,7 @@ int main(void)
     char a[107], b[107], c[107];
     scanf("%[^\n]s", a);
     a[strlen(a)] = '\0';
-    getchar();
+    fflush(stdin);
     scanf("%[^\n]s", b);
     b[strlen(b)] = '\0';
     getchar();
