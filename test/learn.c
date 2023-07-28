@@ -2,11 +2,17 @@
 
 int main(void)
 {
-    int arr[100] = {1, 2, 3, 4, 5};
+    char a[107], b[107], c[107];
+    scanf("%s", a);
+    fflush(stdin);
+    scanf("%s", b);
+    fflush(stdin);
+    scanf("%s", c);
 
-
-
-    printf("%ld", sizeof(arr) / sizeof(int));
+    printf("%s%s%s\n", a, b, c);
+    printf("%s%s%s\n", b, c, a);
+    printf("%s%s%s\n", c, a, b);
+    printf("%s%s%s\n", a, b, c);
 
     return 0;
 }
