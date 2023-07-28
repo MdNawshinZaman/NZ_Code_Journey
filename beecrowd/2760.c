@@ -22,6 +22,7 @@ int main(void)
     {
         printf("%c", a[i]);
         if(i == 9) break;
+        i++;
     }
 
     i = 0;
@@ -29,6 +30,7 @@ int main(void)
     {
         printf("%c", b[i]);
         if(i == 9) break;
+        i++;
     }
 
     i = 0;
@@ -36,6 +38,7 @@ int main(void)
     {
         printf("%c", c[i]);
         if(i == 9) break;
+        i++;
     }
 
     return 0;
