@@ -13,14 +13,24 @@ int main(void)
         freq[strlen(text)] = '\0';
 
         int j = 0;
-        while(freq[j] != '\0')
+        while(text[j] != '\0')
         {
-            if()
-            freq[text[j]]++;
+            if((text[j] >= 'A') && (text[j] <= 'Z')) freq[text[j] + 32]++;
+            else freq[text[j]]++;
         }
 
         int max = 0;
 
+        for(int i = 'a'; i <= 'z'; i++)
+        {
+            if(max < freq[i]) max = freq[i];
+        }
+
+        for(int i = 'a'; i <= 'z'; i++)
+        {
+            if(max == freq[i])
+            printf("%c", i);
+        }
 
     }
 
