@@ -15,12 +15,13 @@ int main(void)
         int j = 0;
         while(freq[j] != '\0')
         {
+            if()
             freq[text[j]]++;
         }
 
         int max = 0;
 
-        
+
     }
 
     return 0;
