@@ -5,7 +5,7 @@ int main(void)
 {
     int n;
     scanf("%d", &n);
-    int freq[200];
+    int freq[200] = {0};
 
     for(int i = 0; i < n; i++)
     {
@@ -18,8 +18,8 @@ int main(void)
         int j = 0;
         while(text[j] != '\0')
         {
-            if((text[j] >= 'A') && (text[j] <= 'Z')) freq[text[j] + 32]++;
-            else freq[text[j]]++;
+            if((text[j] >= 65) && (text[j] <= 90)) freq[(int)text[j] + 32]++;
+            else freq[(int)text[j]]++;
             j++;
         }
 
@@ -32,7 +32,7 @@ int main(void)
 
         for(int k = 97; k <= 122; k++)
         {
-            if(max == freq[k]) printf("%c", (char)k);
+            if(max == freq[k]) printf("%c", k);
         }
 
         printf("\n");
