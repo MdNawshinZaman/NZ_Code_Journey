@@ -10,7 +10,7 @@ int main(void)
     for(int i = 0; i < n; i++)
     {
 
-        char text[209];
+        char text[209] = {'\0'};
         getchar();
         scanf("%[^\n]s", text);
         text[strlen(text)] = '\0';
