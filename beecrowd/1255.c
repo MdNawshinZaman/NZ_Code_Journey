@@ -25,14 +25,14 @@ int main(void)
 
         int max = 0;
 
-        for(int k = 'a'; k <= 'z'; k++)
+        for(int k = 97; k <= 122; k++)
         {
             if(max < freq[k]) max = freq[k];
         }
 
-        for(int k = 97; k <= ; k++)
+        for(int k = 97; k <= 122; k++)
         {
-            if(max == freq[k]) printf("%c", k);
+            if(max == freq[k]) printf("%c", (char)k);
         }
 
         printf("\n");
