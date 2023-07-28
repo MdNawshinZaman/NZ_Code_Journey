@@ -1,7 +1,0 @@
-Date: 21.01.2023
-Completed till Code20
-
-In Code15 I couldn't find how to use dbug50
-
-
-have to learn more efficient way to solve 1038 in beecrowd
