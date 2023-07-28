@@ -16,7 +16,7 @@ int main(void)
     int i = 0;
     while(a[i] != '\0')
     {
-        printf("%c",)
+        printf("%c", a[i]);
     }
 
     return 0;
