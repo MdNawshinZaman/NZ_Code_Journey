@@ -19,7 +19,7 @@ int main(void)
         while(text[j] != '\0')
         {
             if((text[j] >= 'A') && (text[j] <= 'Z')) freq[text[j] + 32]++;
-            else freq[text[j]]++;
+            else freq[(int)text[j]]++;
             j++;
         }
 
@@ -35,7 +35,7 @@ int main(void)
         //     if(max == freq[k]) printf("%c", (char)k);
         // }
 
-        for(int k = 97; k <=122; k++) printf("%d", freq[k]);
+        for(int k = 0; k <=200; k++) printf("%d\n", freq[k]);
 
         printf("\n");
 
