@@ -18,7 +18,7 @@ int main(void)
         int j = 0;
         while(text[j] != '\0')
         {
-            if((text[j] >= 'A') && (text[j] <= 'Z')) freq[text[j] + 32]++;
+            if((text[j] >= 'A') && (text[j] <= 'Z')) freq[(int)text[j] + 32]++;
             else freq[(int)text[j]]++;
             j++;
         }
