@@ -30,10 +30,9 @@ int main(void)
             if(max < freq[k]) max = freq[k];
         }
 
-        for(int k = 'a'; k <= 'z'; k++)
+        for(int k = 97; k <= ; k++)
         {
-            if(max == freq[k])
-            printf("%c", k);
+            if(max == freq[k]) printf("%c", k);
         }
 
         printf("\n");
