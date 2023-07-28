@@ -10,7 +10,7 @@ int main(void)
     for(int i = 0; i < n; i++)
     {
 
-        char text[209] = '\0';
+        char text[209];
         scanf("%[^\n]s", text);
         freq[strlen(text)] = '\0';
 
