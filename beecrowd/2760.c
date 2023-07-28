@@ -6,7 +6,7 @@ int main(void)
     scanf("%[^\n]s", a);
     getchar();
     scanf("%[^\n]s", b);
-    fflush(stdin);
+    getchar();
     scanf("%[^\n]s", c);
 
     printf("%s%s%s\n", a, b, c);
