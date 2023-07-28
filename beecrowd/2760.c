@@ -12,7 +12,12 @@ int main(void)
     printf("%s%s%s\n", a, b, c);
     printf("%s%s%s\n", b, c, a);
     printf("%s%s%s\n", c, a, b);
-    printf("%s%s%s\n", a, b, c);
+    //printf("%s%s%s\n", a, b, c);
+    int i = 0;
+    while(a[i] != '\0')
+    {
+        printf("%c",)
+    }
 
     return 0;
 }
