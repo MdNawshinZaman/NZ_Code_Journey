@@ -40,6 +40,7 @@ int main(void)
         if(i == 9) break;
         i++;
     }
+    printf("\n");
 
     return 0;
 }
