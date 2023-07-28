@@ -17,6 +17,21 @@ int main(void)
     while(a[i] != '\0')
     {
         printf("%c", a[i]);
+        if(i == 9) break;
+    }
+
+    i = 0;
+    while(b[i] != '\0')
+    {
+        printf("%c", b[i]);
+        if(i == 9) break;
+    }
+
+    i = 0;
+    while(c[i] != '\0')
+    {
+        printf("%c", c[i]);
+        if(i == 9) break;
     }
 
     return 0;
