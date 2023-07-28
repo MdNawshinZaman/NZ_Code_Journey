@@ -11,6 +11,7 @@ int main(void)
     {
 
         char text[209];
+        getchar();
         scanf("%[^\n]s", text);
         freq[strlen(text)] = '\0';
 
@@ -19,20 +20,24 @@ int main(void)
         {
             if((text[j] >= 'A') && (text[j] <= 'Z')) freq[text[j] + 32]++;
             else freq[(int)text[j]]++;
+
+            j++;
         }
 
         int max = 0;
 
-        for(int k = 'a'; i <= 'z'; i++)
+        for(int k = 'a'; k <= 'z'; k++)
         {
-            if(max < freq[i]) max = freq[i];
+            if(max < freq[k]) max = freq[k];
         }
 
-        for(int k = 'a'; i <= 'z'; i++)
+        for(int k = 'a'; k <= 'z'; k++)
         {
-            if(max == freq[i])
-            printf("%c", i);
+            if(max == freq[k])
+            printf("%c", k);
         }
+
+        printf("\n");
 
     }
 
