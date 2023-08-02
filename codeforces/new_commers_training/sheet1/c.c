@@ -2,11 +2,10 @@
 
 int main(void)
 {
-    int a,b;
-
-    a = (20-10);
-    b = 20;
-
-    printf("%d\n", a - b);
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d + %d = %d\n", a, b, a + b);
+    printf("%d * %d = %d\n", a, b, a * b);
+    printf("%d - %d = %d\n", a, b, a - b);
     return 0;
 }
