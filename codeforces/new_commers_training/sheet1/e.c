@@ -3,7 +3,10 @@
 
 int main(void)
 {
-    double r, area
+    double r, area;
+
+    scanf("%lf", &r);
+    printf("%.9lf\n", pi * r * r);
 
 
     return 0;
