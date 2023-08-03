@@ -3,9 +3,10 @@
 int main(void)
 {
     double r, area;
-
     scanf("%lf", &r);
-    printf("%.9lf", 3.141592653 * r * r);
+
+    area = 3.141592653 * r * r;
+    printf("%.9lf\n", area);
 
 
     return 0;
