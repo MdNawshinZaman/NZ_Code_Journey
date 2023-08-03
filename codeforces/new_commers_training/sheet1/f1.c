@@ -10,7 +10,7 @@ int main(void)
     int x = strlen(a);
     int y = strlen(b);
 
-    printf("\n%d %d\n", x, y);
+    // printf("\n%d %d\n", x, y);
 
 
     printf("%d\n", atoi(&a[x-1]) + atoi(&b[y-1]));
