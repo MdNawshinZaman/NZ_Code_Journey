@@ -10,7 +10,7 @@ int main(void)
     int x = strlen(a);
     int y = strlen(b);
 
-    printf("%d\n", );
+    printf("%d\n", atoi(&a[x-1]) + atoi(&b[x-1]));
 
     return 0;
 }
