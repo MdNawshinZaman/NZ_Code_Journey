@@ -13,8 +13,8 @@ int main(void)
         sprintf(str, "%.2lf", sum);
         int len = strlen(str);
 
-        char strfinal[30];
         
+
 
         printf("%d\n", len);
 
