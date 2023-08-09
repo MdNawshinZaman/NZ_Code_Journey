@@ -10,7 +10,7 @@ int main(void)
         sum = n + (m / 100.0);
 
         char str[30];
-        gcvt(sum, 30, str);
+        sprintf(str, "%.2lf", sum);
 
         printf("%s\n", str);
 
