@@ -11,9 +11,9 @@ int main(void)
 
         char str[30];
         sprintf(str, "%.2lf", sum);
+        int len = strlen(str);
 
-        
-        printf("%s\n", str);
+        printf("%d\n", len);
 
     }
 
