@@ -9,7 +9,9 @@ int main(void)
         double sum = 0;
         sum = n + (m / 100.0);
 
+        char str[20];
         
+
     }
 
 
