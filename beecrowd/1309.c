@@ -9,8 +9,10 @@ int main(void)
         double sum = 0;
         sum = n + (m / 100.0);
 
-        char str[20];
-        
+        char str[30];
+        gcvt(sum, 30, str);
+
+        printf("%s\n", str);
 
     }
 
