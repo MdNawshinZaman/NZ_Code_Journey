@@ -12,6 +12,7 @@ int main(void)
         char str[30];
         sprintf(str, "%.2lf", sum);
 
+        
         printf("%s\n", str);
 
     }
