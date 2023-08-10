@@ -6,10 +6,9 @@ int main(void)
     int n, z = 0;
     while(1)
     {
-        if(z > 0) printf("\n");
-
         scanf("%d", &n);
         if(n == 0) break;
+        if(z > 0) printf("\n");
         else z++;
 
         int big = 0;
