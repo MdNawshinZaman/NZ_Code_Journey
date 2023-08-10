@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 
 int main(void)
 {
@@ -7,7 +8,7 @@ int main(void)
 
     for(int i = 0; i < n; i++)
     {
-        char srt[6];
+        char str[6];
         fflush(stdin);
         scanf("%s", str);
 
