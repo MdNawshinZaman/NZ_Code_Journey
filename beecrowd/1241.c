@@ -28,7 +28,16 @@ int main(void)
             }
             comp1[r] = '\0';
 
-            printf("%s\n", comp1);
+            r = 0;
+            for(int j = q - 1; j >= 0; j--)
+            {
+                comp2[r] = b[j];
+                r++;
+            }
+            comp2[r] = '\0';
+
+            if(strcmp(comp1, comp2) == 0) printf("encaixa\n");
+            else printf("nao encaixa\n");
         }
     }
 
