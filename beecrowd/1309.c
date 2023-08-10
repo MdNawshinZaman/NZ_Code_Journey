@@ -10,7 +10,7 @@ int main(void)
         sum = n + (m / 100.0);
 
         char str[30];
-        sprintf(str, "%,.2lf", sum);
+        sprintf(str, "%g", sum);
         int len = strlen(str);
 
 
