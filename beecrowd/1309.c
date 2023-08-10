@@ -10,13 +10,13 @@ int main(void)
         sum = n + (m / 100.0);
 
         char str[30];
-        sprintf(str, "%.2lf", sum);
+        sprintf(str, "%,.2lf", sum);
         int len = strlen(str);
 
-        
 
 
-        printf("%d\n", len);
+
+        printf("%s\n", str);
 
     }
 
