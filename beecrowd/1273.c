@@ -3,11 +3,14 @@
 
 int main(void)
 {
-    int n;
+    int n, z = 0;
     while(1)
     {
+        if(z > 0) printf("\n");
+
         scanf("%d", &n);
         if(n == 0) break;
+        else z++;
 
         int big = 0;
         char s_str[50][51];
@@ -33,7 +36,6 @@ int main(void)
             }
             printf("%s\n", s_str[i]);
         }
-        printf("\n");
     }
 
     return 0;
