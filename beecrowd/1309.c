@@ -9,14 +9,15 @@ int main(void)
         double sum = 0;
         sum = n + (m / 100.0);
 
-        char str[30];
-        sprintf(str, "%g", sum);
-        int len = strlen(str);
+        printf("%.2g\n", sum);
+        // char str[30];
+        // sprintf(str, "%,.2f", sum);
+        // int len = strlen(str);
 
 
 
 
-        printf("%s\n", str);
+        // printf("%s\n", str);
 
     }
 
