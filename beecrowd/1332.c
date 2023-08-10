@@ -18,7 +18,7 @@ int main(void)
         }
         else
         {
-            if(str[0] == 'o' || str[1] == 'n' || str[2] == 'e')
+            if((str[0] == 'o' && str[1] == 'n' ) || (str[0] == 'o' && str[2] == 'e') || (str[1] == 'n' && str[2] == 'e'))
             {
                 printf("1\n");
             }
