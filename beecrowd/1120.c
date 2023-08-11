@@ -8,7 +8,7 @@ int main(void)
         int n;
         scanf("%d", &n);
 
-        getchar();
+        //getchar();
         char str[107];
         scanf("%s", str);
 
