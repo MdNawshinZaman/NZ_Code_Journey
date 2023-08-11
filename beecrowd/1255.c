@@ -13,7 +13,8 @@ int main(void)
         char str[209];
         ///Scaning the string
         fflush(stdin);
-        gets(str);
+        //gets(str);
+        fgets(str, sizeof(str), stdin);
 
         int big = 0;
         int j = 0;
