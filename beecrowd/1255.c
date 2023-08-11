@@ -12,8 +12,9 @@ int main(void)
         int freq[300] = {0};
         char str[209];
         ///Scaning the string
-        fflush(stdin);
+        //fflush(stdin);
         //gets(str);
+        getchar();
         fgets(str, sizeof(str), stdin);
 
         int big = 0;
