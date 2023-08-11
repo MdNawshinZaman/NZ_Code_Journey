@@ -15,7 +15,7 @@ int main(void)
         //fflush(stdin);
         //gets(str);
         getchar();
-        fgets(str, sizeof(str), stdin);
+        fgets(str, 207, stdin);
 
         int big = 0;
         int j = 0;
