@@ -24,7 +24,7 @@ int main(void)
             i++;
         }
 
-        char f_str[107];
+        char f_str[107] = {0};
         i = 0;
         int f = 0;
         while(str[i] != '\0')
@@ -38,8 +38,25 @@ int main(void)
         }
         f_str[f] = '\0';
 
-        
+        i = 0;
+        int flag = 0;
+        while (f_str[i] != '\0')
+        {
+            if (f_str[i] != '0')
+            {
+                flag = 1;
+                break;
+            }
+        }
 
+        if(flag != 0)
+        {
+            printf("0\n");
+        }
+        else
+        {
+            printf("%s\n", f_str);
+        }
     }
 
     return 0;
