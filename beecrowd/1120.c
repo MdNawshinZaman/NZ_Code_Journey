@@ -1,16 +1,19 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
-    int n;
-    scanf("%d", &n);
+    while (1)
+    {
+        int n;
+        scanf("%d", &n);
 
-    getchar();
-    char str[107];
-    scanf("%s", str);
+        getchar();
+        char str[107];
+        scanf("%s", str);
 
-    
+        if((n == 0) && (str[]))
+    }
 
     return 0;
 }
