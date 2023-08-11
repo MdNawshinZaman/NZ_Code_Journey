@@ -21,7 +21,24 @@ int main(void)
             {
                 str[i] = -1;
             }
+            i++;
         }
+
+        char f_str[107];
+        i = 0;
+        int f = 0;
+        while(str[i] != '\0')
+        {
+            if(str[i] > 0)
+            {
+                f_str[f] = str[i];
+                f++;
+            }
+            i++;
+        }
+        f_str[f] = '\0';
+
+        
 
     }
 
