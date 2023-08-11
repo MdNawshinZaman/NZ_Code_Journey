@@ -17,8 +17,12 @@ int main(void)
         int i = 0;
         while(str[i] != '\0')
         {
-            if(str[i] == )
+            if(str[i] == (n + 48))
+            {
+                str[i] = -1;
+            }
         }
+
     }
 
     return 0;
