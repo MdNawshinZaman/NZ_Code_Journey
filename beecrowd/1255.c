@@ -26,16 +26,16 @@ int main(void)
             {
                 freq[str[j] + 32]++;
             }
-            else freq[str[j]]++;
+            else freq[(int)str[j]]++;
             j++;
         }
 
         ///checking for most occurring letters
-        for(int j = 97; j <= 122; j++)
+        for(int l = 97; l <= 122; l++)
         {
-            if(big < freq[j])
+            if(big < freq[l])
             {
-                big = freq[j];
+                big = freq[l];
             }
         }
 
