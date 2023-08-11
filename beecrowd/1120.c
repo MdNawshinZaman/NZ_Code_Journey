@@ -19,7 +19,7 @@ int main(void)
         {
             if(str[i] == (n + 48))
             {
-                str[i] = -1;
+                str[i] = 1;
             }
             i++;
         }
@@ -29,7 +29,7 @@ int main(void)
         int f = 0;
         while(str[i] != '\0')
         {
-            if(str[i] > 0)
+            if(str[i] > 1)
             {
                 f_str[f] = str[i];
                 f++;
