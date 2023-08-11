@@ -12,7 +12,7 @@ int main(void)
         char str[107];
         scanf("%s", str);
 
-        if((n == 0) && (str[0] == '0')) break;
+        if((n == 0) && (strcmp(str, "0") == 0)) break;
 
         int i = 0;
         while(str[i] != '\0')
