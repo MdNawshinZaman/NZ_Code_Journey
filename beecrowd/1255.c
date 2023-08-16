@@ -16,9 +16,9 @@ int main(void)
         }
         char str[209] = {0};
         ///Scaning the string
-        //fflush(stdin);
+        fflush(stdin);
         //gets(str);
-        getchar();
+        // getchar();
         fgets(str, 207, stdin);
         str[strlen(str)] = '\0';
 
