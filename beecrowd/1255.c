@@ -9,8 +9,8 @@ int main(void)
 
     for(int i = 0; i < n; i++)
     {
-        int freq[300];
-        for(int j = 0; j < 300; j++)
+        int freq[3000];
+        for(int j = 0; j < 3000; j++)
         {
             freq[j] = 0;
         }
