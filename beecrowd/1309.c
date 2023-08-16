@@ -10,9 +10,9 @@ int main(void)
         sprintf(temp, "%lld", n);
         printf("$");
         int len = strlen(temp);
-        int num_comma = ceil(len / 3.0);
+        int num_comma = ceil(len / 3.0) - 1;
 
-        char num[15];
+        char num[15] = {'\0'};
         int i = len - 1;
         int j = 0;
         while(i >= 0)
