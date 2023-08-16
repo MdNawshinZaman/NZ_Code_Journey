@@ -6,7 +6,7 @@ int main(void)
     char str[100007];
     char final[100007];
 
-    scanf("%[^\n]", str);
+    scanf("%[^\n]s", str);
 
     int i = 0;
     while(str[i] != '\0')
