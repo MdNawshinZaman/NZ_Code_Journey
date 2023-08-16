@@ -26,9 +26,9 @@ int main(void)
         {
             if((str[j] >= 'A') && (str[j] <= 'Z'))
             {
-                freq[(int)str[j] + 32]++;
+                str[j] += 32;
             }
-            else freq[(int)str[j]]++;
+            freq[(int)str[j]]++;
             j++;
         }
 
