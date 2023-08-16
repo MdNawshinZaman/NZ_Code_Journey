@@ -3,11 +3,11 @@
 
 int main(void)
 {
+    char n, str[107];
     while (1)
     {
-        fflush(stdin);
-        char n, str[107];
-        scanf("%c %s", &n, str);
+
+        scanf(" %c %s", &n, str);
         if((n == '0') && (strcmp(str, "0") == 0)) break;
 
         int len = strlen(str);
