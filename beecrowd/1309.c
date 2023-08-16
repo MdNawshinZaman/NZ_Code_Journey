@@ -11,7 +11,14 @@ int main(void)
         printf("$");
         int len = strlen(temp);
 
-        while()
+        char num[15];
+        int i = len - 1;
+        int j = 0;
+        while(i >= 0)
+        {
+            num[j] = temp[i];
+            j++;
+        }
     }
 
 
