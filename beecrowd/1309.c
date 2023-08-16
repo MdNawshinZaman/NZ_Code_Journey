@@ -9,9 +9,12 @@ int main(void)
     {
         sprintf(temp, "%lld", n);
         int len = strlen(temp);
-        int num_comma = ceil(len / 3.0) - 1;
 
-        char num[15] = {'\0'};
+        for(int i = 0; i < len; i++)
+        {
+            printf("%c", temp[i]);
+            if ()
+        }
 
     }
 
