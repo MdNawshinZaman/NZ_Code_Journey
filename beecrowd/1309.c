@@ -10,10 +10,17 @@ int main(void)
         sprintf(temp, "%lld", n);
         int len = strlen(temp);
 
+        int z = (len % 3) - 1;
+        if(z < 0) z = 2;
+
         for(int i = 0; i < len; i++)
         {
             printf("%c", temp[i]);
-            if ()
+            if(i == z && i != len-1)
+            {
+                printf(",");
+                z+=3;
+            }
         }
 
     }
