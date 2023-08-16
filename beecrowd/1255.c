@@ -9,8 +9,12 @@ int main(void)
 
     for(int i = 0; i < n; i++)
     {
-        int freq[300] = {0};
-        char str[209];
+        int freq[300];
+        for(int j = 0; j < 300; j++)
+        {
+            freq[j] = 0;
+        }
+        char str[209] = {0};
         ///Scaning the string
         //fflush(stdin);
         //gets(str);
