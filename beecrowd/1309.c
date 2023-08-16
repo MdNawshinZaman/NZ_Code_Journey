@@ -3,11 +3,15 @@
 
 int main(void)
 {
+    char temp[15];
     long long int n, m;
     while(scanf("%lld %lld", &n, &m) != EOF)
     {
+        sprintf(temp, "%lld", n);
+        printf("$");
+        int len = strlen(temp);
 
-
+        while()
     }
 
 
