@@ -13,10 +13,6 @@ int main(void)
 
         char num[15] = {'\0'};
 
-        while(num_comma)
-        {
-            
-        }
     }
 
 
