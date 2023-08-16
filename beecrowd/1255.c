@@ -16,6 +16,7 @@ int main(void)
         //gets(str);
         getchar();
         fgets(str, 207, stdin);
+        str[strlen(str)] = '\0';
 
         int big = 0;
         int j = 0;
