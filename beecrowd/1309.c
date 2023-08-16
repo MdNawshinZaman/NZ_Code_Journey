@@ -10,6 +10,7 @@ int main(void)
         sprintf(temp, "%lld", n);
         printf("$");
         int len = strlen(temp);
+        int num_comma = ceil(len / 3.0);
 
         char num[15];
         int i = len - 1;
