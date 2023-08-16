@@ -55,14 +55,15 @@ int main(void)
         }
         else
         {
-            for(int i = 0; i < strlen(final); i++)
+            for(int k = 0; k < strlen(final); k++)
             {
-                if((FLAG == 0) && (final[i] != '0')) FLAG = 1;
-                if(FLAG = 1)
+                if((FLAG == 0) && (final[k] != '0')) FLAG = 1;
+                if(FLAG == 1)
                 {
-                    printf("%c", final[i]);
+                    printf("%c", final[k]);
                 }
             }
+            printf("\n");
         }
 
     }
