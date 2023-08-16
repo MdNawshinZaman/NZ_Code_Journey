@@ -24,16 +24,16 @@ int main(void)
         ///making the frequency array (manipulated all capital letters to small letter)
         while(str[j] != '\0')
         {
-            if((str[j] >= 65) && (str[j] <= 90))
+            if((str[j] >= 'A') && (str[j] <= 'Z'))
             {
-                freq[str[j] + 32]++;
+                freq[(int)str[j] + 32]++;
             }
             else freq[(int)str[j]]++;
             j++;
         }
 
         ///checking for most occurring letters
-        for(int l = 97; l <= 122; l++)
+        for(int l = 'a'; l <= 'z'; l++)
         {
             if(big < freq[l])
             {
@@ -42,7 +42,7 @@ int main(void)
         }
 
         ///printing value from the freq array
-        for(int z = 97; z <= 122; z++)
+        for(int z = 'a'; z <= 'z'; z++)
         {
             if(big == freq[z])
             {
