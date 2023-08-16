@@ -6,16 +6,13 @@ int main(void)
     while (1)
     {
         fflush(stdin);
-        char n;
-        scanf("%c", &n);
-
-        fflush(stdin);
-        char str[107];
-        scanf("%s", str);
-
+        char n, str[107];
+        scanf("%c %s", &n, str);
         if((n == '0') && (strcmp(str, "0") == 0)) break;
 
         int len = strlen(str);
+
+        //printf("Lenght %d\n", len);
         for(int i = 0; i < len; i++)
         {
             if (str[i] == n)
@@ -23,6 +20,8 @@ int main(void)
                 str[i] = 'x';
             }
         }
+
+        //printf("%s\n", str);
 
         char final[107];
         int i = 0, j = 0;
@@ -37,6 +36,8 @@ int main(void)
         }
         final[i] = '\0';
 
+        //printf("%s\n", final);
+
         int flag = 1;
         for(int p = 0; p < strlen(final); p++)
         {
@@ -47,7 +48,7 @@ int main(void)
             }
         }
 
-        if(flag == 0)
+        if(flag == 1)
         {
             printf("0\n");
         }
