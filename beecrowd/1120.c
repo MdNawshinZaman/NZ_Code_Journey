@@ -48,6 +48,7 @@ int main(void)
             }
         }
 
+        int FLAG = 0;
         if(flag == 1)
         {
             printf("0\n");
@@ -56,7 +57,11 @@ int main(void)
         {
             for(int i = 0; i < strlen(final); i++)
             {
-                printf("%s\n",final);
+                if((FLAG == 0) && (final[i] != '0')) FLAG = 1;
+                if(FLAG = 1)
+                {
+                    printf("%c", final[i]);
+                }
             }
         }
 
