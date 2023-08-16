@@ -4,7 +4,7 @@
 int main(void)
 {
     char str[100007];
-    char final[1000007];
+    char final[100007];
 
     scanf("%[^\n]", str);
 
