@@ -43,7 +43,7 @@ int main(void)
 
         for(int p  = 0; p < 300; p++)
         {
-            printf("%d\n", freq[p]);
+            printf("%c = %d\n", p, freq[p]);
         }
 
 
