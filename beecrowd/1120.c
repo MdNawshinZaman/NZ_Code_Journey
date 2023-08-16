@@ -5,58 +5,57 @@ int main(void)
 {
     while (1)
     {
-        int n;
-        scanf("%d", &n);
+        fflush(stdin);
+        char n;
+        scanf("%c", &n);
 
-        getchar();
+        fflush(stdin);
         char str[107];
         scanf("%s", str);
 
-        if((n == 0) && (strcmp(str, "0") == 0)) break;
+        if((n == '0') && (strcmp(str, "0") == 0)) break;
 
-        int i = 0;
-        while(str[i] != '\0')
+        int len = strlen(str);
+        for(int i = 0; i < len; i++)
         {
-            if(str[i] == (n + 48))
+            if (str[i] == n)
             {
-                str[i] = 1;
+                str[i] = 'x';
             }
-            i++;
         }
 
-        char f_str[107] = {0};
-        i = 0;
-        int f = 0;
-        while(str[i] != '\0')
+        char final[107];
+        int i = 0, j = 0;
+        while(i < len)
         {
-            if(str[i] > 1)
+            if(str[j] != 'x')
             {
-                f_str[f] = str[i];
-                f++;
+                final[i] = str[j];
+                i++;
             }
-            i++;
+            j++;
         }
-        f_str[f] = '\0';
+        final[i] = '\0';
 
-        i = 0;
-        int flag = 0;
-        while (f_str[i] != '\0')
+        int flag = 1;
+        for(int p = 0; p < strlen(final); p++)
         {
-            if (f_str[i] != '0')
+            if(final[p] != '0')
             {
-                flag = 1;
+                flag = 0;
                 break;
             }
         }
 
-        if(flag != 0)
+        if(flag == 0)
         {
             printf("0\n");
         }
         else
         {
-            printf("%s\n", f_str);
+            printf("%s\n",final);
         }
+
     }
 
     return 0;
