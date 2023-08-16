@@ -13,6 +13,7 @@ int main(void)
         int z = (len % 3) - 1;
         if(z < 0) z = 2;
 
+        printf("$");
         for(int i = 0; i < len; i++)
         {
             printf("%c", temp[i]);
@@ -22,7 +23,8 @@ int main(void)
                 z+=3;
             }
         }
-
+        printf(".");
+        printf("%02lld\n", m);
     }
 
 
