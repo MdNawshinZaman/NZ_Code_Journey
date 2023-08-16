@@ -54,8 +54,10 @@ int main(void)
         }
         else
         {
-            
-            printf("%s\n",final);
+            for(int i = 0; i < strlen(final); i++)
+            {
+                printf("%s\n",final);
+            }
         }
 
     }
