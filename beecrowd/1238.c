@@ -9,7 +9,9 @@ int main(void)
     for(int i = 0; i <  n; i++)
     {
         char str1[51], str2[51];
-        
+        scanf("%s%*c%s%*c", str1, str2);
+
+        int len1 = str
     }
 
     return 0;
