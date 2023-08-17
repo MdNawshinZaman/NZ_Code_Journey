@@ -11,7 +11,10 @@ int main(void)
         char str1[51], str2[51];
         scanf("%s%*c%s%*c", str1, str2);
 
-        int len1 = str
+        int len1 = strlen(str1);
+        int len2 = strlen(str2);
+
+        
     }
 
     return 0;
