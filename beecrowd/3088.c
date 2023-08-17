@@ -33,6 +33,7 @@ int main(void)
             }
             i++;
         }
+        final[j] = '\0';
 
         printf("%s\n", final);
     }
