@@ -1,80 +1,50 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
     int n;
-    scanf("%d", &n);
+    scanf("%d%*c", &n);
 
-
+    char str[207];
+    int freq[150];
     for(int i = 0; i < n; i++)
     {
-        int freq[3000];
-        for(int j = 0; j < 3000; j++)
+        for(int j = 'a'; j <= 'z'; j++)
         {
             freq[j] = 0;
         }
-        char str[209] = {0};
-        ///Scaning the string
-        fflush(stdin);
-        //gets(str);
-        // getchar();
-        fgets(str, 207, stdin);
-        str[strlen(str)] = '\0';
 
-        int big = 0;
-        int j = 0;
+        scanf("%[^\n]%*c", str);
+        int len = strlen(str);
+        str[len] = '\0';
 
-        ///making the frequency array (manipulated all capital letters to small letter)
-        while(str[j] != '\0')
+        int k = 0, big = 0;
+        while(str[k] != '\0')
         {
-            if((str[j] >= 'A') && (str[j] <= 'Z'))
+            if((str[k] >= 'A') && (str[k] <= 'Z')) str[k] += 32;
+            if((str[k] >= 'a') && (str[k] <= 'z'))
             {
-                str[j] += 32;
+                freq[str[k]]++;
+
+                if(big < freq[str[k]])
+                {
+                    big = freq[str[k]];
+                }
             }
-            // freq[(int)str[j]]++;
-            if ((str[j] >= 'a') && (str[j] <= 'z'))
-            {
-                freq[(int)str[j]]++;
-            }
-            j++;
+            k++;
         }
 
-
-        for(int p  = 0; p < 300; p++)
+        for(int  z = 'a'; z <= 'z'; z++)
         {
-            printf("%c = %d\n", p, freq[p]);
-        }
-
-
-
-        ///checking for most occurring letters
-        for(int l = 'a'; l <= 'z'; l++)
-        {
-            if(big < freq[l])
-            {
-                big = freq[l];
-            }
-        }
-
-        ///printing value from the freq array
-        for(int z = 'a'; z <= 'z'; z++)
-        {
-            if(big == freq[z])
+            if(freq[z] == big)
             {
                 printf("%c", z);
             }
         }
         printf("\n");
 
-        //printf("big = %d\n", big);
-
-        /*for(int j = 0; j < 301; j++)
-        {
-            printf("%c = %d\n", j, freq[j]);
-        }*/
     }
 
     return 0;
 }
-
