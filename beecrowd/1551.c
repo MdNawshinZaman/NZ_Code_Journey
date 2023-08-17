@@ -20,7 +20,7 @@ int main(void)
         {
             if(str[j] >= 'a' && str[j] <= 'z')
             {
-                freq[(int)str[j]] = 1;
+                freq[str[j]] = 1;
             }
             j++;
         }
