@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
 #define max 100007
 
 int main(void)
@@ -7,33 +7,34 @@ int main(void)
     char str[max];
     char final[max];
 
-    scanf("%[^\n]s", str);
-    int len = strlen(str);
-    str[len] = '\0';
-
-    // printf("%s\n", str);
-
-    int i = 0;
-    while(str[i] != '\0')
+    while (scanf("%[^\n]s", str) != EOF)
     {
-        if ((str[i] == ' ') && ((str[i+1] == ',') || (str[i+1] == '.')))
-        str[i] = -1;
-        i++;
-    }
+        int len = strlen(str);
+        str[len] = '\0';
 
-    i = 0;
-    int j = 0;
-    while(str[i] != '\0')
-    {
-        if(str[i] != -1)
+        // printf("%s\n", str);
+
+        int i = 0;
+        while (str[i] != '\0')
         {
-            final[j] = str[i];
-            j++;
+            if ((str[i] == ' ') && ((str[i + 1] == ',') || (str[i + 1] == '.')))
+                str[i] = -1;
+            i++;
         }
-        i++;
+
+        i = 0;
+        int j = 0;
+        while (str[i] != '\0')
+        {
+            if (str[i] != -1)
+            {
+                final[j] = str[i];
+                j++;
+            }
+            i++;
+        }
+
+        printf("%s\n", final);
     }
-
-    printf("%s\n", final);
-
     return 0;
 }
