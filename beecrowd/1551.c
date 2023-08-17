@@ -11,8 +11,13 @@ int main(void)
         char str[100];
         int freq[150];
         scanf("%[^\n]%*c", str);
+
+        printf("\n%s\n", str);
+
         int len = strlen(str);
         str[len] = '\0';
+
+        printf("\n%s\n", str);
 
         int j = 0;
         while(str[j] != '\0')
