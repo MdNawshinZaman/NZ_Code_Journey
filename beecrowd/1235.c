@@ -11,12 +11,11 @@ int main(void)
     {
         scanf("%[^\n]%*c", str);
         int len = strlen(str);
-
-        printf("%d\n", len);
-
         str[len] =  '\0';
 
-        printf("%lu\n", strlen(str));
+        int half_len = len / 2;
+
+        
 
 
     }
