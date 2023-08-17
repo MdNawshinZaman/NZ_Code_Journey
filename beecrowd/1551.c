@@ -4,12 +4,14 @@
 int main(void)
 {
     int n;
-    scanf("%d%*c", &n);
+    scanf("%d", &n);
 
     for(int i = 0; i < n; i++)
     {
         char str[100];
         int freq[150];
+        // fflush(stdin);
+        getchar();
         scanf("%[^\n]%*c", str);
 
         int len = strlen(str);
