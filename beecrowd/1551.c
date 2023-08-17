@@ -7,9 +7,13 @@ int main(void)
     scanf("%d%*c", &n);
 
     char str[1007];
-    int freq[150] = 0;
+    int freq[150];
     for(int i = 0; i < n; i++)
     {
+        for(int j = 'a'; j <= 'z'; j++)
+        {
+            freq[j] = 0;
+        }
         scanf("%[^\n]%*c", str);
 
         int len = strlen(str);
@@ -18,6 +22,7 @@ int main(void)
         int j = 0;
         while(str[j] != '\0')
         {
+
             if(str[j] >= 'a' && str[j] <= 'z')
             {
                 freq[str[j]] = 1;
@@ -32,7 +37,7 @@ int main(void)
         }
 
 
-        printf("%d\n", sum);
+        //printf("%d\n", sum);
 
 
         if (sum == 26) printf("frase completa\n");
