@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    long long int a, b;
+    long long a, b;
 
     while(scanf("%lld %lld", &a, &b) != EOF)
     {
