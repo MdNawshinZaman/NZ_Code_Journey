@@ -12,7 +12,7 @@ int main(void)
         int freq[150];
         // fflush(stdin);
         getchar();
-        scanf("%[^\n]%*c", str);
+        scanf("%[^\n]", str);
 
         int len = strlen(str);
         str[len] = '\0';
