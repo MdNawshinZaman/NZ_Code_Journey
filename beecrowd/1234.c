@@ -30,7 +30,7 @@ int main(void)
                 }
                 else if(flag == 0)
                 {
-                    if ((str[i] >= 'a') && (str[i] <= 'a'))
+                    if ((str[i] >= 'a') && (str[i] <= 'z'))
                     {
                         printf("%c", str[i]);
                         flag = 1;
