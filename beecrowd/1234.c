@@ -37,7 +37,7 @@ int main(void)
                     }
                     else
                     {
-                        printf("%c", str[i] + 32);
+                        printf("%c", str[i] - 32);
                         flag = 1;
                     }
                 }
