@@ -6,13 +6,13 @@ int main(void)
     int n;
     scanf("%d", &n);
 
+    char str[1007];
+    int freq[150];
     for(int i = 0; i < n; i++)
     {
-        char str[100];
-        int freq[150];
-        // fflush(stdin);
-        getchar();
-        scanf("%[^\n]", str);
+        fflush(stdin);
+        //getchar();
+        scanf("%[^\n]s", str);
 
         int len = strlen(str);
         str[len] = '\0';
