@@ -8,6 +8,7 @@ int main(void)
 
     for(int i = 0; i <  n; i++)
     {
+        char str1[51], str2[51];
         
     }
 
