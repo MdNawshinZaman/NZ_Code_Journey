@@ -9,7 +9,16 @@ int main(void)
     char str[101];
     for(int i = 0; i < n; i++)
     {
-        scanf("")
+        scanf("%[^\n]%*c", str);
+        int len = strlen(str);
+
+        printf("%d\n", len);
+
+        str[len] =  '\0';
+
+        printf("%lu\n", strlen(str));
+
+
     }
 
     return 0;
