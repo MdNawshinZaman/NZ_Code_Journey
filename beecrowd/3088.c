@@ -1,12 +1,14 @@
 #include<stdio.h>
 #include<string.h>
-
+#define max 100007
 int main(void)
 {
-    char str[100007];
-    char final[100007];
+    char str[max];
+    char final[max];
 
     scanf("%[^\n]s", str);
+
+    
 
     int i = 0;
     while(str[i] != '\0')
