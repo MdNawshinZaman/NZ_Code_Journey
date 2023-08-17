@@ -11,7 +11,7 @@ int main(void)
         char str[100];
         int freq[150];
         scanf("%[^\n]%*c", str);
-        int len = strlen[str];
+        int len = strlen(str);
         str[len] = '\0';
 
         int j = 0;
@@ -19,7 +19,7 @@ int main(void)
         {
             if(str[j] >= 'a' && str[j] <= 'z')
             {
-                freq[str[j]] = 1;
+                freq[(int)str[j]] = 1;
             }
             j++;
         }
