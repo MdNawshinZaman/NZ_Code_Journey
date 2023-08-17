@@ -7,7 +7,7 @@ int main(void)
     scanf("%d%*c", &n);
 
     char str[1007];
-    int freq[150];
+    int freq[150] = 0;
     for(int i = 0; i < n; i++)
     {
         scanf("%[^\n]%*c", str);
