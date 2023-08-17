@@ -7,7 +7,7 @@ int main(void)
     char str[max];
     char final[max];
 
-    while (scanf("%[^\n]s", str) != NULL)
+    while (scanf("%[^\n]%*c", str) != EOF)
     {
         int len = strlen(str);
         str[len] = '\0';
