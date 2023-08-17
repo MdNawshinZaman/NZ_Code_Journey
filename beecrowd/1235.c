@@ -15,8 +15,21 @@ int main(void)
 
         int half_len = len / 2;
 
-        
+        int j = half_len - 1;
+        while(j >= 0)
+        {
+            printf("%c", str[j]);
+            j--;
+        }
 
+        j = len - 1;
+        while(j >= half_len)
+        {
+            printf("%c", str[j]);
+            j--;
+        }
+
+        printf("\n");
 
     }
 
