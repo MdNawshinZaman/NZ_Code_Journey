@@ -3,11 +3,11 @@
 
 int main(void)
 {
-    long long a, b;
+    long long int a, b;
 
     while(scanf("%lld %lld", &a, &b) != EOF)
     {
-        printf("%lld\n", abs(a - b));
+        printf("%lld\n", llabs(a - b));
     }
     return 0;
 }
