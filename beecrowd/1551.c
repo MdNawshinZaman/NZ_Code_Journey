@@ -31,6 +31,10 @@ int main(void)
             sum += freq[k];
         }
 
+
+        printf("%d\n", sum);
+
+
         if (sum == 26) printf("frase completa\n");
         else if (sum >= 13) printf("frase quase completa\n");
         else printf("frase mal elaborada\n");
