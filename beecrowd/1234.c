@@ -28,7 +28,7 @@ int main(void)
                         flag = 0;
                     }
                 }
-                else
+                else if(flag == 0)
                 {
                     if ((str[i] >= 'a') && (str[i] <= 'a'))
                     {
@@ -37,7 +37,7 @@ int main(void)
                     }
                     else
                     {
-                        printf("%c", str[i] - 32);
+                        printf("%c", str[i] + 32);
                         flag = 1;
                     }
                 }
