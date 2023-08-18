@@ -18,7 +18,7 @@ int gcd(f1, f2)
         f1 = f2;
         f2 = rem;
     }
-    return f1; ///f1 is the gcd. 
+    return f1; ///f1 is the gcd. learned from anisul islams video
 }
 
 int main(void)
