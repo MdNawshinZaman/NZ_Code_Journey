@@ -2,12 +2,15 @@
 
 int main(void)
 {
-    float old, new;
-    scanf("%f %f", &old, &new);
+    double old, new;
+    scanf("%lf %lf", &old, &new);
 
-    float increase = new - old;
+    double increase = new - old;
+    double percent = (increase/old)*100.0;
 
-    
+    printf("%.2lf", percent);
+    printf("\n");
+
 
     return 0;
 }
