@@ -13,19 +13,15 @@ int main(void)
     {
         for(int j = 0; j < 3; j++)
         {
-            if(arr[i] > arr[i+1])
+            if(arr[j] > arr[j+1])
             {
-                temp = arr[i];
-                arr[i] = arr[i+1];
-                arr[i+1]  = temp;
+                temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1]  = temp;
             }
         }
     }
 
-    for(int i = 0; i < 4; i++)
-    {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
+
     return 0;
 }
