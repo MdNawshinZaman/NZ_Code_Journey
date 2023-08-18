@@ -15,10 +15,15 @@ int main(void)
 
         char ch = str[0];
 
-        int i = 0;
+        int i = 0, flag = 1;
 
         while(str[i] != '\0')
         {
+            if(ch != str[i])
+            {
+                flag = 0;
+                break;
+            }
             
         }
 
