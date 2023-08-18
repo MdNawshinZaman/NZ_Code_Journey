@@ -24,6 +24,7 @@ int main(void)
             {
                 str[j] += 32;
             }
+            j++;
         }
 
 
