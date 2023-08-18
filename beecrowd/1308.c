@@ -8,6 +8,7 @@ int main(void)
     scanf("%lld", &n);
     for(int i = 0; i < n; i++)
     {
+        scanf("%lld", &m);
         
     }
 
