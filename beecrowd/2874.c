@@ -5,14 +5,13 @@
 int main(void)
 {
     int n;
-    while (scanf("%d", &n) != EOF)
+    while (scanf("%d%*c", &n) != EOF)
     {
         for (int i = 0; i < n; i++)
         {
             char str[9];
-            scanf("")
-
-            printf("%d\n", (char) strtoll(str, NULL, 2));
+            scanf("%s%*c", str);
+            printf("%c\n", (char)strtoll(str, NULL, 2));
         }
     }
 
