@@ -14,7 +14,7 @@ int main(void)
 
     if(r < 0)
     {
-        if(q < 0) q = ceil(fabs(a / (double)b)) * -1;
+        if(q <= 0) q = ceil(fabs(a / (double)b)) * -1;
         else q = ceil(a / (double)b);
         r = a - (b * q);
     }
