@@ -15,6 +15,7 @@ int main(void)
         scanf("%[^\n]%*c", str);
         int len  = strlen(str);
         str[len] = '\0';
+        if(strcmp(str, "*") == 0) break;
 
         int j = 0;
         while(str[j] != '\0')
@@ -25,8 +26,6 @@ int main(void)
             }
         }
 
-
-        if(strcmp(str, "*") == 0) break;
 
         char ch = str[0];
 
