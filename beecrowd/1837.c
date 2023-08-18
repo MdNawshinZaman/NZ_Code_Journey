@@ -5,12 +5,12 @@
 int main(void)
 {
     int a, b, r, q;
-    scanf("%d %d", &a, &b);//-7 3
+    scanf("%d %d", &a, &b);
 
-    q = ceil(fabs(a / (double)b)) * (-1); // -3
     //divident = divisor * quotient + reminder
     // a = b * q + r
-    r = a - (b * q); // 2
+    q = a / (double)b;
+    r = a - (b * q);
 
     printf("%d %d\n", q, r);
 
