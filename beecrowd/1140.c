@@ -7,6 +7,11 @@ int main(void)
     char str[1107];
     while(1)
     {
+        for(int x = 0; x <= 1107; x++)
+        {
+            str[x] = '\0';
+        }
+
         scanf("%[^\n]%*c", str);
         int len  = strlen(str);
         str[len] = '\0';
@@ -27,7 +32,10 @@ int main(void)
             while(str[i] != ' ')
             {
                 i++;
-                
+                if(str[i] == '\0')
+                {
+                    break;
+                }
             }
             i++;
         }
