@@ -4,6 +4,7 @@
 
 int main(void)
 {
-
+    int num;
+    scanf("%D ")
     return 0;
 }
