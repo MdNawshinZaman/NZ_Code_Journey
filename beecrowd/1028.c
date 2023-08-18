@@ -9,6 +9,8 @@ int main(void)
 
     for(int i = 0; i < n; i++)
     {
+        int f1, f2;
+        scanf("%d %d", &f1, &f2);
         
     }
 
