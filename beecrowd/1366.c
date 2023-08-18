@@ -12,10 +12,13 @@ int main(void)
         scanf("%d", &n);
         if (n == 0) break;
 
+        int sum = 0, c, v;
         for(int i = 0; i < n; i++)
         {
-
+            scanf("%d %d", &c, &v);
+            sum += v/2;
         }
+        printf("%d\n", sum/2);
     }
 
 
