@@ -20,7 +20,7 @@ int main(void)
         int j = 0;
         while(str[j] != '\0')
         {
-            if(str[j] >= 'A' && str[j] <= 'Z')
+            if((str[j] >= 'A') && (str[j] <= 'Z'))
             {
                 str[j] += 32;
             }
