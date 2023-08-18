@@ -9,7 +9,7 @@ int main(void)
     double percent = (increase/old)*100.0;
 
     printf("%.2lf", percent);
-    printf("\n");
+    printf("%%\n");
 
 
     return 0;
