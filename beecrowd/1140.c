@@ -16,6 +16,16 @@ int main(void)
         int len  = strlen(str);
         str[len] = '\0';
 
+        int j = 0;
+        while(str[j] != '\0')
+        {
+            if(str[j] >= 'A' && str[j] <= 'Z')
+            {
+                str[j] += 32;
+            }
+        }
+
+
         if(strcmp(str, "*") == 0) break;
 
         char ch = str[0];
