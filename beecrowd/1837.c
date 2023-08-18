@@ -12,6 +12,11 @@ int main(void)
     q = a / (double)b;
     r = a - (b * q);
 
+    if(r < 0)
+    {
+        q--;
+        r = a - (b * q);
+    }
     printf("%d %d\n", q, r);
 
     return 0;
