@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <std>
 
 int main(void)
 {
@@ -22,7 +23,7 @@ int main(void)
         }
     }
 
-    printf("%d\n", (arr[0] + arr[3]) - (arr[1] + arr[2]));
-    
+    printf("%d\n", abs((arr[0] + arr[3]) - (arr[1] + arr[2])));
+
     return 0;
 }
