@@ -12,7 +12,7 @@ int main(void)
     q = a / (double)b;
     r = a - (b * q);
 
-    if(r < 0)
+    while(r < 0)
     {
         q--;
         r = a - (b * q);
