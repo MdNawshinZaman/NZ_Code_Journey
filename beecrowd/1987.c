@@ -2,10 +2,15 @@
 
 int main(void)
 {
-    long long int n, m
-    while(scanf("%lld %lld", &n, &m) != EOF)
+    int n;
+    char m[11];
+    while(scanf("%d %s", &n, m) != EOF)
     {
+        int sum = 0;
+        for(int i = 0; i <  n; i++)
+        {
 
+        }
     }
 
     return 0;
