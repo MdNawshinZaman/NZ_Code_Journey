@@ -5,13 +5,13 @@ int main(void)
 {
     int n;
     char m[11];
-    int flag = 0;
+    // int flag = 0;
     while (scanf("%d %s", &n, m) != EOF)
     {
-        if (flag == 1)
-            printf("\n");
-        else
-            flag = 1;
+        // if (flag == 1)
+        //     printf("\n");
+        // else
+        //     flag = 1;
 
         int sum = 0;
         for (int i = 0; i < n; i++)
@@ -52,9 +52,9 @@ int main(void)
         }
 
         if (sum % 3 == 0)
-            printf("%d sim", sum);
+            printf("%d sim\n", sum);
         else
-            printf("%d nao", sum);
+            printf("%d nao\n", sum);
     }
 
     return 0;
