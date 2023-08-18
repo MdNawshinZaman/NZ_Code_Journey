@@ -5,6 +5,7 @@
 int main(void)
 {
     int num;
-    scanf("%D ")
+    scanf("%d", &num);
+    printf("%.lf\n",  pow(3, num));
     return 0;
 }
