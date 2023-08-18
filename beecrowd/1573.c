@@ -9,7 +9,7 @@ int main(void)
         scanf("%d %d %d", &a, &b, &c);
         if(a == 0 && b == 0 && c == 0) break;
 
-        printf("%.lf\n", pow(a*b*c, 1/3.0));
+        printf("%d\n", (int)pow(a*b*c, 1/3.0));
     }
 
     return 0;
