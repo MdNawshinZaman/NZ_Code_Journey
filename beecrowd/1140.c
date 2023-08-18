@@ -40,6 +40,9 @@ int main(void)
             i++;
         }
 
+        if(flag == 1) printf("Y\n");
+        else printf("N\n");
+
     }
 
     return 0;
