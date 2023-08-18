@@ -11,8 +11,9 @@ int main(void)
         {
             char str[9];
             scanf("%s%*c", str);
-            printf("%c\n", (char)strtoll(str, NULL, 2));
+            printf("%c", (char)strtoll(str, NULL, 2));
         }
+        printf("\n");
     }
 
     return 0;
