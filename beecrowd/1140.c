@@ -24,7 +24,12 @@ int main(void)
                 flag = 0;
                 break;
             }
-            
+            while(str[i] != ' ')
+            {
+                i++;
+                
+            }
+            i++;
         }
 
     }
