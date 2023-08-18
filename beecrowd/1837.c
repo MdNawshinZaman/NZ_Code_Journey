@@ -9,7 +9,7 @@ int main(void)
 
     //divident = divisor * quotient + reminder
     // a = b * q + r
-    q = a / (double)b;
+    q = a / b;
     r = a - (b * q);
 
     if(r < 0)
