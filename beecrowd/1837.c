@@ -14,7 +14,7 @@ int main(void)
 
     // if(r < 0)
     // {
-    //     q--;
+    //     q = ceil(q);
     //     r = a - (b * q);
     // }
     printf("%d %d\n", q, r);
