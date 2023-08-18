@@ -30,7 +30,7 @@ int main(void)
     {
         int f1, f2;
         scanf("%d %d", &f1, &f2);
-        printf("%d",gcd(f1, f2));
+        printf("%d\n",gcd(f1, f2));
     }
 
     return 0;
