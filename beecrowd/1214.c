@@ -28,7 +28,8 @@ int main(void)
                 if(arr[j] > avg) a_avg++;
             }
 
-            printf("%.3lf", (a_avg/avg) * 100.0);
+            printf("%.3lf", (a_avg/(double)n) * 100.0);
+            printf("%%\n");
 
         }
     }
