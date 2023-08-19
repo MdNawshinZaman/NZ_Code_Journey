@@ -19,7 +19,7 @@ int main(void)
                 scanf("%d", &arr[j]);
                 avg += arr[i];
             }
-            avg /= 3.0;
+            avg /= (double)n;
 
             int a_avg = 0;
 
