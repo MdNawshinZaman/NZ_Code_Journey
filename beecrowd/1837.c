@@ -15,15 +15,8 @@ int main(void)
 
     if(r < 0)
     {
-        if(q < 0)
-        {
-            q--;
-        }
-        else if(q >= 0)
-        {
-            q++;
-        }
-        r = a - (b * q);
+        r += abs(b);
+        q = (a - r) \ b;
     }
     printf("%d %d\n", q, r);
 
