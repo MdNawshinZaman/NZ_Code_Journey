@@ -11,8 +11,10 @@ int main(void)
 
         int num_carry = 0, carry = 0;
 
-        while (a == 0 && b == 0)
+        while (1)
         {
+            if(a == 0 && b == 0) break;
+
             int x = a % 10;
             int y = b % 10;
 
