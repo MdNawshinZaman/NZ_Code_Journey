@@ -3,11 +3,9 @@
 
 int main(void)
 {
-    while (1)
+    int n;
+    while (scanf("%d%*c", &n) != EOF)
     {
-        int n;
-        scanf("%d%*c", &n);
-
         int D[61], E[61];
 
         for(int i = 0; i < 62; i++)
