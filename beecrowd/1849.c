@@ -29,6 +29,5 @@ int main(void)
 
    printf("%d\n", a*a);
 
-
     return 0;
 }
