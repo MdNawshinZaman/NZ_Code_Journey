@@ -11,12 +11,13 @@ int main(void)
 
     //divident = divisor * quotient + reminder
     // a = b * q + r
+    // r = a / (b * q)
     q = a / b;
     r = a % b;
 
     if(r < 0)
     {
-        
+
     }
     printf("%d %d\n", q, r);
 
