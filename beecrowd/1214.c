@@ -19,14 +19,18 @@ int main(void)
                 scanf("%d", &arr[j]);
                 avg += arr[i];
             }
-            avg /= (double)n;
+            avg = avg / (double)n;
 
             int a_avg = 0;
+
+            printf("%lf\n", avg);
 
             for(int j = 0; j < n; j++)
             {
                 if(arr[j] > avg) a_avg++;
             }
+
+            printf("%d\n", a_avg);
 
             printf("%.3lf", (a_avg/(double)n) * 100.0);
             printf("%%\n");
