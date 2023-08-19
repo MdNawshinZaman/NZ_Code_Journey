@@ -13,9 +13,9 @@ int main(void)
     q = a / b;
     r = a % b;
 
-    if(r < 0)
+    while(r < 0)
     {
-        if(q < 0)
+        if(q <= 0)
         {
             q--;
         }
