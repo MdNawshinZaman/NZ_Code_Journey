@@ -15,11 +15,11 @@ int main(void)
 
     while(r < 0)
     {
-        if(q <= 0)
+        if(q < 0)
         {
             q--;
         }
-        else if(q > 0)
+        else if(q >= 0)
         {
             q++;
         }
