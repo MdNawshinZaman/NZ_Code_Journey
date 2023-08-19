@@ -27,7 +27,7 @@ int main(void)
 
    int a = (l < c)? l : c;
 
-   printf("%lld\n", a*a);
+   printf("%d\n", a*a);
 
 
     return 0;
