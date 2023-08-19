@@ -14,12 +14,12 @@ int main(void)
     q = a / b;
     r = a % b;
 
-    // if(r < 0)
-    // {
-    //     if(q <= 0) q = ceil(fabs(a / (double)b)) * -1;
-    //     else q = ceil(a / (double)b);
-    //     r = a - (b * q);
-    // }
+    if(r < 0)
+    {
+        if(q <= 0) q = ceil(fabs(a / (double)b)) * -1;
+        else q = ceil(a / (double)b);
+        r = a - (b * q);
+    }
     printf("%d %d\n", q, r);
 
     return 0;
