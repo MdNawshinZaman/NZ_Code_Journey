@@ -13,7 +13,7 @@ int main(void)
     q = a / b;
     r = a % b;
 
-    while(r < 0)
+    if(r < 0)
     {
         if(q < 0)
         {
