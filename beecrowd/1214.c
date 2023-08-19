@@ -17,7 +17,7 @@ int main(void)
             for(int j = 0; j < n; j++)
             {
                 scanf("%d", &arr[j]);
-                avg += arr[i];
+                avg += arr[j];
             }
             avg = avg / (double)n;
 
