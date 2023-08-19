@@ -1,5 +1,3 @@
-// unfinished
-
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -11,13 +9,21 @@ int main(void)
 
     //divident = divisor * quotient + reminder
     // a = b * q + r
-    // r = a / (b * q)
+    // r = a - (b * q)
     q = a / b;
     r = a % b;
 
     if(r < 0)
     {
-
+        if(q < 0)
+        {
+            q--;
+        }
+        else
+        {
+            q++;
+        }
+        r = a - (b * q);
     }
     printf("%d %d\n", q, r);
 
