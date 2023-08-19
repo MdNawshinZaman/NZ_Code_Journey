@@ -16,7 +16,7 @@ int main(void)
     if(r < 0)
     {
         r += abs(b);
-        q = (a - r) \ b;
+        q = (a - r) / b;
     }
     printf("%d %d\n", q, r);
 
