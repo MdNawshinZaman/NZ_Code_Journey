@@ -11,7 +11,7 @@ int gcd(int a, int b)
 
 int main(void)
 {
-    printf("%d\n", gcd(259, 111));
+    
 
 
     return 0;
