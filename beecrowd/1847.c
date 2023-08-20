@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <math.h>
-
 
 int main(void)
 {
@@ -20,7 +18,13 @@ int main(void)
     {
         p1 = a - b;
         p2 = b - c;
-
+        if(p1 <= p2) printf(":(\n");
+        else printf(":)\n");
+    }
+    else if(a == b)
+    {
+        if (b < c) printf(":)\n");
+        else printf(":(\n");
     }
 
 
