@@ -27,7 +27,7 @@ int main(void)
             b = temp;
         }
 
-        printf("%d\n", (n / a) + (n / b) - (gcd(a, b)));
+        printf("%d\n", (n / a) + (n / b) - (n / gcd(a, b)));
     }
 
     return 0;
