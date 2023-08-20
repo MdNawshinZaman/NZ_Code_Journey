@@ -6,17 +6,16 @@
 int main(void)
 {
     int A[10009], B[10009];
-    for(;;)
+    int a, b;
+    while(1)
     {
-        for(int i = 0; i <= 10009; i++)
+        for(int i = 0; i < 10009; i++)
         {
             A[i] = 0;
             B[i] = 0;
         }
 
-        int a, b;
-        scanf("%d %d", &a, &b)
-
+        scanf("%d %d", &a, &b);
         if(a == 0 && b == 0) break;
 
         int temp;
@@ -33,7 +32,7 @@ int main(void)
         }
 
         int sum1 = 0, sum2 = 0;
-        for(int i = 0; i <= 10009; i++)
+        for(int i = 0; i < 10009; i++)
         {
             if(A[i] == B[i])
             {
