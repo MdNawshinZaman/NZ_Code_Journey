@@ -9,14 +9,14 @@ int main(void)
     int a, b;
     while(1)
     {
+        scanf("%d %d", &a, &b);
+        if(a == 0 && b == 0) break;
+
         for(int i = 0; i < 10009; i++)
         {
             A[i] = 0;
             B[i] = 0;
         }
-
-        scanf("%d %d", &a, &b);
-        if(a == 0 && b == 0) break;
 
         int temp;
         for(int i = 0; i < a; i++)
@@ -39,11 +39,12 @@ int main(void)
                 A[i] = 0;
                 B[i] = 0;
             }
-            else
-            {
-                sum1 += A[i];
-                sum2 += B[i];
-            }
+        }
+
+        for(int i = 0; i < 10009; i++)
+        {
+            sum1 += A[i];
+            sum2 += B[i];
         }
 
         int small = (sum1<sum2)?sum1:sum2;
