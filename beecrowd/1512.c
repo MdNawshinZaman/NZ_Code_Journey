@@ -11,7 +11,10 @@ int gcd(int a, int b)
 
 int main(void)
 {
-    
+    int n, a, b;
+    scanf("%d %d %d", &n, &a, &b);
+
+    printf("%d", (n/a) + (n/b) - (gcd()))
 
 
     return 0;
