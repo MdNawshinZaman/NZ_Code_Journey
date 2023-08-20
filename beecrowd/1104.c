@@ -24,7 +24,13 @@ int main(void)
             A[temp]++;
         }
 
-        for(int )
+        for(int i = 0; i < b; i++)
+        {
+            scanf("%d", &temp);
+            B[temp]++;
+        }
+
+        
     }
 
     return 0;
