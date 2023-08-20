@@ -2,10 +2,10 @@
 #include <math.h>
 #include <string.h>
 
+int A[10009], B[10009];
 
 int main(void)
 {
-    int A[10009], B[10009];
     int a, b;
     while(1)
     {
@@ -46,7 +46,8 @@ int main(void)
             }
         }
 
-        printf("%d\n", (sum1<sum2)?sum1:sum2);
+        int small = (sum1<sum2)?sum1:sum2;
+        printf("%d\n", small);
 
     }
 
