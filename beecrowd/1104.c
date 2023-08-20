@@ -2,7 +2,7 @@
 #include <math.h>
 #include <string.h>
 
-int A[10009], B[10009];
+int A[100009], B[100009];
 
 int main(void)
 {
@@ -12,7 +12,7 @@ int main(void)
         scanf("%d %d", &a, &b);
         if(a == 0 && b == 0) break;
 
-        for(int i = 0; i < 10009; i++)
+        for(int i = 0; i < 100009; i++)
         {
             A[i] = 0;
             B[i] = 0;
@@ -32,7 +32,7 @@ int main(void)
         }
 
         int sum1 = 0, sum2 = 0;
-        for(int i = 0; i < 10009; i++)
+        for(int i = 0; i < 100009; i++)
         {
             if(A[i] == B[i])
             {
@@ -41,7 +41,7 @@ int main(void)
             }
         }
 
-        for(int i = 0; i < 10009; i++)
+        for(int i = 0; i < 100009; i++)
         {
             sum1 += A[i];
             sum2 += B[i];
