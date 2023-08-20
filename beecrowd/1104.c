@@ -16,7 +16,15 @@ int main(void)
 
         int a, b;
         scanf("%d %d", &a, &b)
-        for(int i)
+
+        int temp;
+        for(int i = 0; i < a; i++)
+        {
+            scanf("%d", &temp);
+            A[temp]++;
+        }
+
+        for(int )
     }
 
     return 0;
