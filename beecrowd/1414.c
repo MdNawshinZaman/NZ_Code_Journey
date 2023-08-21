@@ -7,8 +7,11 @@ int main(void)
 {
     int t, n;
 
-    while(scanf("%d %d", &t, &n) != EOF)
+    while(1)
     {
+        scanf("%d %d", &t, &n);
+        if(t == 0) break;
+
         
     }
 
