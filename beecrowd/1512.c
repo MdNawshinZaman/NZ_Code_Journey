@@ -4,10 +4,12 @@
 
 int gcd(int a, int b)
 {
-    if (b == 0)
+    /*if (b == 0)
         return a;
     int r = a % b;
-    return gcd(b, r);
+    return gcd(b, r);*/
+
+    return (b == 0)? a: gcd(b, a%b);
 }
 
 int main(void)
@@ -26,8 +28,8 @@ int main(void)
             a = b;
             b = temp;
         }
-
-        printf("%d\n", (n / a) + (n / b) - (n / gcd(a, b))/2);
+        int lcm = (a*b) / gcd(a, b);
+        printf("%d\n", (n / a) + (n / b) - (n /lcm));
     }
 
     return 0;
