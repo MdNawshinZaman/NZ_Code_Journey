@@ -16,7 +16,7 @@ int main(void)
         sun_flwr =(PI * pow(((a*b*c)/(4 * violt)) , 2)) - violt;
 
         rose = PI * pow((violt/s),2);
-
+        
         violt -= rose;
 
         printf("%.4lf %.4lf %.4lf\n", sun_flwr, violt, rose);
