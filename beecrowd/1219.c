@@ -12,10 +12,10 @@ int main(void)
 
         s = (a+b+c) / 2.0;
         violt =  sqrt(s * (s - a) * (s - b) * (s - c));
-        sun_flwr =(PI * pow(c/2.0 , 2)) - violt;
 
-        double r = (a + b - c)/2.0;
-        rose = PI * r * r;
+        sun_flwr =(PI * pow(((a*b*c)/(4 * violt)) , 2)) - violt;
+
+        rose = PI * pow((violt/s),2);
 
         violt -= rose;
 
