@@ -8,9 +8,10 @@ int main(void)
     int a, b, c;
     while(scanf("%d %d %d", &a, &b, &c) != EOF)
     {
-        double sun_flwr, violt, rose;
+        double sun_flwr, violt, rose, s;
 
-        violt =  0.5 * (double)a * (double)b;
+        s = (a+b+c) / 2.0;
+        violt =  sqrt(s * (s - a) * (s - b) * (s - c));
         sun_flwr =(PI * pow(c/2.0 , 2)) - violt;
 
         double r = (a + b - c)/2.0;
