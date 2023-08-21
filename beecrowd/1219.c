@@ -10,8 +10,8 @@ int main(void)
     {
         double sun_flwr, violt, rose;
 
-        violt =  0.5 * a * b;
-        sun_flwr =(PI * c * c) - violt;
+        violt =  0.5 * (double)a * (double)b;
+        sun_flwr =(PI * (double)c * (double)c) - violt;
 
         double r = (a + b - c)/2.0;
         rose = PI * r * r;
