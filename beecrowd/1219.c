@@ -11,9 +11,14 @@ int main(void)
         double sun_flwr, violt, rose;
 
         violt =  0.5 * a * b;
-        sum_flwr =(PI * c * c) - violt;
+        sun_flwr =(PI * c * c) - violt;
 
         double r = (a + b - c)/2.0;
+        rose = PI * r * r;
+
+        violt -= rose;
+
+        printf("%.4lf %.4lf %.4lf\n", sun_flwr, violt, rose);
 
     }
     return 0;
