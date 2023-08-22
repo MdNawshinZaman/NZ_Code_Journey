@@ -2,23 +2,23 @@
 
 int main(void)
 {
-    int t, n, temp;
-    char team[13];
+    int t, n;
     while(1)
     {
-        scanf("%d %d", &t, &n);
+        scanf("%d %d%*c", &t, &n);
         if(t == 0) break;
 
-        int sum = 0;
+        char name[15];
+        int temp, sum = 0;
         for(int i = 0; i < t; i++)
         {
-            scanf(" %s %d", team, &temp);
-            sum += temp % 3;
+            scanf("%s %d%*c", name, &temp);
+            sum += temp;
         }
 
-        printf("%d\n", sum / 2);
-
+        printf("%d\n", (n*3) - sum);
     }
+
 
     return 0;
 }
