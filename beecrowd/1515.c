@@ -10,8 +10,11 @@ int main(void)
     {
         scanf("%d", &n);
         if(n == 0) break;
+        char name[51];
+        int a, t;
 
         
+
     }
 
 
