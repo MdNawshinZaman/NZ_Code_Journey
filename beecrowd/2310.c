@@ -6,7 +6,12 @@
 int main(void)
 {
     int n;
-    scanf("")
+    scanf("%d", &n);
+
+    for(int i = 0; i < n; i++)
+    {
+        
+    }
 
     return 0;
 }
