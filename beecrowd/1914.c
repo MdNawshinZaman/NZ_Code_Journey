@@ -7,9 +7,8 @@ int main(void)
 
     for (int i = 0; i < n; i++)
     {
-
+        
     }
-    printf("%-7d --- %-7d\n", 123, 123);
 
     return 0;
 }
