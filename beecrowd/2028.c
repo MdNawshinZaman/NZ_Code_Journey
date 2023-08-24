@@ -15,7 +15,7 @@ int main(void)
 
         if(num == 1)
         {
-            printf("Caso %d: %d numero\n0 ", Case, num);
+            printf("Caso %d: %d numero\n0", Case, num);
         }
         else
         {
