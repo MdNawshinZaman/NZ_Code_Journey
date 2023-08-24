@@ -1,11 +1,13 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <math.h>
 
 int main(void)
 {
 
-    char txt = 'x';
-
-    printf("%d", txt);
+    for(float i = 0.2; i < 2; i+=0.2)
+    {
+        printf("%.2f = %f\n", i, trunc(i));
+    }
 
     return 0;
 }
