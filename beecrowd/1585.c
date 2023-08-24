@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(void)
 {
@@ -17,7 +18,7 @@ int main(void)
             b = temp;
         }
 
-        printf("%.f cm2\n", (a/2.0)*b);
+        printf("%.f cm2\n", trunc((a/2.0)*b));
     }
 
     return 0;
