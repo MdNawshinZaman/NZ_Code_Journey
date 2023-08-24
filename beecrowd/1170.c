@@ -18,7 +18,7 @@ int main(void)
             count++;
             temp /= 2.0;
         }
-        printf("%d ")
+        printf("%d dias\n", count);
     }
 
     return 0;
