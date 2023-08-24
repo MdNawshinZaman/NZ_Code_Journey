@@ -17,7 +17,7 @@ int main(void)
             b = temp;
         }
 
-        printf("%d cm2\n", (a/2)*b);
+        printf("%.f cm2\n", (a/2.0)*b);
     }
 
     return 0;
