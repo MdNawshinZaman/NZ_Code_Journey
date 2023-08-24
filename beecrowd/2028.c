@@ -5,7 +5,7 @@
 
 int main(void)
 {
-    int n;
+    int n, case = 1;
     while(scanf("%d", &n) != EOF)
     {
         
