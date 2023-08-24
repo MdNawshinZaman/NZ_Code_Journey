@@ -1,7 +1,4 @@
 #include <stdio.h>
-#include <math.h>
-#include <string.h>
-
 
 int main(void)
 {
@@ -34,7 +31,7 @@ int main(void)
                 printf("%d", i);
                 if(j != i-1 ) printf(" ");
             }
-            
+            if(i != n) printf(" ");
         }
         printf("\n\n");
 
