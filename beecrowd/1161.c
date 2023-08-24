@@ -14,7 +14,7 @@ int main(void)
     int m, n;
     while(scanf("%d %d", &m, &n) != EOF)
     {
-        printf("%lld %lld\n", factorial(m), factorial(n));
+        printf("%lld\n", factorial(m) + factorial(n));
     }
 
     return 0;
