@@ -2,18 +2,20 @@
 #include <stdio.h>
 #include <string.h>
 
+int arr[200009];
+int fibonot[200009];
+
 int main(void)
 {
-    int arr[200009];
-    int fibonot[200009];
     int ini = 0, k = 1;
     while (ini <= 2000009)
     {
-        ini += k;
         arr[ini] = 1;
+        ini += k;
     }
 
-    for (int i = 0, j = 1; i < 100009; i++)
+    int j = 1;
+    for (int i = 0; i < 100009; i++)
     {
         if (arr[j] == 0)
         {
