@@ -19,7 +19,7 @@ int main(void)
     {
         arr[ini] = 1;
         ini += k;
-        k++;
+        k = ini;
     }
 
     int j = 1;
