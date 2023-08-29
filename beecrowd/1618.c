@@ -16,14 +16,16 @@ int main(void)
         minY = (minY > by) ? ((by > cy)? ((cy > dy) ? dy : cy) : by) : ay;
         maxY = (maxY < by) ? ((by < cy)? ((cy < dy) ? dy : cy) : by) : ay;
 
-        if ((rx >= minX && rx  <= maxX) && (ry >= minY && ry  <= maxY))
-        {
-            printf("1\n");
-        }
-        else
-        {
-            printf("0\n");
-        }
+        printf("X: %d %d\nY: %d %d\n", minX, maxX, minY, maxY);
+
+        // if ((rx >= minX && rx  <= maxX) && (ry >= minY && ry  <= maxY))
+        // {
+        //     printf("1\n");
+        // }
+        // else
+        // {
+        //     printf("0\n");
+        // }
     }
 
     return 0;
