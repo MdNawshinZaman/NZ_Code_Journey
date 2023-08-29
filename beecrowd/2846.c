@@ -7,11 +7,19 @@ int fibonot[200009];
 
 int main(void)
 {
+
+    for(int i = 0; i < 200009; i++)
+    {
+        arr[i] = 0;
+        fibonot[i] = 0;
+    }
+
     int ini = 0, k = 1;
     while (ini <= 2000009)
     {
         arr[ini] = 1;
         ini += k;
+        k++;
     }
 
     int j = 1;
