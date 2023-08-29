@@ -23,25 +23,26 @@ int main(void)
         post = sum;
     }
 
-    int j = 0;
-    for (int i = 0; i < 100009; i++)
+    int j = 0, z = 0;
+    while(j <= 100009)
     {
-        if (arr[i] == 0)
+        if (arr[z] == 0)
         {
-            fibonot[j] = i;
+            fibonot[j] = z;
             j++;
         }
+        z++;
     }
 
-    for (int i = 0; i < 100000; i++)
-    {
-        printf("%d = %d\n", i, fibonot[i]);
-    }
+    // for (int i = 0; i <= 100000; i++)
+    // {
+    //     printf("%d = %d\n", i, fibonot[i]);
+    // }
     // printf("\n");
 
-    // int n;
-    // scanf("%d", &n);
-    // printf("%d\n", fibonot[n]);
+    int n;
+    scanf("%d", &n);
+    printf("%d\n", fibonot[n]);
 
     return 0;
 }
