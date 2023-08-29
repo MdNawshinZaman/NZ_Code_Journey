@@ -35,16 +35,16 @@ int main(void)
             }
         }
 
-        printf("x: %d %d\ny: %d %d\n",  x[0], x[3], y[0], y[3]);
+        // printf("x: %d %d\ny: %d %d\n",  x[0], x[3], y[0], y[3]);
 
-        // if ((rx >= minX && rx  <= maxX) && (ry >= minY && ry  <= maxY))
-        // {
-        //     printf("1\n");
-        // }
-        // else
-        // {
-        //     printf("0\n");
-        // }
+        if ((rx >= x[0] && rx  <= x[3]) && (ry >= y[0] && ry  <= y[3]))
+        {
+            printf("1\n");
+        }
+        else
+        {
+            printf("0\n");
+        }
     }
 
     return 0;
