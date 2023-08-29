@@ -14,5 +14,10 @@ int main(void)
         arr[ini] = 1;
     }
 
+    for(int i = 0, j = 1; i < 100009; i++, j++)
+    {
+        if()
+    }
+
     return 0;
 }
