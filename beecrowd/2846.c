@@ -17,9 +17,10 @@ int main(void)
     int ini = 1, k = 1;
     while (ini <= 2000009)
     {
-        arr[ini] = 1; // 
+        arr[ini] = 1; //
         k += ini; //
         ini = k; //
+
     }
 
     int j = 1;
