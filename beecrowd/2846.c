@@ -14,13 +14,13 @@ int main(void)
         fibonot[i] = 0;
     }
 
-    int ini = 1, k = 1;
-    while (ini <= 2000009)
+    int pre = 1, post = 1, sum = 1;
+    while (sum <= 200009)
     {
-        arr[ini] = 1; //
-        k += ini; //
-        ini = k; //
-
+        arr[sum] = 1; //
+        sum = pre + post; //
+        pre = post; //
+        post = sum;
     }
 
     int j = 1;
