@@ -8,9 +8,22 @@ int main(void)
     for(int i = 0; i < n; i++)
     {
         scanf("%d %d %d %d %d %d %d %d %d %d", &ax, &ay, &bx, &by, &cx, &cy, &dx, &dy, &rx, &ry);
-        int minX, maxX, minY, maxY;
+        int minX = ax, maxX = ax, minY = ay, maxY = ay;
 
-        if()
+        minX = (minX > bx) ? ((bx > cx)? ((cx > dx) ? dx : cx) : bx) : ax;
+        maxX = (maxX < bx) ? ((bx < cx)? ((cx < dx) ? dx : cx) : bx) : ax;
+
+        minY = (minY > by) ? ((by > cy)? ((cy > dy) ? dy : cy) : by) : ay;
+        maxY = (maxY < by) ? ((by < cy)? ((cy < dy) ? dy : cy) : by) : ay;
+
+        if ((rx >= minX && rx  <= maxX) && (ry >= minY && ry  <= maxY))
+        {
+            printf("1\n");
+        }
+        else
+        {
+            printf("0\n");
+        }
     }
 
     return 0;
