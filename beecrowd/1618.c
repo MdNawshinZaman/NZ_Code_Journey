@@ -8,7 +8,9 @@ int main(void)
     for(int i = 0; i < n; i++)
     {
         scanf("%d %d %d %d %d %d %d %d %d %d", &ax, &ay, &bx, &by, &cx, &cy, &dx, &dy, &rx, &ry);
-        
+        int minX, maxX, minY, maxY;
+
+        if()
     }
 
     return 0;
