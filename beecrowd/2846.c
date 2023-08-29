@@ -14,12 +14,12 @@ int main(void)
         fibonot[i] = 0;
     }
 
-    int ini = 0, k = 1;
+    int ini = 1, k = 1;
     while (ini <= 2000009)
     {
-        arr[ini] = 1;
-        ini += k;
-        k = ini;
+        arr[ini] = 1; //
+        ini += k; //
+        k = ini; // 
     }
 
     int j = 1;
