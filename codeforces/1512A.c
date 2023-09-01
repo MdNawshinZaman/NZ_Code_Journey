@@ -21,13 +21,13 @@ int main(void)
             freq[temp]++;
         }
 
-        int uniq = freq[0], ans = 0;
-        for(int j = 1; j < 101; j++)
+        int ans = 0;
+        for(int j = 0; j < 101; j++)
         {
-            if(freq[j] > uniq)
+            if(freq[j] == 1)
             {
-                uniq = freq[j];
-                ans = j;
+                ans = j+1;
+                break;
             }
         }
 
