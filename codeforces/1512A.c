@@ -3,7 +3,7 @@
 int main(void)
 {
     int t;
-    scnaf("%d", &t);
+    scanf("%d", &t);
 
     int freq[107] = {0};
     for(int i = 0; i < t; i++)
@@ -20,6 +20,18 @@ int main(void)
             scanf("%d", &temp);
             freq[temp]++;
         }
+
+        int uniq = freq[0], ans = 0;
+        for(int j = 1; j < 101; j++)
+        {
+            if(freq[j] > uniq)
+            {
+                uniq = freq[j];
+                ans = j;
+            }
+        }
+
+        printf("%d\n",ans);
     }
 
     return 0;
