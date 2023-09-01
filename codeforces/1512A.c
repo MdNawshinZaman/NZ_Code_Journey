@@ -35,7 +35,7 @@ int main(void)
         {
             if(freq[j] == 1)
             {
-                uniq = freq[j];
+                uniq = j;
                 break;
             }
         }
