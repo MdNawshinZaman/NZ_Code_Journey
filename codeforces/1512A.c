@@ -23,14 +23,14 @@ int main(void)
         }
 
 
-        for(int j = 0; j < 11; j++)
-        {
-            printf("%d ", freq[j]);
-        }
-        printf("\n");
+        // for(int j = 0; j < 20; j++)
+        // {
+        //     printf("%d ", freq[j]);
+        // }
+        // printf("\n");
 
 
-        int uniq;
+        int uniq = 0;
         for(int j = 0; j < 101; j++)
         {
             if(freq[j] == 1)
@@ -39,6 +39,8 @@ int main(void)
                 break;
             }
         }
+
+        printf("uniq %d\n", uniq);
 
         int ans = 0;
         for(int j = 0; j < n; j++)
