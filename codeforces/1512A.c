@@ -22,6 +22,14 @@ int main(void)
             freq[arr[j]]++;
         }
 
+
+        for(int j = 0; j < 11; j++)
+        {
+            printf("%d ", freq[j]);
+        }
+        printf("\n");
+
+
         int uniq;
         for(int j = 0; j < 101; j++)
         {
