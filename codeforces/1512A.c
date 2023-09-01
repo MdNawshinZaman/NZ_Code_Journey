@@ -5,30 +5,36 @@ int main(void)
     int t;
     scanf("%d", &t);
 
-    int freq[107] = {0};
+    int freq[107], arr[107];
     for(int i = 0; i < t; i++)
     {
         for(int j = 0; j < 107; j++)
         {
             freq[j] = 0;
+            arr[j] = 0;
         }
-        int n, temp;
+        int n;
         scanf("%d", &n);
 
         for(int j = 0; j < n; j++)
         {
-            scanf("%d", &temp);
-            freq[temp]++;
+            scanf("%d", &arr[j]);
+            freq[arr[j]]++;
         }
 
-        int ans = 0;
+        int uniq;
         for(int j = 0; j < 101; j++)
         {
             if(freq[j] == 1)
             {
-                ans = j+1;
+                uniq = freq[j];
                 break;
             }
+        }
+
+        for(int j = 0; j < n; j++)
+        {
+            
         }
 
         printf("%d\n",ans);
