@@ -40,7 +40,7 @@ int main(void)
             }
         }
 
-        printf("uniq %d\n", uniq);
+        // printf("uniq %d\n", uniq);
 
         int ans = 0;
         for(int j = 0; j < n; j++)
