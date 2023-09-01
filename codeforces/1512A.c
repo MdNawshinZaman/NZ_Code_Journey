@@ -2,18 +2,24 @@
 
 int main(void)
 {
-    int n;
-    scnaf("%d", &n);
+    int t;
+    scnaf("%d", &t);
 
-    int freq[107] = {0}, arr[107] = {0};
-    for(int i = 0; i < n; i++)
+    int freq[107] = {0};
+    for(int i = 0; i < t; i++)
     {
         for(int j = 0; j < 107; j++)
         {
             freq[j] = 0;
-            arr[j] = 0
         }
+        int n, temp;
+        scanf("%d", &n);
 
+        for(int j = 0; j < n; j++)
+        {
+            scanf("%d", &temp);
+            freq[temp]++;
+        }
     }
 
     return 0;
