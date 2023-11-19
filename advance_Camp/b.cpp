@@ -1,9 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long int
-int rev_num;
 
-ll reverse(ll num, ll n) // num , 0
+ll reverse(ll num, ll rev_num) // num , 0
 {
     if(num / 10 == 0)
     {
@@ -26,8 +25,7 @@ int main(void)
     for(ll i = 0; i < a; i++)
     {
         cin >> num;
-        rev_num = 0;
-        cout << reverse(num);
+        cout << reverse(num, 0);
         //print(num);
         cout << '\n';
     }
