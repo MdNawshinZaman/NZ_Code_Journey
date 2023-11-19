@@ -49,7 +49,7 @@ int main(void)
         cin >> num;
         if(num == 0)
         {
-            cout << 0 << '\n';
+            cout << 0 << ' ' <<'\n';
             continue;
         }
 
