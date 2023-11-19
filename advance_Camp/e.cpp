@@ -3,6 +3,10 @@ using namespace std;
 
 int fib_n(int n, int current, int prev, int count)
 {
+    if(n == 1)
+    {
+        return 0;
+    }
     if(count == n)
     {
         return current;
