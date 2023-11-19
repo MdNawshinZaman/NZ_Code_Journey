@@ -21,14 +21,15 @@ void pattern(int num, int n)
     {
         return;
     }
-    
+    pattern(num, n-1);
+    row_printer(num, n);
 }
 
 int main(void)
 {
-    int n;
-    cin >> n;
-    pattern(n);
+    int num;
+    cin >> num;
+    pattern(num, num);
 
     return 0;
 }
