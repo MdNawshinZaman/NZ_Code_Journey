@@ -10,7 +10,7 @@ ll reverse(ll num, ll rev_num) // num , 0
     }
     else
     {
-        rev_ num = (rev_num * 10) + num % 10;
+        rev_num = (rev_num * 10) + num % 10;
         return reverse(num/10, rev_num);
     }
 }
