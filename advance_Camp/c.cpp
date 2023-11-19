@@ -1,30 +1,28 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-// void pattern(int n)
-// {
-//     if()
-// }
-
-int main(void)
+void pattern(int n)
 {
-    int n;
-    cin >> n;
-    // pattern(n);
-
-    for(int i = 0;  i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-        for(int j = 1; j < n-i ; j++)
+        for (int j = 1; j < n - i; j++)
         {
             cout << ' ';
         }
-        for(int j = 0; j < ((i*2)+1); j++)
+        for (int j = 0; j < ((i * 2) + 1); j++)
         {
             cout << '*';
         }
 
         cout << '\n';
     }
+}
+
+int main(void)
+{
+    int n;
+    cin >> n;
+    pattern(n);
 
     return 0;
 }
