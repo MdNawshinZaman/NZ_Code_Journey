@@ -4,11 +4,15 @@ using namespace std;
 
 ll reverse(ll num, ll rev_num) // num , 0
 {
-    if(num / 10 == 0)
+    if(num < 0)
     {
-        return num;
+        return rev_num;
     }
-    return rev_num + 10 * (reverse(num/10));
+    else
+    {
+        rev_ num = (rev_num * 10) + num % 10;
+        return reverse(num/10, rev_num);
+    }
 }
 
 // ll print(ll num)
