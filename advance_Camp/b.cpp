@@ -9,7 +9,7 @@ ll reverse(ll num) // num , 0
     {
         return num;
     }
-    return rev_num * 10 + (reverse(num/10));
+    return rev_num + 10 * (reverse(num/10));
 }
 
 // ll print(ll num)
