@@ -4,6 +4,10 @@ using namespace std;
 
 int reverse(ll num)
 {
+    if()
+    {
+        return;
+    }
     
     int rev_num =
 }
