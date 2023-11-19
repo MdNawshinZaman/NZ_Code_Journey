@@ -23,9 +23,11 @@ void print(ll num, ll check)
     }
     else
     {
-        if(check == 1)
-        cout << num % 10 << ' ';
-        print(num/10);
+        if(check == 1) cout << ' ';
+
+        cout << num % 10;
+        check = 1;
+        print(num/10, check);
     }
 }
 
