@@ -15,9 +15,11 @@ ll reverse(ll num, ll rev_num) // num , 0
     }
 }
 
-ll print(ll num)
+void print(ll num)
 {
-
+    if()
+    {
+    }
 }
 
 int main(void)
@@ -29,8 +31,7 @@ int main(void)
     for(ll i = 0; i < a; i++)
     {
         cin >> num;
-        //cout << reverse(num, 0);
-        print(num);
+        print(reverse(num, 0));
         cout << '\n';
     }
 
