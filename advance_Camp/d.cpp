@@ -17,7 +17,7 @@ int rec(int digit, int sum)
 
 }
 
-void SUM(n)
+void SUM(int n)
 {
     if(n <= 0)
     {
@@ -27,7 +27,7 @@ void SUM(n)
 
     int digit;
     cin >> digit;
-    cout << "Case " << n: << rec(digit, 0) << '\n';
+    cout << "Case " << n << ':' << rec(digit, 0) << '\n';
 }
 
 int main(void)
