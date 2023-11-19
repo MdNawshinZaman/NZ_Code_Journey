@@ -4,6 +4,11 @@ using namespace std;
 
 void num(ll num)
 {
+    if()
+    {
+        return ;
+    }
+
     
 }
 
