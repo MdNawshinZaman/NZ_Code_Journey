@@ -2,6 +2,16 @@
 using namespace std;
 #define ll long long int
 
+ll digit_count (ll num)
+{
+    ll n = 0;
+    while(num != 0)
+    {
+        num /= 10;
+        n++;
+    }
+    return n;
+}
 ll reverse(ll num, ll rev_num) // num , 0
 {
     if(num == 0)
@@ -37,7 +47,13 @@ int main(void)
     for(ll i = 0; i < a; i++)
     {
         cin >> num;
-        print(reverse(num, 0));
+        ll rev = reverse(num, 0);
+        print(rev);
+
+        for(ll i = 0 ; i < digit_count(num) - digit_count(rev); i++)
+        {
+            cout << 0 << ' ';
+        }
         cout << '\n';
     }
 
