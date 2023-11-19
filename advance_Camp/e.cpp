@@ -1,7 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int fib
+int fib_n(n)
+{
+    
+}
 
 int main(void)
 {
