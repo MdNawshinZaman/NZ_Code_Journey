@@ -3,7 +3,7 @@ using namespace std;
 
 int max(int a, int b, int c, int d)
 {
-    return a > b? = a:b;
+    if(a > )
 }
 
 
