@@ -5,7 +5,7 @@ int fib_n(int n, int current, int prev, int count)
 {
     if(n == 1)
     {
-        return 0;
+        return prev;
     }
     if(count == n)
     {
