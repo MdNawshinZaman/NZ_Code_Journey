@@ -15,7 +15,7 @@ ll reverse(ll num, ll rev_num) // num , 0
     }
 }
 
-void print(ll num, ll check)
+void print(ll num)
 {
     if(num == 0)
     {
@@ -23,11 +23,8 @@ void print(ll num, ll check)
     }
     else
     {
-        if(check == 1) cout << ' ';
-
-        cout << num % 10;
-        check = 1;
-        print(num/10, check);
+        cout << num % 10 << ' ';
+        print(num/10);
     }
 }
 
@@ -40,7 +37,7 @@ int main(void)
     for(ll i = 0; i < a; i++)
     {
         cin >> num;
-        print(reverse(num, 0), 0);
+        print(reverse(num, 0));
         cout << '\n';
     }
 
