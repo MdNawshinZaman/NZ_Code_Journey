@@ -4,7 +4,7 @@ using namespace std;
 
 ll reverse(ll num, ll rev_num) // num , 0
 {
-    if(num < 0)
+    if(num == 0)
     {
         return rev_num;
     }
@@ -15,10 +15,10 @@ ll reverse(ll num, ll rev_num) // num , 0
     }
 }
 
-// ll print(ll num)
-// {
+ll print(ll num)
+{
 
-// }
+}
 
 int main(void)
 {
@@ -29,8 +29,8 @@ int main(void)
     for(ll i = 0; i < a; i++)
     {
         cin >> num;
-        cout << reverse(num, 0);
-        //print(num);
+        //cout << reverse(num, 0);
+        print(num);
         cout << '\n';
     }
 
