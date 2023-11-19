@@ -1,26 +1,33 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void rec(n)
+int rec(int digit, int sum)
 {
-    
+    if(digit == 0)
+    {
+        return
+    }
+
 }
 
-void sum(n)
+void SUM(n)
 {
     if(n <= 0)
     {
         return;
     }
-    sum(n-1);
-    rec(n);
+    SUM(n-1);
+
+    int digit;
+    cin >> digit;
+    rec(digit);
 }
 
 int main(void)
 {
     int n;
     cin >> n;
-    rec_sum(n);
+    SUM(n);
 
     return 0;
 }
