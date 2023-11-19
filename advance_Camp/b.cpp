@@ -2,23 +2,15 @@
 using namespace std;
 #define ll long long int
 
+int reverse(ll num)
+{
+    
+    int rev_num =
+}
+
 int print(ll num)
 {
-    // if(num == 0)
-    // {
-    //     return -1;
-    // }
 
-    // int n = print(num/10);
-
-    while(1)
-    {
-        if(num / 10 == 0)
-        {
-            cout << num;
-        }
-        
-    }
 }
 
 int main(void)
