@@ -1,9 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int max(int a, int b, int c, int d)
+int max(int a, int b)
 {
-    if(a > )
+    return a > b? a : b;
+}
+
+int greatest(int a, int b, int c, int d)
+{
+    return max(a, max(b, max(c,d)));
 }
 
 
@@ -13,7 +18,7 @@ int main(void)
     cin >> a >> b >> c >>d;
     //cout << a <<' ' << b << ' ' << c << ' ' << d << '\n';
 
-    int m = max(a, b, c, d);
+    int m = greatest(a, b, c, d);
 
     cout << m << '\n';
 
