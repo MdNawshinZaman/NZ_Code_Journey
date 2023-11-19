@@ -50,7 +50,7 @@ int main(void)
         ll rev = reverse(num, 0);
         print(rev);
 
-        for(ll i = 0 ; i < digit_count(num) - digit_count(rev); i++)
+        for(ll j = 0 ; j < digit_count(num) - digit_count(rev); j++)
         {
             cout << 0 << ' ';
         }
