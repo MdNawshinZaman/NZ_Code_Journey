@@ -2,14 +2,14 @@
 using namespace std;
 #define ll long long int
 
-int reverse(ll num)
+int reverse(ll num, ll rev_num) // num , 0
 {
-    if()
+    if(num / 10 == 0)
     {
-        return;
+        return num;
     }
     
-    int rev_num =
+
 }
 
 int print(ll num)
