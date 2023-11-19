@@ -7,13 +7,13 @@ int fib_n(int n, int current, int prev, int count)
     {
         return current;
     }
-    fib_n(n, current += , count+=1)
+    return fib_n(n, current + prev, current, count+=1);
 }
 
 int main(void)
 {
     int n;
     cin >> n;
-    cout << fib_n(n,1, 0, 2);
+    cout << fib_n(n,1, 0, 2) << '\n';
     return 0;
 }
