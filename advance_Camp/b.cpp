@@ -4,12 +4,21 @@ using namespace std;
 
 int print(ll num)
 {
-    if(num == 0)
+    // if(num == 0)
+    // {
+    //     return -1;
+    // }
+
+    // int n = print(num/10);
+
+    while(1)
     {
-        return -1;
+        if(num / 10 == 0)
+        {
+            cout << num;
+        }
+        
     }
-    
-    int n = print(num/10);
 }
 
 int main(void)
