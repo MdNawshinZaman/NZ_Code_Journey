@@ -1,10 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long int
+// #define long long int long long int
 
-ll digit_count (ll num)
+long long int digit_count (long long int num)
 {
-    ll n = 0;
+    long long int n = 0;
     while(num != 0)
     {
         num /= 10;
@@ -12,7 +12,7 @@ ll digit_count (ll num)
     }
     return n;
 }
-ll reverse(ll num, ll rev_num) // num , 0
+long long int reverse(long long int num, long long int rev_num) // num , 0
 {
     if(num == 0)
     {
@@ -25,7 +25,7 @@ ll reverse(ll num, ll rev_num) // num , 0
     }
 }
 
-void print(ll num)
+void print(long long int num)
 {
     if(num == 0)
     {
@@ -40,17 +40,17 @@ void print(ll num)
 
 int main(void)
 {
-    ll a;
+    long long int a;
     cin >> a;
 
-    ll num = 0;
-    for(ll i = 0; i < a; i++)
+    long long int num = 0;
+    for(long long int i = 0; i < a; i++)
     {
         cin >> num;
-        ll rev = reverse(num, 0);
+        long long int rev = reverse(num, 0);
         print(rev);
 
-        for(ll j = 0 ; j < digit_count(num) - digit_count(rev); j++)
+        for(long long int j = 0 ; j < digit_count(num) - digit_count(rev); j++)
         {
             cout << 0 << ' ';
         }
