@@ -3,7 +3,7 @@ using namespace std;
 
 int fib_n(int n, int current, int prev, int count)
 {
-    if(n == 1)
+    if(n == 1 || n == 0)
     {
         return prev;
     }
