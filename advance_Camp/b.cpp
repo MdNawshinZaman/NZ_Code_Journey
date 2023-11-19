@@ -17,8 +17,14 @@ ll reverse(ll num, ll rev_num) // num , 0
 
 void print(ll num)
 {
-    if()
+    if(num == 0)
     {
+        return;
+    }
+    else
+    {
+        cout << num % 10 << ' ';
+        
     }
 }
 
