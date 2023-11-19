@@ -3,32 +3,32 @@ using namespace std;
 #define ll long long int
 int rev_num;
 
-int reverse(ll num) // num , 0
+ll reverse(ll num) // num , 0
 {
     if(num / 10 == 0)
     {
         return num;
     }
-    return
-
+    return rev_num * 10 + (reverse(num/10));
 }
 
-int print(ll num)
-{
+// ll print(ll num)
+// {
 
-}
+// }
 
 int main(void)
 {
-    int a;
+    ll a;
     cin >> a;
 
     ll num = 0;
-    for(int i = 0; i < a; i++)
+    for(ll i = 0; i < a; i++)
     {
         cin >> num;
         rev_num = 0;
-        print(num);
+        cout << reverse(num);
+        //print(num);
         cout << '\n';
     }
 
