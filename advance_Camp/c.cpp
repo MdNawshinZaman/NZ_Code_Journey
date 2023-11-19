@@ -1,25 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void pattern(int num, int n)
+void row_printer()
 {
-    // for (int i = 0; i < n; i++)
-    // {
-    //     for (int j = 1; j < n - i; j++)
-    //     {
-    //         cout << ' ';
-    //     }
-    //     for (int j = 0; j < ((i * 2) + 1); j++)
-    //     {
-    //         cout << '*';
-    //     }
-
-    //     cout << '\n';
-    // }
-
-    if (n == 1)
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 1; j < num - i; j++)
+        for (int j = 1; j < n - i; j++)
         {
             cout << ' ';
         }
@@ -29,7 +15,13 @@ void pattern(int num, int n)
         }
 
         cout << '\n';
+    }
+}
 
+void pattern(int num, int n)
+{
+    if (n == 1)
+    {
     }
 }
 
