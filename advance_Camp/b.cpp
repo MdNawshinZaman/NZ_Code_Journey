@@ -24,7 +24,7 @@ void print(ll num)
     else
     {
         cout << num % 10 << ' ';
-        
+        print(num/10);
     }
 }
 
