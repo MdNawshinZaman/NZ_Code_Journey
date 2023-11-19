@@ -47,6 +47,13 @@ int main(void)
     for(long long int i = 0; i < a; i++)
     {
         cin >> num;
+        if(num == 0)
+        {
+            cout << 0 << '\n';
+            continue;
+        }
+
+
         long long int rev = reverse(num, 0);
         print(rev);
 
