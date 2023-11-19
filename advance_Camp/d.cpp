@@ -12,7 +12,7 @@ int rec(int digit, int sum)
         int n;
         cin >> n;
         sum += n;
-        rec(digit-1, sum);
+        return rec(digit-1, sum);
     }
 }
 
