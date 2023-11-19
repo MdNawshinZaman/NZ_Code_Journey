@@ -2,14 +2,14 @@
 using namespace std;
 #define ll long long int
 
-void print(ll num)
+int print(ll num)
 {
     if(num == 0)
     {
-        return;
+        return -1;
     }
     
-    print(num/10);
+    int n = print(num/10);
 }
 
 int main(void)
