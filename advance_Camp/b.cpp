@@ -3,7 +3,7 @@ using namespace std;
 #define ll long long int
 int rev_num;
 
-ll reverse(ll num) // num , 0
+ll reverse(ll num, ll n) // num , 0
 {
     if(num / 10 == 0)
     {
